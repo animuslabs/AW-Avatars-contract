@@ -1,0 +1,35 @@
+[
+    {
+        "account": "atomicassets",
+        "name": "createschema",
+        "authorization": [
+            {
+                "actor": "waxcontract1",
+                "permission": "active"
+            }
+        ],
+        "data": {
+            "authorized_creator": "waxcontract1",
+            "collection_name": "avatars1235a",
+            "schema_name": "avatarschema",
+            "schema_format": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "img",
+                    "type": "image"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "rarity",
+                    "type": "uint8"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,104 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "testsuite",
+      "type": "promptString",
+      "default": "[mytestsuite]",
+      "description": "Enter test suite key (Example: \"[MyTestSuite]\""
+    },
+    {
+      "type": "pickString",
+      "id": "chainSelect",
+      "description": "On which chain do you want to deploy?",
+      "options": [
+        "eos",
+        "kylin",
+        "wax",
+        "jungle",
+        "telosTest",
+        "waxTest"
+      ],
+      "default": "waxTest"
+    }
+  ],
+  "tasks": [
+    // Compilation
+    {
+      "label": "make",
+      "type": "shell",
+      "command": "cd build && cmake `clsdk-cmake-args` .. && make -j $(nproc)",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(diff-insert) Build",
+          "tooltip": "CMake build"
+        }
+      }
+    },
+    {
+      "label": "make and test",
+      "type": "shell",
+      "command": "cd build && cmake `clsdk-cmake-args` .. && make -j $(nproc) && ctest -V",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(diff-insert) Build and test",
+          "tooltip": "CMake build and invoke Cltester"
+        }
+      }
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "cd build && ctest -V",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(diff-insert) Test",
+          "tooltip": "Invoke Cltester"
+        }
+      }
+    },
+    {
+      "label": "testspecific",
+      "type": "shell",
+      "command": "cd build && cltester -v artifacts/test-contract_name.wasm ${input:testsuite} -s ",
+      "args": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(diff-insert) Test Suite",
+          "tooltip": "Invoke Cltester on a specific test suite"
+        }
+      }
+    },
+    {
+      "label": "Deploy",
+      "type": "shell",
+      "command": "node ./util/deploy ${input:chainSelect}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "statusbar": {
+          "label": "$(diff-insert) Deploy",
+          "tooltip": "deploy contract and abi"
+        }
+      }
+    },
+  ]
+}

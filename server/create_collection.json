@@ -1,0 +1,45 @@
+[
+    {
+        "account": "atomicassets",
+        "name": "createcol",
+        "authorization": [
+            {
+                "actor": "waxcontract1",
+                "permission": "active"
+            }
+        ],
+        "data": {
+            "author": "waxcontract1",
+            "collection_name": "avatars12",
+            "allow_notify": true,
+            "authorized_accounts": [
+                "waxcontract1"
+            ],
+            "notify_accounts": [],
+            "market_fee": "0.05",
+            "data": [
+                {
+                    "key": "name",
+                    "value": [
+                        "string",
+                        "avatars"
+                    ]
+                },
+                {
+                    "key": "description",
+                    "value": [
+                        "string",
+                        "this is a description"
+                    ]
+                },
+                {
+                    "key": "url",
+                    "value": [
+                        "string",
+                        "https://google.com"
+                    ]
+                }
+            ]
+        }
+    }
+]

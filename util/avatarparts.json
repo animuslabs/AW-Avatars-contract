@@ -1,0 +1,2088 @@
+[
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0007_bottom_3.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 2,
+    "name": "unue",
+    "ipfsCard": "QmR8BH5DAHCqYNnxtWy2majbxdigwejJ2iAbBRgSEbXRkF",
+    "template_id": 396961
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0009_big-wings_zombie.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "malmorta",
+    "ipfsCard": "QmXXGh9CoCpEn2XdgDAmdFnDsGLqZXAjfB9dxBqwmETPym",
+    "template_id": 396962
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0000_eyes_spawn.png",
+    "offset": {
+      "x": 876.5,
+      "y": -695,
+      "width": 521,
+      "height": 508
+    },
+    "rarity": 5,
+    "name": "generi",
+    "ipfsCard": "QmUJswsFzCpiCyFSWjdufQJUuhsGTm1eHJQyvSRW1kq5rM",
+    "template_id": 396963
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0001_eyes_scientist.png",
+    "offset": {
+      "x": 899,
+      "y": -708,
+      "width": 546,
+      "height": 184
+    },
+    "rarity": 3,
+    "name": "sperta",
+    "ipfsCard": "QmeXJPR6dGDQCFyuvR7VtempquD3Vskbbv99eXS6pFSRSK",
+    "template_id": 396964
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0002_eyes_queen.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 4,
+    "name": "regino",
+    "ipfsCard": "QmXY8gbA1XduoZnoxJH2jWeRswrJLSov98b1uttPjx4X3t",
+    "template_id": 396965
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0003_eyes_king.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 3,
+    "name": "rego",
+    "ipfsCard": "Qmb7TspF3oVsuCWgEU5dAhFrgVRFCBG8oo3KQJb4SE9fB9",
+    "template_id": 396966
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0004_eyes_elvis.png",
+    "offset": {
+      "x": 903,
+      "y": -718,
+      "width": 516,
+      "height": 188
+    },
+    "rarity": 3,
+    "name": "galata",
+    "ipfsCard": "QmXzhgb8YGGQwGQC8YKCKCNKEUgGdTkNP1rD1qirCAcTsL",
+    "template_id": 396967
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0005_eyes_barbarian.png",
+    "offset": {
+      "x": 840.5,
+      "y": -668.5,
+      "width": 331,
+      "height": 203
+    },
+    "rarity": 3,
+    "name": "barbaro",
+    "ipfsCard": "QmfU2bH9pjb4GQDvECMMajsk5qWDJqTfB8YzQx2RdWZFS7",
+    "template_id": 396968
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0006_eyes_superhero.png",
+    "offset": {
+      "x": 1009,
+      "y": -731,
+      "width": 736,
+      "height": 396
+    },
+    "rarity": 4,
+    "name": "memfida",
+    "ipfsCard": "QmUM6nL1XvgNppzhxZguYSS2vJvMZgA6s5g2emyjnXoyp8",
+    "template_id": 396969
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0007_eyes_wizard.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "sorcisto",
+    "ipfsCard": "QmdKedvcA2h1WDGgZMdD8LMA6UQ7cFeYAn7ytakGP8tQ13",
+    "template_id": 396970
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_1pack_0000s_0008_eyes_zombie.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "malmorta",
+    "ipfsCard": "QmTTophyWgEDv41M1qCgWLPNHKWKwE9yj2vmvc5v3Q5toh",
+    "template_id": 396971
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0000_mouth_scientist.png",
+    "offset": {
+      "x": 837.5,
+      "y": -854.5,
+      "width": 183,
+      "height": 55
+    },
+    "rarity": 4,
+    "name": "sperta",
+    "ipfsCard": "QmZvmy726H1gkMHR8C4RMJddqHiNqY1cwZ1LdzyP1g1VQW",
+    "template_id": 396972
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0001_mouth_queen.png",
+    "offset": {
+      "x": 799,
+      "y": -856.5,
+      "width": 106,
+      "height": 91
+    },
+    "rarity": 1,
+    "name": "regino",
+    "ipfsCard": "QmZuNKmJwHcHqApXX7haS8x47thpYcSkMzXxA7V6wa7LQF",
+    "template_id": 396973
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0002_mouth_king.png",
+    "offset": {
+      "x": 803.5,
+      "y": -858,
+      "width": 209,
+      "height": 178
+    },
+    "rarity": 4,
+    "name": "rego",
+    "ipfsCard": "QmW7iL4mMji5M6pDuMnn6tesK1nosVu8Niv5MB4ph3u2dQ",
+    "template_id": 396974
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0003_mouth_elvis.png",
+    "offset": {
+      "x": 807,
+      "y": -853.5,
+      "width": 110,
+      "height": 133
+    },
+    "rarity": 2,
+    "name": "galata",
+    "ipfsCard": "QmWgfT3UFk6prxXdNXZdCCHgQwePFG45d2XbvTtGovnrvi",
+    "template_id": 396975
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0006_mouth_wizard.png",
+    "offset": {
+      "x": 883,
+      "y": -1016,
+      "width": 502,
+      "height": 540
+    },
+    "rarity": 4,
+    "name": "sorcisto",
+    "ipfsCard": "QmVoVnbBAZYidU7vFQY7wCeExkaAksGXkgAXXsimKterNe",
+    "template_id": 396976
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_1pack_0001s_0007_mouth_zombie.png",
+    "offset": {
+      "x": 856,
+      "y": -834.5,
+      "width": 376,
+      "height": 125
+    },
+    "rarity": 4,
+    "name": "malmorta",
+    "ipfsCard": "QmUhxP9Ea1rW82cj2RYaUuSt26p2cfg9EgM5hhdmNWzLpu",
+    "template_id": 396977
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0000_hair_scientist.png",
+    "offset": {
+      "x": 953,
+      "y": -534,
+      "width": 668,
+      "height": 698
+    },
+    "rarity": 3,
+    "name": "sperta",
+    "ipfsCard": "QmdVMHdB13AykKSXR44AgVGB1AmsjR4ZD6mszGs9vzsNYj",
+    "template_id": 396978
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0001_hair_queen.png",
+    "offset": {
+      "x": 969.5,
+      "y": -478.5,
+      "width": 711,
+      "height": 953
+    },
+    "rarity": 5,
+    "name": "regino",
+    "ipfsCard": "QmXpMM5iH2XWGdznGGVVKt13a7XKZxDELsjKbBwuevhjze",
+    "template_id": 396979
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0002_hair_king.png",
+    "offset": {
+      "x": 942,
+      "y": -585.5,
+      "width": 686,
+      "height": 845
+    },
+    "rarity": 5,
+    "name": "rego",
+    "ipfsCard": "QmXyBd8m7eumrJTiVesoMRJsnJyWZXde7LcMRcVH5bhk5t",
+    "template_id": 396980
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0003_hair_elvis.png",
+    "offset": {
+      "x": 927,
+      "y": -538.5,
+      "width": 610,
+      "height": 679
+    },
+    "rarity": 5,
+    "name": "galata",
+    "ipfsCard": "QmXax99B16WTt8gePpUpkTmQjY9g9nbWr4RUWQS2yVdLfm",
+    "template_id": 396981
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0004_hair_barbarian.png",
+    "offset": {
+      "x": 1209,
+      "y": -670.5,
+      "width": 1154,
+      "height": 901
+    },
+    "rarity": 5,
+    "name": "barbaro",
+    "ipfsCard": "QmXhosqCYSz9Hx7LCcE94nA9CcWJ5P23wzvH1VqxmGXtAN",
+    "template_id": 396982
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0005_hair_superhero.png",
+    "offset": {
+      "x": 942.5,
+      "y": -461,
+      "width": 649,
+      "height": 530
+    },
+    "rarity": 4,
+    "name": "memfida",
+    "ipfsCard": "QmXyoJHuNCCaenstbHVny6Ku1gUCcwhTVHmU1SJzsHdMCj",
+    "template_id": 396983
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0006_hair_wizard.png",
+    "offset": {
+      "x": 934,
+      "y": -415,
+      "width": 868,
+      "height": 830
+    },
+    "rarity": 5,
+    "name": "sorcisto",
+    "ipfsCard": "QmbgNkMZB46MjVe3jmyp644bhLnZ4m56WDQJN5nt5ZPw5z",
+    "template_id": 396984
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_1pack_0002s_0007_hair_zombie.png",
+    "offset": {
+      "x": 989.5,
+      "y": -757.5,
+      "width": 777,
+      "height": 907
+    },
+    "rarity": 4,
+    "name": "malmorta",
+    "ipfsCard": "QmUBJtp5Ba4bXQgqbxWQWQxFdHAysYu7DsmqunPRo7SUCc",
+    "template_id": 396985
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0000_head_spawn.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "generi",
+    "ipfsCard": "QmTJHejG7Hj6bj3fQvHX69sAuHRT9WbVqReULJKcjhF2Zy",
+    "template_id": 396986
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0001_head_scientist.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "sperta",
+    "ipfsCard": "QmWsF77Z38R2tdYs2uNGgQJAV7wDvpCK4M2fvz7AueG12x",
+    "template_id": 396987
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0002_head_queen.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "regino",
+    "ipfsCard": "Qmf16WMboxMRTMsUbShj2pguHj3LyC94PYJV7TnTgdwUgQ",
+    "template_id": 396988
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0003_head_king.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "rego",
+    "ipfsCard": "Qmats6dHegBCQ88DMiQmJ5gs2pWGgeVQM8hyEKURQANh1F",
+    "template_id": 396989
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0004_head_ellvis.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "galata",
+    "ipfsCard": "QmR7d3NDXGunQUrXi2Gys6wStzQZZ2RgpbPae25Cv1coJW",
+    "template_id": 396990
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0006_head_astronaut.png",
+    "offset": {
+      "x": 929,
+      "y": -693.5,
+      "width": 692,
+      "height": 651
+    },
+    "rarity": 5,
+    "name": "esploristo",
+    "ipfsCard": "QmaREv4XHXZfcfHo6Ga2y1VMv1Kfs3TzXUtxpYTPBJyK7Q",
+    "template_id": 396991
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0007_headsuperhero.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "memfida",
+    "ipfsCard": "QmSUcWZKnEDVw25vvQL5GSxG7oFpPu2BBB67wnSbDYf7Ba",
+    "template_id": 396992
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0008_head_wizard.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "sorcisto",
+    "ipfsCard": "QmRwcs9HcPFZCs4THAFZWHDMEGrk6fBEPeheUQB3TTXiAk",
+    "template_id": 396993
+  },
+  {
+    "type": "head",
+    "filepath": "boid_1pack_0003s_0009_head_zombie.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 5,
+    "name": "malmorta",
+    "ipfsCard": "QmVoTwXPry3CuzLETxDSur8n4aAEUXq83dPWSdWnRVW5EW",
+    "template_id": 396994
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0000_top_spawn.png",
+    "offset": {
+      "x": 969,
+      "y": -1116.5,
+      "width": 702,
+      "height": 929
+    },
+    "rarity": 3,
+    "name": "generi",
+    "ipfsCard": "Qmdn5nAq94qhmkBUhs6m5Axrsn4gzoTa3v36xAzztRDpXQ",
+    "template_id": 396995
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0001_top_scientist.png",
+    "offset": {
+      "x": 988.5,
+      "y": -1169,
+      "width": 741,
+      "height": 684
+    },
+    "rarity": 5,
+    "name": "sperta",
+    "ipfsCard": "QmTi13o4bkUypkCwmENJRBSnbqNGT1VomGjP9r8G1bARzw",
+    "template_id": 396996
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0002_top_queen.png",
+    "offset": {
+      "x": 926,
+      "y": -1105.5,
+      "width": 656,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "regino",
+    "ipfsCard": "Qme4jfFeBmnWDijmzDRJC1To9LMsPF5Ln3HBshimZiTxjw",
+    "template_id": 396997
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0003_top_king.png",
+    "offset": {
+      "x": 931,
+      "y": -1176.5,
+      "width": 626,
+      "height": 699
+    },
+    "rarity": 4,
+    "name": "rego",
+    "ipfsCard": "QmQupSzsvSnQh9o4acWVK3EkbohAjKRaJ9G76o2EwUEM2h",
+    "template_id": 396998
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0004_top_elvis.png",
+    "offset": {
+      "x": 929.5,
+      "y": -1113,
+      "width": 629,
+      "height": 572
+    },
+    "rarity": 5,
+    "name": "galata",
+    "ipfsCard": "QmNNanCzLKHqxSeEmoeBbnkBpJr5VkvjqGmhGNJBwMH8s8",
+    "template_id": 396999
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0005_top_barbarian.png",
+    "offset": {
+      "x": 956,
+      "y": -1175,
+      "width": 676,
+      "height": 696
+    },
+    "rarity": 3,
+    "name": "barbaro",
+    "ipfsCard": "QmYFzqjVP6YVf5cnuPYQtPndGM8yqzMwTinRe7zTwcGT8c",
+    "template_id": 397000
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0006_top_astronaut.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 1,
+    "name": "esploristo",
+    "ipfsCard": "QmbhNaQgpa8aKp85NQ6hSsLJZjNEjcbLbCEB5juSb7n9vr",
+    "template_id": 397001
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0007_top_superhero.png",
+    "offset": {
+      "x": 1121.5,
+      "y": -1105.5,
+      "width": 1007,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "memfida",
+    "ipfsCard": "QmcNoeLTUuAnuZBXZRQ1JHPYxLgFXeWpBBp9w149sJ2ton",
+    "template_id": 397002
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0008_top_wizard.png",
+    "offset": {
+      "x": 1061.5,
+      "y": -1188.5,
+      "width": 887,
+      "height": 723
+    },
+    "rarity": 5,
+    "name": "sorcisto",
+    "ipfsCard": "QmaEEPt5CnVdf6CNo14KNWeuRp9rJ5hnZ5ek2ghoT8sHaD",
+    "template_id": 397003
+  },
+  {
+    "type": "top",
+    "filepath": "boid_1pack_0004s_0009_top_zombie.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "malmorta",
+    "ipfsCard": "Qmf1Y5swyeRmk6RqK59D98J2Tb1mzS7khDV32ZeQk2XNFN",
+    "template_id": 397004
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0000_bottom_spawn.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "generi",
+    "ipfsCard": "QmYehDgvZQAwMxnfNxrSrJmG5hwtbC3YR1KJvFV995LHvb",
+    "template_id": 397005
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0001_bottom_scientist.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "sperta",
+    "ipfsCard": "QmWqgphf3nYb2rz3Fchkit1u3FzGLj6D7a42KkQTNw9Aue",
+    "template_id": 397006
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0002_bottom_qeen.png",
+    "offset": {
+      "x": 932.5,
+      "y": -1422.5,
+      "width": 495,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "regino",
+    "ipfsCard": "QmQCqmjYfrv9fZDBZrYS6GqdrwAzwPXuEpyccqcniWEDeo",
+    "template_id": 397007
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0003_bottom_KING.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "rego",
+    "ipfsCard": "QmU3pd9qj3CCZLJfpB5bFiYxrf1vWbXiYakTZBVuUaAPvW",
+    "template_id": 397008
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0004_bottom_elvis.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "galata",
+    "ipfsCard": "Qma9CyzfMExum5V7cVv2vAsHpXBC9NMwpLKc2hYBPZU2xa",
+    "template_id": 397009
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0005_bottom_barbarian.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "barbaro",
+    "ipfsCard": "QmeifLTHAbXRP4SSBxidWGfyQG4h9LRDQxEB4dRdUxr29T",
+    "template_id": 397010
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0006_bottom_astronaut.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "esploristo",
+    "ipfsCard": "Qmdt7qw5idAyLTDMTtLSAPw3RWyF31CAwDcHKtwNLxyfAJ",
+    "template_id": 397011
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0007_bottom_SUPERHERO.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "memfida",
+    "ipfsCard": "QmQsvDDWkdM9Mghc6VJNqTnZxy2P25vkYnDaWzizaMmkGU",
+    "template_id": 397012
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0008_bottom_wizard.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 2,
+    "name": "sorcisto",
+    "ipfsCard": "QmSSuTVkJSfHbHkhgraKV5Y1k65yffEp9W6uz8K7XUsRnq",
+    "template_id": 397013
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_1pack_0005s_0009_bottom_zombie.png",
+    "offset": {
+      "x": 971.5,
+      "y": -1417.5,
+      "width": 639,
+      "height": 521
+    },
+    "rarity": 2,
+    "name": "malmorta",
+    "ipfsCard": "QmUc24VXjKyE84SdhnCmwzm4pxxeD5fXXp9My5xz7LSZiN",
+    "template_id": 397014
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0000_big-wings_spawn.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "generi",
+    "ipfsCard": "QmdN2Bw7yeJKnmKLrVN6yikiA8C3rhAz9eks4Z4RodNqUs",
+    "template_id": 397015
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0001_big-wings_scientist.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "sperta",
+    "ipfsCard": "QmVEfZgBkvF2KiDLZzgZz7dQYcFs8DPzbDFyJ5SaXypZc8",
+    "template_id": 397016
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0002_big-wings_queen.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 3,
+    "name": "regino",
+    "ipfsCard": "Qmc6QDrr4cCghWHP3kLhYjP9rU2twqeoYtQCH1ASk5ivcr",
+    "template_id": 397017
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0003_big-wings_king.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 5,
+    "name": "rego",
+    "ipfsCard": "QmUkpe8f56rNzNZmNmSQvW3CiWtaPGtg2poveG6edyac6E",
+    "template_id": 397018
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0004_big-wings_elvis.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "galata",
+    "ipfsCard": "Qmf9XVivnCRBb4kNshtrcpYB5eudYDeWJhLFSnLBEPUo5V",
+    "template_id": 397019
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0005_big-wings_barbarian.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "barbaro",
+    "ipfsCard": "QmNj1aKbXVxnq7WwftAb6BdagQ6hzRpiuFQNDaQBi4kp2H",
+    "template_id": 397020
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0006_big-wings_astronaut.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -864.5,
+      "width": 1901,
+      "height": 653
+    },
+    "rarity": 1,
+    "name": "esploristo",
+    "ipfsCard": "QmWTHgyT1v5ig1qL7JfqxteFmKN6Zg1DkY1xMnNeEhmnPE",
+    "template_id": 397021
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0007_big-wings-superhero.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 5,
+    "name": "memfida",
+    "ipfsCard": "QmaFa7XpypY9WpcVNHNsfcXEmmjHSgkKoDfHMNynHRYtfS",
+    "template_id": 397022
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_1pack_0006s_0008_big-wings.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 5,
+    "name": "sorcisto",
+    "ipfsCard": "QmPkrgrZP66MNRNptW1Eav1EAbKmZkTUoCuRcRBm5ukQ3M",
+    "template_id": 397023
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0000_small-wings_spawn.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 5,
+    "name": "generi",
+    "ipfsCard": "QmVqC5usw9tWqRH8vRLjA3pevr4FdCXMs7sVKK5ZkdRXHz",
+    "template_id": 397024
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0001_small-wings_scientist.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "sperta",
+    "ipfsCard": "QmcXJbsBPWZqwGEccAcYkdNG93wujN8KnPz4mGk8YVhhXw",
+    "template_id": 397025
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0002_small-wings_queen.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "regino",
+    "ipfsCard": "Qmb9QWLiPueaiVH6rz9nSS86PfvQVpB2rpFRLpvfj6rrwo",
+    "template_id": 397026
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0003_small-wings_king.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "rego",
+    "ipfsCard": "QmZcAJHE612n7KbqriifvsHaY8U2h4VRBwkQ8ukczdb5nL",
+    "template_id": 397027
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0004_small-wings_elvis.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 3,
+    "name": "galata",
+    "ipfsCard": "QmXQFizTH2sqNZNEjFiNHYmwNn4ScCG8e2JWeMX3xJ7xqf",
+    "template_id": 397028
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0005_small-wings_barbarian.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "barbaro",
+    "ipfsCard": "QmXV2UHBooeq8QS2bAgYxYgGPX1Fm5UCenuF86gax3fBxA",
+    "template_id": 397029
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0006_small-wings_astronaut.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 3,
+    "name": "esploristo",
+    "ipfsCard": "QmZoikd3yGmDoVqxJJDPAaArp4RhhEP2TpHBUsQtZdWB8h",
+    "template_id": 397030
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0007_small-wings_superhero.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "memfida",
+    "ipfsCard": "QmcUJaVqUTe6LPd5V7G24qcBtyLzbQp9YTdtf4Zm2e7zHU",
+    "template_id": 397031
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0008_small-wings_wizard.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 3,
+    "name": "sorcisto",
+    "ipfsCard": "QmXaexifDNWGaDnWxHBBswZC7vqEu4TzfLjYH9gHUFdU4S",
+    "template_id": 397032
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_1pack_0007s_0009_small-wings_zombie.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 1,
+    "name": "malmorta",
+    "ipfsCard": "QmajukSeRT5s3S31bRjiyXNzCdP7YsqiDY3KbGQbPZ7x2c",
+    "template_id": 397033
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0000_hair_10.png",
+    "offset": {
+      "x": 971,
+      "y": -626,
+      "width": 706,
+      "height": 690
+    },
+    "rarity": 5,
+    "name": "konduki",
+    "ipfsCard": "QmajCSW67HQJuF9qgDdrZCdpygKaJh2vcX2WuUQNWoUf2r",
+    "template_id": 397034
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0001_hair_9.png",
+    "offset": {
+      "x": 931.5,
+      "y": -517.5,
+      "width": 555,
+      "height": 619
+    },
+    "rarity": 5,
+    "name": "serci",
+    "ipfsCard": "QmNZ1XxqJaX3GueGVebmNU3qM9qo7YCwwsC3vXiP5zaUEA",
+    "template_id": 397035
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0002_hair_8.png",
+    "offset": {
+      "x": 955,
+      "y": -737,
+      "width": 652,
+      "height": 864
+    },
+    "rarity": 4,
+    "name": "scio",
+    "ipfsCard": "QmSG4A141WrMDardjj7yYZPiknsFeh1KAG3MLsLGaCsvfY",
+    "template_id": 397036
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0003_hair_7.png",
+    "offset": {
+      "x": 946.5,
+      "y": -540,
+      "width": 791,
+      "height": 754
+    },
+    "rarity": 5,
+    "name": "pliigita",
+    "ipfsCard": "QmV4sriGPGWHGPbPmuYCMFbBbr6UhniUcyTnZhbrRNNydL",
+    "template_id": 397037
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0004_hair_6.png",
+    "offset": {
+      "x": 890.5,
+      "y": -730.5,
+      "width": 673,
+      "height": 831
+    },
+    "rarity": 4,
+    "name": "ribelulo",
+    "ipfsCard": "QmTog5F6ursuQmdKqNHcdBVzV6PLTLuq2dEFD575vNC5hL",
+    "template_id": 397038
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0005_hair_5.png",
+    "offset": {
+      "x": 978,
+      "y": -661,
+      "width": 756,
+      "height": 630
+    },
+    "rarity": 3,
+    "name": "soleca",
+    "ipfsCard": "QmSS1jUV8YHzjvRbVyNkuKqcM33GzrNZFt2fXEiEKp77Fk",
+    "template_id": 397039
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0006_hair_4.png",
+    "offset": {
+      "x": 935.5,
+      "y": -666,
+      "width": 635,
+      "height": 722
+    },
+    "rarity": 5,
+    "name": "esplori",
+    "ipfsCard": "QmSUKWLXyKMvvuWCEcyQ6WCMBXxVR5oZU3eg2Vq9fn6mmT",
+    "template_id": 397040
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0007_hair_3.png",
+    "offset": {
+      "x": 947.5,
+      "y": -610,
+      "width": 675,
+      "height": 696
+    },
+    "rarity": 3,
+    "name": "unue",
+    "ipfsCard": "QmNYYeg3GhME4wf9TwjfT9ttcfoKPKs4Xph1oeXHdm72Us",
+    "template_id": 397041
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0008_hair_2.png",
+    "offset": {
+      "x": 953.5,
+      "y": -647.5,
+      "width": 811,
+      "height": 921
+    },
+    "rarity": 5,
+    "name": "stratido",
+    "ipfsCard": "QmSETVFuC62GYKCKth7TtL5NzKaeL91r1mVDVtDUjpAJf2",
+    "template_id": 397042
+  },
+  {
+    "type": "hair",
+    "filepath": "boid_2pack__0000s_0009_hair_1.png",
+    "offset": {
+      "x": 937.5,
+      "y": -507,
+      "width": 589,
+      "height": 688
+    },
+    "rarity": 5,
+    "name": "taktika",
+    "ipfsCard": "QmbekyiNsWMaKmuVXtrZkEz8aqRYi51adaiNvCxJsPH2HV",
+    "template_id": 397043
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0000_mouth_10.png",
+    "offset": {
+      "x": 825,
+      "y": -761,
+      "width": 282,
+      "height": 352
+    },
+    "rarity": 4,
+    "name": "konduki",
+    "ipfsCard": "QmUq7miRuBhA9Jw123cMowkpJisS3LEFbtWG9WWK3WkxuA",
+    "template_id": 397044
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0001_mouth_9.png",
+    "offset": {
+      "x": 894.5,
+      "y": -836,
+      "width": 529,
+      "height": 312
+    },
+    "rarity": 3,
+    "name": "serci",
+    "ipfsCard": "QmYMQGLKF4KsSduvy4ZQEfo9wmjxNeHHDERHqaJK2AaZ6s",
+    "template_id": 397045
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0002_mouth_8.png",
+    "offset": {
+      "x": 875,
+      "y": -947,
+      "width": 360,
+      "height": 240
+    },
+    "rarity": 2,
+    "name": "scio",
+    "ipfsCard": "QmXviJgyNF3o77zfiouGHfGCf8HnUFjjnGB8DZd1Kj21eC",
+    "template_id": 397046
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0003_mouth_7.png",
+    "offset": {
+      "x": 845.5,
+      "y": -899,
+      "width": 183,
+      "height": 144
+    },
+    "rarity": 2,
+    "name": "pliigita",
+    "ipfsCard": "QmSQDNoUNs6G2dA1zvuy3zdpkTKBkcwVt8upWUGFZLCqof",
+    "template_id": 397047
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0006_mouth_4.png",
+    "offset": {
+      "x": 876.5,
+      "y": -787.5,
+      "width": 343,
+      "height": 189
+    },
+    "rarity": 2,
+    "name": "esplori",
+    "ipfsCard": "QmeeqkwLtRKAZEZSb55WYJNPG6qf6oQJ2Gh1oucSBXk8Rm",
+    "template_id": 397048
+  },
+  {
+    "type": "mouth",
+    "filepath": "boid_2pack__0001s_0009_mouth_1.png",
+    "offset": {
+      "x": 837.5,
+      "y": -912,
+      "width": 183,
+      "height": 156
+    },
+    "rarity": 3,
+    "name": "taktika",
+    "ipfsCard": "QmU3WdfauXY696XPMrjtrg6BStGM4cRDVcSgXULR1mcRNn",
+    "template_id": 397049
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0000_eyes_10.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "konduki",
+    "ipfsCard": "QmXk8qPiPh9AeGugLFbzgLKJTCnQP81JLdLuptqEXAuoR2",
+    "template_id": 397050
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0001_eyes_9.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "serci",
+    "ipfsCard": "QmU8qs4iZGeYxEx3DFHdB5omnypUJi1YD8KGQnKo9nzPS7",
+    "template_id": 397051
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0002_eyes8.png",
+    "offset": {
+      "x": 919.5,
+      "y": -692.5,
+      "width": 577,
+      "height": 215
+    },
+    "rarity": 5,
+    "name": "scio",
+    "ipfsCard": "QmVxckHX2W1XTVtRZSUFrsVeP5d9tJByLrWvTkgc3JKvHq",
+    "template_id": 397052
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0003_eyes_7.png",
+    "offset": {
+      "x": 840.5,
+      "y": -739,
+      "width": 331,
+      "height": 220
+    },
+    "rarity": 3,
+    "name": "pliigita",
+    "ipfsCard": "QmXCK6tFhyw6fPJJ74BrtH8aEqsbRvhfcjrxesRT5tYMPT",
+    "template_id": 397053
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0004_eyes_6.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "ribelulo",
+    "ipfsCard": "QmPrtR9iNtV78xQRBoaFQeC3u7XwU6YasMgxwqDu2YdkL2",
+    "template_id": 397054
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0005_eyes_5.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 3,
+    "name": "soleca",
+    "ipfsCard": "QmNmwGa5iTPFrKWGxmdSGVVjEZV1ydbs1gSVFA77QHNcAu",
+    "template_id": 397055
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0006_eyes_4.png",
+    "offset": {
+      "x": 840.5,
+      "y": -699.5,
+      "width": 331,
+      "height": 141
+    },
+    "rarity": 2,
+    "name": "esplori",
+    "ipfsCard": "QmUHT4arHiRKxC1n5RUb7VXnjxyGoT9pS1aBs92cYUiL1B",
+    "template_id": 397056
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0007_eyes_3.png",
+    "offset": {
+      "x": 867.5,
+      "y": -789,
+      "width": 385,
+      "height": 338
+    },
+    "rarity": 4,
+    "name": "unue",
+    "ipfsCard": "QmWadKavTj8q9Ub1zckKjiJoLGys4DCTwZhzKpf1hRQ27t",
+    "template_id": 397057
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0008_eyes_2.png",
+    "offset": {
+      "x": 881,
+      "y": -707,
+      "width": 530,
+      "height": 348
+    },
+    "rarity": 3,
+    "name": "stratido",
+    "ipfsCard": "QmcT4eSHtUb6Qoru49YQPKMUrToTMFJyN3uMrcVJxxsqky",
+    "template_id": 397058
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0002s_0009_eyes1.png",
+    "offset": {
+      "x": 920,
+      "y": -681,
+      "width": 676,
+      "height": 224
+    },
+    "rarity": 3,
+    "name": "taktika",
+    "ipfsCard": "QmTjEDMEzcpVWzKmGZfqtMwxgCqwMcHo27GJPWou7jAZJR",
+    "template_id": 397059
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0000_head_10.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "konduki",
+    "ipfsCard": "Qmdw1pRtQDrjkzevzwQFGpowaavAPzNHxT83xUEN4qCjJD",
+    "template_id": 397060
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0001_head_9.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "serci",
+    "ipfsCard": "QmbGWpXtitGYXGTVa8FHBejp4StfJ32miNbmenpxhB4ivw",
+    "template_id": 397061
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0002_head_8.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "scio",
+    "ipfsCard": "QmSPiPkSKgvrNxpWPcRwtVkTL84qRA4tBVnwMxNHhV3EsG",
+    "template_id": 397062
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0003_head_7.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 5,
+    "name": "pliigita",
+    "ipfsCard": "QmRuMJBkLnqbHL7sMYd3Heg8eK4FUNN8t88Q4s8jpYpecT",
+    "template_id": 397063
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0004_head_6.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 5,
+    "name": "ribelulo",
+    "ipfsCard": "QmSKGZyewX98ZJ77wsCyPbWPwtB4as9y1HvcHsSUP6Qc5Z",
+    "template_id": 397064
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0005_head_5.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "soleca",
+    "ipfsCard": "QmbMHsKu4f7gbjYQtsLrt3gpdK8eC6whJaACnJPEJ1BP7D",
+    "template_id": 397065
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0006_head_4.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "esplori",
+    "ipfsCard": "QmWJquKS6P8RqwEQh5nPxL5UrtzTHyT78ehWNUPC1mNqmC",
+    "template_id": 397066
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0007_head_3.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "unue",
+    "ipfsCard": "Qmcm4ZSej8BcZLYwvK57pfggmiw9P5YMHq8qNDKrheEcqb",
+    "template_id": 397067
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0008_head_2.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "stratido",
+    "ipfsCard": "QmNojit373rmgBP6bUWVz3dbYm9FoAexDYgJmJmLSKiW4m",
+    "template_id": 397068
+  },
+  {
+    "type": "head",
+    "filepath": "boid_2pack__0003s_0009_head_1.png",
+    "offset": {
+      "x": 941.5,
+      "y": -685.5,
+      "width": 619,
+      "height": 631
+    },
+    "rarity": 1,
+    "name": "taktika",
+    "ipfsCard": "QmeFrp1T7k8w4wSve3DseBxaYdpKdeQS8bnXxprhNk26pw",
+    "template_id": 397069
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0000_top_10.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 3,
+    "name": "konduki",
+    "ipfsCard": "Qmdk6NE5R26bQAj72tatRKx4NBP33bbddzr92UMtNZC4rL",
+    "template_id": 397070
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0001_top_9.png",
+    "offset": {
+      "x": 944,
+      "y": -1095,
+      "width": 656,
+      "height": 578
+    },
+    "rarity": 1,
+    "name": "serci",
+    "ipfsCard": "QmTM3cpkpr4rJC7hYnDs5wZfan3DbbUSvW8cxM1xcUzQBg",
+    "template_id": 397071
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0002_top_8.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "scio",
+    "ipfsCard": "QmZk7eyWhqDcMDBC1fFAauVZ4hyA3TamdCKNAaDjR2prGA",
+    "template_id": 397072
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0003_top_7.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 5,
+    "name": "pliigita",
+    "ipfsCard": "QmPMssoK9ZELV8y67nYAhBT5oKmdenh8z7sWUmYzyiVrY7",
+    "template_id": 397073
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0004_top_6.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 3,
+    "name": "ribelulo",
+    "ipfsCard": "QmNPzQKsbY4m91a6X7UGe2ZCsHptX8z5nuNExPjhNGyo8L",
+    "template_id": 397074
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0005_top_5.png",
+    "offset": {
+      "x": 945,
+      "y": -1146,
+      "width": 654,
+      "height": 638
+    },
+    "rarity": 5,
+    "name": "soleca",
+    "ipfsCard": "QmUhcScf4iP7cBiq4A5mFPLiqUbZvUciroeUcrKCwHZyv6",
+    "template_id": 397075
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0006_top4.png",
+    "offset": {
+      "x": 931,
+      "y": -1105.5,
+      "width": 626,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "esplori",
+    "ipfsCard": "QmcDviDCtKKchfwpT4TBu9R6mdHkykTFnfKn4wn1YYG7gH",
+    "template_id": 397076
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0007_top3.png",
+    "offset": {
+      "x": 937.5,
+      "y": -1129,
+      "width": 665,
+      "height": 608
+    },
+    "rarity": 3,
+    "name": "unue",
+    "ipfsCard": "Qmc6cKT7edNfTps327srBq9fAMTZnZzWaCqvHqLAZhTLLF",
+    "template_id": 397077
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0008_top_2.png",
+    "offset": {
+      "x": 931,
+      "y": -1109,
+      "width": 626,
+      "height": 550
+    },
+    "rarity": 2,
+    "name": "stratido",
+    "ipfsCard": "QmNtKKGBhGxGyppwuxeVxQ4aFqpGTg46BZixuP6G1bnehk",
+    "template_id": 397078
+  },
+  {
+    "type": "top",
+    "filepath": "boid_2pack__0004s_0009_top_1.png",
+    "offset": {
+      "x": 921,
+      "y": -1105.5,
+      "width": 646,
+      "height": 557
+    },
+    "rarity": 4,
+    "name": "taktika",
+    "ipfsCard": "QmS2VxYeoUK8csKCk5Tocqwrgf5NaM2hRVfs2AYUCmsDNn",
+    "template_id": 397079
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0000_Group-8.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "konduki",
+    "ipfsCard": "QmdsYuzzhyWhomde41zpahznRbKxawU2X3R32qJfWbW3bT",
+    "template_id": 397080
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0001_bottom_9.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "serci",
+    "ipfsCard": "QmZt2rNSW3MSrG52f13SqoAz9YgM5uHizQHnNhRkSM5c97",
+    "template_id": 397081
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0002_bottom_8.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 1,
+    "name": "scio",
+    "ipfsCard": "QmSiEunHVVDucMt6orftqco4CA2EyEniMomftAhJiYTixs",
+    "template_id": 397082
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0003_bottom_7.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "pliigita",
+    "ipfsCard": "QmQ1uXvGnQ8vDZJnsujTExB8sTQrVTUxJoj8PuQTBRumg3",
+    "template_id": 397083
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0004_bottom_6.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "ribelulo",
+    "ipfsCard": "QmXEn5mcijxvifMPtBDqDMGdwio3xZrfrGY9voSJyx7Scp",
+    "template_id": 397084
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0005_bottom_5.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "soleca",
+    "ipfsCard": "QmeXtsoivYtteAe8oDgu4gBC4W7FVFQc8nMNAwFysvcvNx",
+    "template_id": 397085
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0006_bottom_4.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "esplori",
+    "ipfsCard": "QmZbZGYPAUmh46bqSV11cQdmU9xghwmzFeZG98RLTFDswW",
+    "template_id": 397086
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0008_bottom_2.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 3,
+    "name": "stratido",
+    "ipfsCard": "QmdmD1Z6gyhJ5VpaqVmBxTkSmhUSnghynnGpNMfF5oaV8U",
+    "template_id": 397087
+  },
+  {
+    "type": "bottom",
+    "filepath": "boid_2pack__0005s_0009_bottom_1.png",
+    "offset": {
+      "x": 927,
+      "y": -1422.5,
+      "width": 484,
+      "height": 511
+    },
+    "rarity": 4,
+    "name": "taktika",
+    "ipfsCard": "QmcCZxCToMcFpiQYxE7bbsSk146Cfe9Rnd5qStbFk9geL5",
+    "template_id": 397088
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0000_big_wings_10.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 4,
+    "name": "konduki",
+    "ipfsCard": "QmPSSrAME2vHTuVuRWrNa6MoJtYbvExh8uYTVAan8WXw2u",
+    "template_id": 397089
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0001_big_wings_9.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -927.5,
+      "width": 1901,
+      "height": 527
+    },
+    "rarity": 5,
+    "name": "serci",
+    "ipfsCard": "QmXvtyZZCG9aBz1rCWHTxtqxbKRWqEGByPEeK2A3oqq3z1",
+    "template_id": 397090
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0002_big_wings_8.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 3,
+    "name": "scio",
+    "ipfsCard": "QmXSdzm6hna9HCYBDuh87BSWKzjbg6NBVdY7C8hrJvYaJY",
+    "template_id": 397091
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0003_big_wings_7.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -925.5,
+      "width": 1901,
+      "height": 531
+    },
+    "rarity": 3,
+    "name": "pliigita",
+    "ipfsCard": "QmQgiXLD1P3vfSqUrurxQGjKP4SV5JG34UggT6Vx1PDJUZ",
+    "template_id": 397092
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0004_big_wings_6.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -903.5,
+      "width": 1901,
+      "height": 611
+    },
+    "rarity": 4,
+    "name": "ribelulo",
+    "ipfsCard": "Qmbb4mry5hZGGEhXuuATsoV3oeMTwapEpoUxnz9xmLEAYE",
+    "template_id": 397093
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0005_big_wings_5.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -893,
+      "width": 1901,
+      "height": 596
+    },
+    "rarity": 3,
+    "name": "soleca",
+    "ipfsCard": "QmNxgMBrM3ajUxyaMqtWmBTPLqaBMxdcJbTkMWz6niJFdw",
+    "template_id": 397094
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0006_big_wings_4.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 5,
+    "name": "esplori",
+    "ipfsCard": "QmRocxkXB7MS4yFRzmgzKxaZpt9TtuAfL3YBcwFtpQHTib",
+    "template_id": 397095
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0007_big_wings_3.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -928,
+      "width": 1901,
+      "height": 526
+    },
+    "rarity": 3,
+    "name": "unue",
+    "ipfsCard": "QmUXrTaSfbWQyDCdERsM2PoXi8bkyzDwNEiPXmoi3QmEPf",
+    "template_id": 397096
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0008_big_wings_2.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -932.5,
+      "width": 1901,
+      "height": 537
+    },
+    "rarity": 4,
+    "name": "stratido",
+    "ipfsCard": "QmXNKji6BXt8vdFmC88PL2WjPxQDQZnb3ZXEGBFuyGZBto",
+    "template_id": 397097
+  },
+  {
+    "type": "big-wings",
+    "filepath": "boid_2pack__0006s_0009_big_wings_1.png",
+    "offset": {
+      "x": 1030.5,
+      "y": -912,
+      "width": 1901,
+      "height": 558
+    },
+    "rarity": 4,
+    "name": "taktika",
+    "ipfsCard": "QmTeUWiNfJJEY3j984P8CzFxWcFYtQQgg8FWVxpwSKWVFR",
+    "template_id": 397098
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0000_small_wings_10.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 5,
+    "name": "konduki",
+    "ipfsCard": "QmXTvqrFqXpmiVb2GTQzdW9xFpFzX6g8BMFqZ8vbBXJWFf",
+    "template_id": 397099
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0001_small_wings_9.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "serci",
+    "ipfsCard": "QmQRwhsokEugRhpDrLbCcMnrDTr9rLVz8S3DSXSjVuoQ5m",
+    "template_id": 397100
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0002_small_wings_8.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 4,
+    "name": "scio",
+    "ipfsCard": "QmfUyTn5a22XvbqveY63jGfjruTjG25N8JTCrK5NApQnzE",
+    "template_id": 397101
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0003_small_wings_7.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1218,
+      "width": 1085,
+      "height": 292
+    },
+    "rarity": 2,
+    "name": "pliigita",
+    "ipfsCard": "QmVL75FaQrytaUby9rox2LyNNAb5XSY9ujdjiJ1ynDd9ng",
+    "template_id": 397102
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0004_small_wings_6.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "ribelulo",
+    "ipfsCard": "QmeusWxRniah85A7DyTa9oMvLLhEtEcZdph9QFmH75o6ZC",
+    "template_id": 397103
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0005_small_wings_5.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 3,
+    "name": "soleca",
+    "ipfsCard": "QmQTmD7kWucMWGcwiFynax84DD6oh9aUDy6RkgvSYruDtV",
+    "template_id": 397104
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0006_small_wings_4.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 2,
+    "name": "esplori",
+    "ipfsCard": "QmdXAWwwSuzWeacrogGrQwv9wFoNmfwUTGGZCKi3EAWHDE",
+    "template_id": 397105
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0007_small_wings_3.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 5,
+    "name": "unue",
+    "ipfsCard": "Qmc9wn8PCoDdZRuov5B54ek86eKP1Wtm3jJKkxpu9r2U5n",
+    "template_id": 397106
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0008_small_wings_2.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 3,
+    "name": "stratido",
+    "ipfsCard": "QmYAQfeGJV8dGMdr4jtNgxSmBeu6PoNvqHuHQRmbbs98V2",
+    "template_id": 397107
+  },
+  {
+    "type": "small-wings",
+    "filepath": "boid_2pack__0007s_0009_small_wings_1.png",
+    "offset": {
+      "x": 967.5,
+      "y": -1217.5,
+      "width": 1085,
+      "height": 291
+    },
+    "rarity": 1,
+    "name": "taktika",
+    "ipfsCard": "QmP45BaXE1KYyja2sTgw6GBxktvEiDM66GhMSUReJPULHw",
+    "template_id": 397108
+  },
+  {
+    "type": "eyes",
+    "filepath": "boid_2pack__0008s_0000_eyes.png",
+    "offset": {
+      "x": 841,
+      "y": -699.5,
+      "width": 332,
+      "height": 141
+    },
+    "rarity": 1,
+    "name": "malplena",
+    "ipfsCard": "QmNb5XnSVqezi6MbyWM17hxPv74CieUpsqqgC2sP491KGW",
+    "template_id": 397109
+  }
+]

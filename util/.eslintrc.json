@@ -1,0 +1,26 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "no-empty": "off"
+  }
+}

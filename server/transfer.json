@@ -1,0 +1,20 @@
+[
+    {
+        "account": "atomicassets",
+        "name": "transfer",
+        "authorization": [
+            {
+                "actor": "piecesnbitss",
+                "permission": "active"
+            }
+        ],
+        "data": {
+            "from": "piecesnbitss",
+            "to": "waxcontract1",
+            "asset_ids": [
+                "1099527261653"
+            ],
+            "memo": "assemble"
+        }
+    }
+]
