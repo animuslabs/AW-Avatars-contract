@@ -2,6 +2,35 @@
 # yarn lockfile v1
 
 
+"@achingbrain/ip-address@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@achingbrain/ip-address/-/ip-address-8.1.0.tgz#24f2e9cd7289e33f433d771b23bea56cfd0242c9"
+  dependencies:
+    jsbn "1.1.0"
+    sprintf-js "1.1.2"
+
+"@achingbrain/nat-port-mapper@^1.0.3":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@achingbrain/nat-port-mapper/-/nat-port-mapper-1.0.8.tgz#020f63a8959d5f3556663441d1522917c81ed9dd"
+  dependencies:
+    "@achingbrain/ssdp" "^4.0.1"
+    "@libp2p/logger" "^2.0.0"
+    default-gateway "^6.0.2"
+    err-code "^3.0.1"
+    it-first "^3.0.1"
+    p-defer "^4.0.0"
+    p-timeout "^5.0.2"
+    xml2js "^0.5.0"
+
+"@achingbrain/ssdp@^4.0.1":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@achingbrain/ssdp/-/ssdp-4.0.4.tgz#681c59664f9e05ea65d66b23f96f0dbf71f0e293"
+  dependencies:
+    event-iterator "^2.0.0"
+    freeport-promise "^2.0.0"
+    merge-options "^3.0.4"
+    xml2js "^0.5.0"
+
 "@assemblyscript/loader@^0.9.4":
   version "0.9.4"
   resolved "https://registry.npmjs.org/@assemblyscript/loader/-/loader-0.9.4.tgz"
@@ -12,24 +41,68 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@chainsafe/libp2p-noise@^5.0.0", "@chainsafe/libp2p-noise@^5.0.1":
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/@chainsafe/libp2p-noise/-/libp2p-noise-5.0.3.tgz"
+"@chainsafe/is-ip@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@chainsafe/is-ip/-/is-ip-2.0.1.tgz#62cb285669d91f88fd9fa285048dde3882f0993b"
+
+"@chainsafe/libp2p-gossipsub@^6.0.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@chainsafe/libp2p-gossipsub/-/libp2p-gossipsub-6.3.0.tgz#0ef8b8548a4c8307233b01dfb23bfa605df6b0e2"
   dependencies:
+    "@libp2p/crypto" "^1.0.3"
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-connection-manager" "^1.3.0"
+    "@libp2p/interface-keys" "^1.0.3"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-store" "^1.2.2"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@libp2p/interface-registrar" "^2.0.3"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/peer-record" "^5.0.0"
+    "@libp2p/pubsub" "^6.0.0"
+    "@libp2p/topology" "^4.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    abortable-iterator "^4.0.2"
+    denque "^1.5.0"
+    it-length-prefixed "^8.0.2"
+    it-pipe "^2.0.4"
+    it-pushable "^3.1.0"
+    multiformats "^11.0.0"
+    protobufjs "^6.11.2"
+    uint8arraylist "^2.3.2"
+    uint8arrays "^4.0.2"
+
+"@chainsafe/libp2p-noise@^11.0.0":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@chainsafe/libp2p-noise/-/libp2p-noise-11.0.4.tgz#b4806e7605e44fa279130c60a95faad13ed01d93"
+  dependencies:
+    "@libp2p/crypto" "^1.0.11"
+    "@libp2p/interface-connection-encrypter" "^3.0.5"
+    "@libp2p/interface-keys" "^1.0.6"
+    "@libp2p/interface-metrics" "^4.0.4"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/logger" "^2.0.5"
+    "@libp2p/peer-id" "^2.0.0"
     "@stablelib/chacha20poly1305" "^1.0.1"
     "@stablelib/hkdf" "^1.0.1"
     "@stablelib/sha256" "^1.0.1"
-    "@stablelib/x25519" "^1.0.1"
-    bl "^5.0.0"
-    debug "^4.3.1"
-    it-buffer "^0.1.3"
-    it-length-prefixed "^5.0.3"
-    it-pair "^1.0.0"
-    it-pb-rpc "^0.2.0"
-    it-pipe "^1.1.0"
-    peer-id "^0.16.0"
-    protobufjs "^6.11.2"
-    uint8arrays "^3.0.0"
+    "@stablelib/x25519" "^1.0.3"
+    it-length-prefixed "^8.0.2"
+    it-pair "^2.0.2"
+    it-pb-stream "^3.2.0"
+    it-pipe "^2.0.3"
+    it-stream-types "^1.0.4"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.3.2"
+    uint8arrays "^4.0.2"
+
+"@chainsafe/netmask@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@chainsafe/netmask/-/netmask-2.0.0.tgz#0d4a75f47919f65011da4327a3845c9661f1038a"
+  dependencies:
+    "@chainsafe/is-ip" "^2.0.1"
 
 "@deltalabs/eos-utils@^3.0.3":
   version "3.0.3"
@@ -66,59 +139,709 @@
     hash.js "^1.0.0"
     tslib "^2.0.3"
 
-"@ipld/car@^3.1.0":
-  version "3.2.4"
-  resolved "https://registry.npmjs.org/@ipld/car/-/car-3.2.4.tgz"
+"@ipld/car@^5.0.0":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@ipld/car/-/car-5.1.1.tgz#14a26dc97c4783ade491ac811f61885259b9d75e"
   dependencies:
-    "@ipld/dag-cbor" "^7.0.0"
-    multiformats "^9.5.4"
+    "@ipld/dag-cbor" "^9.0.0"
+    cborg "^1.9.0"
+    multiformats "^11.0.0"
     varint "^6.0.0"
 
-"@ipld/dag-cbor@^6.0.3", "@ipld/dag-cbor@^6.0.4":
-  version "6.0.15"
-  resolved "https://registry.npmjs.org/@ipld/dag-cbor/-/dag-cbor-6.0.15.tgz"
+"@ipld/dag-cbor@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@ipld/dag-cbor/-/dag-cbor-9.0.0.tgz#51902f7d19ce2203b04e4cfe0514936b82d09d91"
   dependencies:
-    cborg "^1.5.4"
-    multiformats "^9.5.4"
+    cborg "^1.10.0"
+    multiformats "^11.0.0"
 
-"@ipld/dag-cbor@^7.0.0":
-  version "7.0.1"
-  resolved "https://registry.npmjs.org/@ipld/dag-cbor/-/dag-cbor-7.0.1.tgz"
+"@ipld/dag-json@^10.0.0":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@ipld/dag-json/-/dag-json-10.0.1.tgz#a4bf5f26c310f0cfff4d5f680e19b972bfdf8fdb"
   dependencies:
-    cborg "^1.6.0"
-    multiformats "^9.5.4"
+    cborg "^1.10.0"
+    multiformats "^11.0.0"
 
-"@ipld/dag-json@^8.0.1":
-  version "8.0.8"
-  resolved "https://registry.npmjs.org/@ipld/dag-json/-/dag-json-8.0.8.tgz"
+"@ipld/dag-pb@^4.0.0":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@ipld/dag-pb/-/dag-pb-4.0.2.tgz#3895864c119296b1712c7e35b0d009fc6a76ad62"
   dependencies:
-    cborg "^1.5.4"
-    multiformats "^9.5.4"
-
-"@ipld/dag-pb@^2.0.0", "@ipld/dag-pb@^2.0.2", "@ipld/dag-pb@^2.1.0", "@ipld/dag-pb@^2.1.3":
-  version "2.1.16"
-  resolved "https://registry.npmjs.org/@ipld/dag-pb/-/dag-pb-2.1.16.tgz"
-  dependencies:
-    multiformats "^9.5.4"
+    multiformats "^11.0.0"
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.3"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.3.tgz"
 
-"@multiformats/murmur3@^1.0.3", "@multiformats/murmur3@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@multiformats/murmur3/-/murmur3-1.1.1.tgz"
+"@libp2p/bootstrap@^6.0.0":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/bootstrap/-/bootstrap-6.0.3.tgz#0e91542808972ac966919d2b0a5bcdbf71144ca7"
   dependencies:
-    multiformats "^9.5.4"
+    "@libp2p/interface-peer-discovery" "^1.0.1"
+    "@libp2p/interface-peer-info" "^1.0.7"
+    "@libp2p/interface-peer-store" "^1.2.2"
+    "@libp2p/interfaces" "^3.0.3"
+    "@libp2p/logger" "^2.0.1"
+    "@libp2p/peer-id" "^2.0.0"
+    "@multiformats/mafmt" "^12.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/crypto@^1.0.0", "@libp2p/crypto@^1.0.11", "@libp2p/crypto@^1.0.3", "@libp2p/crypto@^1.0.4":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@libp2p/crypto/-/crypto-1.0.15.tgz#bd004c0389399adb432ed2fd648014e88af37c05"
+  dependencies:
+    "@libp2p/interface-keys" "^1.0.2"
+    "@libp2p/interfaces" "^3.2.0"
+    "@noble/ed25519" "^1.6.0"
+    "@noble/secp256k1" "^1.5.4"
+    multiformats "^11.0.0"
+    node-forge "^1.1.0"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.4.3"
+    uint8arrays "^4.0.2"
+
+"@libp2p/delegated-content-routing@^4.0.0":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/delegated-content-routing/-/delegated-content-routing-4.0.3.tgz#5b3652d1becfc84d754a0d4fe1b234d9c8c973ab"
+  dependencies:
+    "@libp2p/interface-content-routing" "^2.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.3"
+    "@libp2p/interfaces" "^3.0.3"
+    "@libp2p/logger" "^2.0.1"
+    any-signal "^3.0.1"
+    err-code "^3.0.1"
+    it-drain "^2.0.0"
+    multiformats "^11.0.0"
+    p-defer "^4.0.0"
+    p-queue "^7.2.0"
+
+"@libp2p/delegated-peer-routing@^4.0.0":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@libp2p/delegated-peer-routing/-/delegated-peer-routing-4.0.5.tgz#d8ff78e979ce5418b7f29a4ad4f56dad0dfc22d6"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.1"
+    "@libp2p/interface-peer-routing" "^1.0.0"
+    "@libp2p/interfaces" "^3.3.1"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    any-signal "^3.0.1"
+    ipfs-core-types "^0.14.0"
+    multiformats "^11.0.0"
+    p-defer "^4.0.0"
+    p-queue "^7.2.0"
+
+"@libp2p/floodsub@^6.0.0":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/floodsub/-/floodsub-6.0.3.tgz#38a5440449ea87bb9be90933a4bca0dbdddfb69c"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/pubsub" "^6.0.0"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.1.1"
+    uint8arrays "^4.0.3"
+
+"@libp2p/interface-address-manager@^2.0.0":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-address-manager/-/interface-address-manager-2.0.5.tgz#913fceed38b7cfe12a1e546764e3428a1fbaffda"
+  dependencies:
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-connection-encrypter@^3.0.1", "@libp2p/interface-connection-encrypter@^3.0.5":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection-encrypter/-/interface-connection-encrypter-3.0.6.tgz#1f7c7428d5905b390cfc5390e72bd02829213d31"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    it-stream-types "^1.0.4"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-connection-manager@^1.1.1", "@libp2p/interface-connection-manager@^1.3.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection-manager/-/interface-connection-manager-1.5.0.tgz#959dedb26c3859677f0c889406d1814978e60386"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-connection@^3.0.1", "@libp2p/interface-connection@^3.0.2":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection/-/interface-connection-3.1.1.tgz#f43180e64de118c29f311ee7111f8bbe50e252bf"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    it-stream-types "^1.0.4"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-connection@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection/-/interface-connection-4.0.0.tgz#fcc830ca891820fac89a4c6bd4fcc2df4874f49b"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    it-stream-types "^1.0.4"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-connection@^5.0.0", "@libp2p/interface-connection@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection/-/interface-connection-5.0.1.tgz#ad870bce125cd77c78d72890683739bbf3b99c97"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    it-stream-types "^2.0.1"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-content-routing@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-content-routing/-/interface-content-routing-2.1.0.tgz#94fb1773e91b1a6611babbdf1a0c0d28c8638a86"
+  dependencies:
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    multiformats "^11.0.0"
+
+"@libp2p/interface-dht@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-dht/-/interface-dht-2.0.1.tgz#b41901d193081b6e51a2dd55e7338ed03a2bdd07"
+  dependencies:
+    "@libp2p/interface-peer-discovery" "^1.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    multiformats "^11.0.0"
+
+"@libp2p/interface-keychain@^2.0.0":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-keychain/-/interface-keychain-2.0.4.tgz#d421f79636048beae9d0370fb8b7ae38d403163f"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    multiformats "^11.0.0"
+
+"@libp2p/interface-keys@^1.0.2", "@libp2p/interface-keys@^1.0.3", "@libp2p/interface-keys@^1.0.6":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-keys/-/interface-keys-1.0.7.tgz#ad09ee7dc9c1495f1dd3e1785133c317befb4d7b"
+
+"@libp2p/interface-libp2p@^1.0.0":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-libp2p/-/interface-libp2p-1.3.3.tgz#d3f8e2900f4605a8d60267fc436b95a882688cf1"
+  dependencies:
+    "@libp2p/interface-connection" "^5.0.0"
+    "@libp2p/interface-content-routing" "^2.0.0"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-keychain" "^2.0.0"
+    "@libp2p/interface-metrics" "^4.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interface-peer-routing" "^1.0.0"
+    "@libp2p/interface-peer-store" "^1.0.0"
+    "@libp2p/interface-pubsub" "^4.0.0"
+    "@libp2p/interface-registrar" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-metrics@^4.0.0", "@libp2p/interface-metrics@^4.0.2", "@libp2p/interface-metrics@^4.0.4":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-metrics/-/interface-metrics-4.0.7.tgz#18e6d928876dcf831e6afb0fe241e95c6414f098"
+  dependencies:
+    "@libp2p/interface-connection" "^5.0.0"
+
+"@libp2p/interface-peer-discovery@^1.0.0", "@libp2p/interface-peer-discovery@^1.0.1":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-discovery/-/interface-peer-discovery-1.1.0.tgz#d541a7aaf7c9650a966760d5b6e3f640699ef5ef"
+  dependencies:
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+
+"@libp2p/interface-peer-id@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-id/-/interface-peer-id-2.0.1.tgz#445632909d44a8ae2c736bb2aa98c8bf757e8c62"
+  dependencies:
+    multiformats "^11.0.0"
+
+"@libp2p/interface-peer-info@^1.0.0", "@libp2p/interface-peer-info@^1.0.1", "@libp2p/interface-peer-info@^1.0.2", "@libp2p/interface-peer-info@^1.0.3", "@libp2p/interface-peer-info@^1.0.7":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-info/-/interface-peer-info-1.0.9.tgz#4b1ff859b7861f4387a69711850b3ac31eaedc56"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-peer-routing@^1.0.0", "@libp2p/interface-peer-routing@^1.0.1":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-routing/-/interface-peer-routing-1.1.0.tgz#deef6f653dd898466452e3f430835b0cb1aeb68e"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+
+"@libp2p/interface-peer-store@^1.0.0", "@libp2p/interface-peer-store@^1.2.0", "@libp2p/interface-peer-store@^1.2.2":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-store/-/interface-peer-store-1.2.9.tgz#85173892e52ac230abfd45798bfab03dce20ae84"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interface-record" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-peer-store@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-peer-store/-/interface-peer-store-2.0.1.tgz#7c8d8ac2aaaa9b9b4e63c1c4fb3a276efbd8a41d"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@libp2p/interface-pubsub@^3.0.0":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-pubsub/-/interface-pubsub-3.0.7.tgz#cc1c7c47c883daddd2b84d83d719b3826943be3b"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    it-pushable "^3.0.0"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-pubsub@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-pubsub/-/interface-pubsub-4.0.0.tgz#cf7edaec505989b1423ca0fd4d06bbe3d0aab9af"
+  dependencies:
+    "@libp2p/interface-connection" "^5.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    it-pushable "^3.1.3"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-record@^2.0.0", "@libp2p/interface-record@^2.0.1":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-record/-/interface-record-2.0.6.tgz#44597e144bc3e9960cc64f8c5fcd9822ea3e283f"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    uint8arraylist "^2.1.2"
+
+"@libp2p/interface-registrar@^2.0.0", "@libp2p/interface-registrar@^2.0.3":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-registrar/-/interface-registrar-2.0.10.tgz#782d9a068dc142d4258eef59ea3174b328ec2735"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+
+"@libp2p/interface-stream-muxer@^3.0.0":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-stream-muxer/-/interface-stream-muxer-3.0.6.tgz#f84fae484290b667a1b4ffa51af7d6138765a698"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    it-stream-types "^1.0.4"
+
+"@libp2p/interface-transport@^2.0.0", "@libp2p/interface-transport@^2.1.0":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface-transport/-/interface-transport-2.1.3.tgz#3fbc8457013a1552d281a3d94ee7ae0725cc16e0"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-stream-muxer" "^3.0.0"
+    "@libp2p/interfaces" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    it-stream-types "^1.0.4"
+
+"@libp2p/interfaces@^3.0.0", "@libp2p/interfaces@^3.0.2", "@libp2p/interfaces@^3.0.3", "@libp2p/interfaces@^3.2.0", "@libp2p/interfaces@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/interfaces/-/interfaces-3.3.1.tgz#519c77c030b10d776250bbebf65990af53ccb2ee"
+
+"@libp2p/kad-dht@^7.0.0":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/kad-dht/-/kad-dht-7.0.3.tgz#d5736bd37576ef189d697819268e4d26631fbb4c"
+  dependencies:
+    "@libp2p/crypto" "^1.0.4"
+    "@libp2p/interface-address-manager" "^2.0.0"
+    "@libp2p/interface-connection" "^3.0.2"
+    "@libp2p/interface-connection-manager" "^1.1.1"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-metrics" "^4.0.0"
+    "@libp2p/interface-peer-discovery" "^1.0.1"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.3"
+    "@libp2p/interface-peer-store" "^1.2.2"
+    "@libp2p/interface-registrar" "^2.0.3"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.1"
+    "@libp2p/peer-collections" "^3.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/record" "^3.0.0"
+    "@libp2p/topology" "^4.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    abortable-iterator "^4.0.2"
+    any-signal "^3.0.0"
+    datastore-core "^8.0.1"
+    hashlru "^2.3.0"
+    interface-datastore "^7.0.0"
+    it-all "^2.0.0"
+    it-drain "^2.0.0"
+    it-first "^2.0.0"
+    it-length "^2.0.0"
+    it-length-prefixed "^8.0.2"
+    it-map "^2.0.0"
+    it-merge "^2.0.0"
+    it-parallel "^3.0.0"
+    it-pipe "^2.0.3"
+    it-stream-types "^1.0.4"
+    it-take "^2.0.0"
+    k-bucket "^5.1.0"
+    multiformats "^11.0.0"
+    p-defer "^4.0.0"
+    p-queue "^7.2.0"
+    private-ip "^3.0.0"
+    protons-runtime "^5.0.0"
+    timeout-abort-controller "^3.0.0"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
+    varint "^6.0.0"
+
+"@libp2p/logger@^2.0.0", "@libp2p/logger@^2.0.1", "@libp2p/logger@^2.0.2", "@libp2p/logger@^2.0.5":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@libp2p/logger/-/logger-2.0.7.tgz#9a3996242b4a9edb8a9d825c8accaf62f617c5c6"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    debug "^4.3.3"
+    interface-datastore "^8.0.0"
+    multiformats "^11.0.0"
+
+"@libp2p/mdns@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/mdns/-/mdns-6.0.0.tgz#dc68881a58c0ce5e4cc3490c0c9d74d1e1b88936"
+  dependencies:
+    "@libp2p/interface-peer-discovery" "^1.0.1"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.3"
+    "@libp2p/interfaces" "^3.0.3"
+    "@libp2p/logger" "^2.0.1"
+    "@libp2p/peer-id" "^2.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    "@types/multicast-dns" "^7.2.1"
+    multicast-dns "^7.2.0"
+    multiformats "^11.0.0"
+
+"@libp2p/mplex@^7.1.1":
+  version "7.1.7"
+  resolved "https://registry.yarnpkg.com/@libp2p/mplex/-/mplex-7.1.7.tgz#ee14192f5e82aa3710ae4a102875278aea0bb127"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-stream-muxer" "^3.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    abortable-iterator "^4.0.2"
+    any-signal "^4.0.1"
+    benchmark "^2.1.4"
+    it-batched-bytes "^1.0.0"
+    it-pushable "^3.1.0"
+    it-stream-types "^1.0.4"
+    rate-limiter-flexible "^2.3.9"
+    uint8arraylist "^2.1.1"
+    uint8arrays "^4.0.2"
+    varint "^6.0.0"
+
+"@libp2p/multistream-select@^3.0.0":
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/@libp2p/multistream-select/-/multistream-select-3.1.8.tgz#2071d18da5afd5b162adf427beb8b4c9a67211b8"
+  dependencies:
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    abortable-iterator "^5.0.0"
+    it-first "^3.0.1"
+    it-handshake "^4.1.3"
+    it-length-prefixed "^9.0.0"
+    it-merge "^3.0.0"
+    it-pipe "^3.0.0"
+    it-pushable "^3.1.0"
+    it-reader "^6.0.1"
+    it-stream-types "^2.0.1"
+    uint8arraylist "^2.3.1"
+    uint8arrays "^4.0.2"
+
+"@libp2p/peer-collections@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/peer-collections/-/peer-collections-3.0.1.tgz#77080198e6222fcb6d8633aa5a3feeb9afcb3196"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+
+"@libp2p/peer-id-factory@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/peer-id-factory/-/peer-id-factory-2.0.3.tgz#d841989494c4900e01f6e3929ef06b8cc4e56f8f"
+  dependencies:
+    "@libp2p/crypto" "^1.0.0"
+    "@libp2p/interface-keys" "^1.0.2"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    multiformats "^11.0.0"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
+
+"@libp2p/peer-id@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/peer-id/-/peer-id-2.0.3.tgz#7299d74eae7b2526123d941bdb2d08462704c79a"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    multiformats "^11.0.0"
+    uint8arrays "^4.0.2"
+
+"@libp2p/peer-record@^5.0.0":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/peer-record/-/peer-record-5.0.3.tgz#eceb3ed6419e0cade035542540115fb5c14f647b"
+  dependencies:
+    "@libp2p/crypto" "^1.0.11"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-record" "^2.0.1"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/utils" "^3.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    protons-runtime "^5.0.0"
+    uint8-varint "^1.0.2"
+    uint8arraylist "^2.1.0"
+    uint8arrays "^4.0.2"
+
+"@libp2p/peer-store@^6.0.0":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@libp2p/peer-store/-/peer-store-6.0.4.tgz#3ec42dc8f1863a06bd487ba0701719356a0da51f"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.3"
+    "@libp2p/interface-peer-store" "^1.2.2"
+    "@libp2p/interface-record" "^2.0.1"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/peer-record" "^5.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    interface-datastore "^7.0.0"
+    it-all "^2.0.0"
+    it-filter "^2.0.0"
+    it-foreach "^1.0.0"
+    it-map "^2.0.0"
+    mortice "^3.0.0"
+    multiformats "^11.0.0"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.1.1"
+    uint8arrays "^4.0.2"
+
+"@libp2p/prometheus-metrics@^1.0.1":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/prometheus-metrics/-/prometheus-metrics-1.1.3.tgz#a884e282598c7d693674658a21c05d65fa6c9e6b"
+  dependencies:
+    "@libp2p/interface-connection" "^3.0.2"
+    "@libp2p/interface-metrics" "^4.0.2"
+    "@libp2p/logger" "^2.0.2"
+    it-foreach "^1.0.0"
+    it-stream-types "^1.0.4"
+
+"@libp2p/pubsub@^6.0.0":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@libp2p/pubsub/-/pubsub-6.0.6.tgz#7acf5a1de8fa5d982afc109ddd31e240111e7fe8"
+  dependencies:
+    "@libp2p/crypto" "^1.0.0"
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@libp2p/interface-registrar" "^2.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-collections" "^3.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/topology" "^4.0.0"
+    abortable-iterator "^4.0.2"
+    it-length-prefixed "^9.0.0"
+    it-pipe "^3.0.0"
+    it-pushable "^3.0.0"
+    multiformats "^11.0.0"
+    p-queue "^7.2.0"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
+
+"@libp2p/record@^3.0.0":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/record/-/record-3.0.3.tgz#4f9fb408e7ffcfc5cdbaa0f32fba16f58a9da45d"
+  dependencies:
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    multiformats "^11.0.0"
+    protons-runtime "^5.0.0"
+    uint8arraylist "^2.1.1"
+    uint8arrays "^4.0.2"
+
+"@libp2p/tcp@^6.0.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@libp2p/tcp/-/tcp-6.2.2.tgz#9262e284037f0951aca22f0fb3d488e3515ff6fd"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-metrics" "^4.0.0"
+    "@libp2p/interface-transport" "^2.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/utils" "^3.0.2"
+    "@multiformats/mafmt" "^12.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    stream-to-it "^0.2.2"
+
+"@libp2p/topology@^4.0.0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@libp2p/topology/-/topology-4.0.1.tgz#8efab229ed32d30cfa6c4a371e8022011c0ff6f9"
+  dependencies:
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-registrar" "^2.0.3"
+    "@libp2p/logger" "^2.0.1"
+    it-all "^2.0.0"
+
+"@libp2p/tracked-map@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@libp2p/tracked-map/-/tracked-map-3.0.2.tgz#55f696c26c62956f2a87906230c3693b79335372"
+  dependencies:
+    "@libp2p/interface-metrics" "^4.0.0"
+
+"@libp2p/utils@^3.0.0", "@libp2p/utils@^3.0.1", "@libp2p/utils@^3.0.2":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@libp2p/utils/-/utils-3.0.11.tgz#d1611c3d7836eb32e5fc8bcc19c620e77471f44f"
+  dependencies:
+    "@achingbrain/ip-address" "^8.1.0"
+    "@libp2p/interface-connection" "^5.0.1"
+    "@libp2p/interface-peer-store" "^2.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    abortable-iterator "^5.0.0"
+    is-loopback-addr "^2.0.1"
+    it-stream-types "^2.0.1"
+    private-ip "^3.0.0"
+    uint8arraylist "^2.3.2"
+
+"@libp2p/webrtc-peer@^2.0.0":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@libp2p/webrtc-peer/-/webrtc-peer-2.0.2.tgz#71c240e34905c6c97e20fdf703cec025c745c155"
+  dependencies:
+    "@libp2p/interfaces" "^3.0.2"
+    "@libp2p/logger" "^2.0.0"
+    delay "^5.0.0"
+    err-code "^3.0.1"
+    iso-random-stream "^2.0.2"
+    it-pushable "^3.0.0"
+    it-stream-types "^1.0.4"
+    p-defer "^4.0.0"
+    p-event "^5.0.1"
+    uint8arrays "^4.0.2"
+
+"@libp2p/webrtc-star-protocol@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/webrtc-star-protocol/-/webrtc-star-protocol-3.0.0.tgz#0d874dbc62cbd43aacaa111261a0a7ed22c5e652"
+  dependencies:
+    "@multiformats/multiaddr" "^11.0.0"
+    socket.io-client "^4.1.2"
+
+"@libp2p/webrtc-star@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/webrtc-star/-/webrtc-star-6.0.0.tgz#79ef6c73b989d22be43f4bc95e354749cceb8d09"
+  dependencies:
+    "@libp2p/interface-connection" "^3.0.1"
+    "@libp2p/interface-peer-discovery" "^1.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-transport" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.2"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/utils" "^3.0.1"
+    "@libp2p/webrtc-peer" "^2.0.0"
+    "@libp2p/webrtc-star-protocol" "^3.0.0"
+    "@multiformats/mafmt" "^11.0.2"
+    "@multiformats/multiaddr" "^11.0.0"
+    abortable-iterator "^4.0.2"
+    delay "^5.0.0"
+    err-code "^3.0.1"
+    iso-random-stream "^2.0.2"
+    multiformats "^11.0.0"
+    p-defer "^4.0.0"
+    socket.io-client "^4.1.2"
+    uint8arrays "^4.0.2"
+
+"@libp2p/websockets@^5.0.0":
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/@libp2p/websockets/-/websockets-5.0.10.tgz#87689c083a7b7e0fa98ab30f0791094c2545f83c"
+  dependencies:
+    "@libp2p/interface-connection" "^4.0.0"
+    "@libp2p/interface-transport" "^2.0.0"
+    "@libp2p/interfaces" "^3.0.3"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/utils" "^3.0.2"
+    "@multiformats/mafmt" "^12.0.0"
+    "@multiformats/multiaddr" "^12.0.0"
+    "@multiformats/multiaddr-to-uri" "^9.0.2"
+    abortable-iterator "^4.0.2"
+    it-ws "^5.0.6"
+    p-defer "^4.0.0"
+    p-timeout "^6.0.0"
+    wherearewe "^2.0.1"
+    ws "^8.12.1"
+
+"@multiformats/mafmt@^11.0.2", "@multiformats/mafmt@^11.0.3":
+  version "11.1.2"
+  resolved "https://registry.yarnpkg.com/@multiformats/mafmt/-/mafmt-11.1.2.tgz#c03ef4022c795b7f230b136f2f974fc263eac4f1"
+  dependencies:
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@multiformats/mafmt@^12.0.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@multiformats/mafmt/-/mafmt-12.1.0.tgz#9984f1e5314631a0472ccb91ea1ce12ea1f5059b"
+  dependencies:
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@multiformats/multiaddr-to-uri@^9.0.1", "@multiformats/multiaddr-to-uri@^9.0.2":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@multiformats/multiaddr-to-uri/-/multiaddr-to-uri-9.0.4.tgz#d739e1bfed8d060553f2b63aaedeba26b017efce"
+  dependencies:
+    "@multiformats/multiaddr" "^12.0.0"
+
+"@multiformats/multiaddr@^11.0.0", "@multiformats/multiaddr@^11.1.5":
+  version "11.6.1"
+  resolved "https://registry.yarnpkg.com/@multiformats/multiaddr/-/multiaddr-11.6.1.tgz#ec46984a298e715e27a398434c087856db5f3185"
+  dependencies:
+    "@chainsafe/is-ip" "^2.0.1"
+    dns-over-http-resolver "^2.1.0"
+    err-code "^3.0.1"
+    multiformats "^11.0.0"
+    uint8arrays "^4.0.2"
+    varint "^6.0.0"
+
+"@multiformats/multiaddr@^12.0.0":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@multiformats/multiaddr/-/multiaddr-12.1.2.tgz#816654413a88f2c5c929ac4e12a54743511312c3"
+  dependencies:
+    "@chainsafe/is-ip" "^2.0.1"
+    "@chainsafe/netmask" "^2.0.0"
+    "@libp2p/interfaces" "^3.3.1"
+    dns-over-http-resolver "^2.1.0"
+    multiformats "^11.0.0"
+    uint8arrays "^4.0.2"
+    varint "^6.0.0"
+
+"@multiformats/murmur3@^2.0.0":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@multiformats/murmur3/-/murmur3-2.1.3.tgz#eb690132bcc898d74257287d133cdf693f81f888"
+  dependencies:
+    multiformats "^11.0.0"
     murmurhash3js-revisited "^3.0.0"
 
-"@noble/ed25519@^1.5.1":
-  version "1.6.0"
-  resolved "https://registry.npmjs.org/@noble/ed25519/-/ed25519-1.6.0.tgz"
+"@noble/ed25519@^1.6.0":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-1.7.3.tgz#57e1677bf6885354b466c38e2b620c62f45a7123"
 
-"@noble/secp256k1@^1.3.0":
-  version "1.5.5"
-  resolved "https://registry.npmjs.org/@noble/secp256k1/-/secp256k1-1.5.5.tgz"
+"@noble/secp256k1@^1.5.4":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -244,9 +967,9 @@
     "@stablelib/constant-time" "^1.0.1"
     "@stablelib/wipe" "^1.0.1"
 
-"@stablelib/random@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@stablelib/random/-/random-1.0.1.tgz"
+"@stablelib/random@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@stablelib/random/-/random-1.0.2.tgz#2dece393636489bf7e19c51229dd7900eddf742c"
   dependencies:
     "@stablelib/binary" "^1.0.1"
     "@stablelib/wipe" "^1.0.1"
@@ -263,12 +986,12 @@
   version "1.0.1"
   resolved "https://registry.npmjs.org/@stablelib/wipe/-/wipe-1.0.1.tgz"
 
-"@stablelib/x25519@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@stablelib/x25519/-/x25519-1.0.2.tgz"
+"@stablelib/x25519@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@stablelib/x25519/-/x25519-1.0.3.tgz#13c8174f774ea9f3e5e42213cbf9fc68a3c7b7fd"
   dependencies:
     "@stablelib/keyagreement" "^1.0.1"
-    "@stablelib/random" "^1.0.1"
+    "@stablelib/random" "^1.0.2"
     "@stablelib/wipe" "^1.0.1"
 
 "@types/bn.js@*":
@@ -281,11 +1004,11 @@
   version "0.0.31"
   resolved "https://registry.npmjs.org/@types/debug/-/debug-0.0.31.tgz"
 
-"@types/debug@^4.1.7":
-  version "4.1.7"
-  resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.7.tgz"
+"@types/dns-packet@*":
+  version "5.2.4"
+  resolved "https://registry.yarnpkg.com/@types/dns-packet/-/dns-packet-5.2.4.tgz#0de4ee48f900a62b014ce61a3c9ab5d33dc06b0d"
   dependencies:
-    "@types/ms" "*"
+    "@types/node" "*"
 
 "@types/elliptic@^6.4.12":
   version "6.4.14"
@@ -309,58 +1032,68 @@
   version "3.0.5"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.5.tgz"
 
-"@types/ms@*":
-  version "0.7.31"
-  resolved "https://registry.npmjs.org/@types/ms/-/ms-0.7.31.tgz"
+"@types/multicast-dns@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@types/multicast-dns/-/multicast-dns-7.2.1.tgz#6527b28ce62bcdc08a38f6a329a3d23145c99d95"
+  dependencies:
+    "@types/dns-packet" "*"
+    "@types/node" "*"
 
 "@types/node@*", "@types/node@>=13.7.0", "@types/node@^17.0.21":
   version "17.0.21"
   resolved "https://registry.npmjs.org/@types/node/-/node-17.0.21.tgz"
 
-"@types/retry@^0.12.0":
+"@types/node@^18.0.0":
+  version "18.16.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.3.tgz#6bda7819aae6ea0b386ebc5b24bdf602f1b42b01"
+
+"@types/retry@0.12.1":
   version "0.12.1"
-  resolved "https://registry.npmjs.org/@types/retry/-/retry-0.12.1.tgz"
+  resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.1.tgz#d8f1c0d0dc23afad6dc16a9e993a0865774b4065"
 
 "@vascosantos/moving-average@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@vascosantos/moving-average/-/moving-average-1.1.0.tgz"
 
-abortable-iterator@^3.0.0, abortable-iterator@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.npmjs.org/abortable-iterator/-/abortable-iterator-3.0.2.tgz"
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
   dependencies:
-    get-iterator "^1.0.2"
+    event-target-shim "^5.0.0"
 
-abstract-leveldown@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-7.2.0.tgz"
+abortable-iterator@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/abortable-iterator/-/abortable-iterator-4.0.3.tgz#432570d8256dbad2cef4f129312b651c5ffcdd0f"
+  dependencies:
+    get-iterator "^2.0.0"
+    it-stream-types "^1.0.3"
+
+abortable-iterator@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/abortable-iterator/-/abortable-iterator-5.0.1.tgz#5d93eba6fa8287a973a9ea090c64ca08b3777780"
+  dependencies:
+    get-iterator "^2.0.0"
+    it-stream-types "^2.0.1"
+
+abstract-level@^1.0.2, abstract-level@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/abstract-level/-/abstract-level-1.0.3.tgz#78a67d3d84da55ee15201486ab44c09560070741"
   dependencies:
     buffer "^6.0.3"
-    catering "^2.0.0"
+    catering "^2.1.0"
     is-buffer "^2.0.5"
-    level-concat-iterator "^3.0.0"
-    level-supports "^2.0.1"
+    level-supports "^4.0.0"
+    level-transcoder "^1.0.1"
+    module-error "^1.0.1"
     queue-microtask "^1.2.3"
 
-aggregate-error@^3.0.0, aggregate-error@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/aggregate-error/-/aggregate-error-3.1.0.tgz"
-  dependencies:
-    clean-stack "^2.0.0"
-    indent-string "^4.0.0"
+any-signal@^3.0.0, any-signal@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/any-signal/-/any-signal-3.0.1.tgz#49cae34368187a3472e31de28fb5cb1430caa9a6"
 
-ajv@^6.12.3:
-  version "6.12.6"
-  resolved "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz"
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    fast-json-stable-stringify "^2.0.0"
-    json-schema-traverse "^0.4.1"
-    uri-js "^4.2.2"
-
-any-signal@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/any-signal/-/any-signal-3.0.0.tgz"
+any-signal@^4.0.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/any-signal/-/any-signal-4.1.1.tgz#928416c355c66899e6b2a91cad4488f0324bae03"
 
 array-parallel@~0.1.3:
   version "0.1.3"
@@ -370,35 +1103,9 @@ array-series@~0.1.5:
   version "0.1.5"
   resolved "https://registry.npmjs.org/array-series/-/array-series-0.1.5.tgz"
 
-array-shuffle@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/array-shuffle/-/array-shuffle-2.0.0.tgz"
-
-asn1@~0.2.3:
-  version "0.2.6"
-  resolved "https://registry.npmjs.org/asn1/-/asn1-0.2.6.tgz"
-  dependencies:
-    safer-buffer "~2.1.0"
-
-assert-plus@1.0.0, assert-plus@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz"
-
-async@^3.2.0:
-  version "3.2.3"
-  resolved "https://registry.npmjs.org/async/-/async-3.2.3.tgz"
-
-asynckit@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
-
-aws-sign2@~0.7.0:
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz"
-
-aws4@^1.8.0:
-  version "1.11.0"
-  resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
+array-shuffle@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/array-shuffle/-/array-shuffle-3.0.0.tgz#9a927cc2ca4c8ef4d71cddef7c9ee7b3b733d54b"
 
 axios@^0.21.1:
   version "0.21.4"
@@ -431,17 +1138,18 @@ base64-js@^1.3.1:
   version "1.5.1"
   resolved "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
 
-bcrypt-pbkdf@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz"
+benchmark@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/benchmark/-/benchmark-2.1.4.tgz#09f3de31c916425d498cc2ee565a0ebf3c2a5629"
   dependencies:
-    tweetnacl "^0.14.3"
+    lodash "^4.17.4"
+    platform "^1.3.3"
 
 bigi@1.4.2, bigi@^1.1.0:
   version "1.4.2"
   resolved "https://registry.npmjs.org/bigi/-/bigi-1.4.2.tgz"
 
-bignumber.js@^9.0.0, bignumber.js@^9.0.1:
+bignumber.js@^9.0.0:
   version "9.0.2"
   resolved "https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.2.tgz"
 
@@ -453,36 +1161,36 @@ bl@^5.0.0:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
-blob-to-it@^1.0.1:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/blob-to-it/-/blob-to-it-1.0.4.tgz"
+blob-to-it@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/blob-to-it/-/blob-to-it-2.0.2.tgz#de8af7eb2ed445b39d6630b2b22844926febc0a4"
   dependencies:
-    browser-readablestream-to-it "^1.0.3"
+    browser-readablestream-to-it "^2.0.0"
 
-blockstore-core@^1.0.0, blockstore-core@^1.0.2:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/blockstore-core/-/blockstore-core-1.0.5.tgz"
+blockstore-core@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/blockstore-core/-/blockstore-core-3.0.0.tgz#08f52d954fe079d2735b745d218e737071badd97"
   dependencies:
     err-code "^3.0.1"
-    interface-blockstore "^2.0.2"
-    interface-store "^2.0.1"
-    it-all "^1.0.4"
-    it-drain "^1.0.4"
-    it-filter "^1.0.2"
-    it-take "^1.0.1"
-    multiformats "^9.4.7"
+    interface-blockstore "^4.0.0"
+    interface-store "^3.0.0"
+    it-all "^2.0.0"
+    it-drain "^2.0.0"
+    it-filter "^2.0.0"
+    it-take "^2.0.0"
+    multiformats "^11.0.0"
 
-blockstore-datastore-adapter@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/blockstore-datastore-adapter/-/blockstore-datastore-adapter-2.0.3.tgz"
+blockstore-datastore-adapter@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/blockstore-datastore-adapter/-/blockstore-datastore-adapter-5.0.0.tgz#cc36455a200dbff38dad7976174384e882cd50ba"
   dependencies:
-    blockstore-core "^1.0.0"
+    blockstore-core "^3.0.0"
     err-code "^3.0.1"
-    interface-blockstore "^2.0.2"
-    interface-datastore "^6.0.2"
-    it-drain "^1.0.1"
-    it-pushable "^1.4.2"
-    multiformats "^9.1.0"
+    interface-blockstore "^4.0.0"
+    interface-datastore "^7.0.0"
+    it-drain "^2.0.0"
+    it-pushable "^3.1.0"
+    multiformats "^11.0.0"
 
 bn.js@5.2.0:
   version "5.2.0"
@@ -503,9 +1211,22 @@ brorand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/brorand/-/brorand-1.1.0.tgz"
 
-browser-readablestream-to-it@^1.0.1, browser-readablestream-to-it@^1.0.3:
+browser-level@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/browser-level/-/browser-level-1.0.1.tgz#36e8c3183d0fe1c405239792faaab5f315871011"
+  dependencies:
+    abstract-level "^1.0.2"
+    catering "^2.1.1"
+    module-error "^1.0.2"
+    run-parallel-limit "^1.1.0"
+
+browser-readablestream-to-it@^1.0.0:
   version "1.0.3"
-  resolved "https://registry.npmjs.org/browser-readablestream-to-it/-/browser-readablestream-to-it-1.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/browser-readablestream-to-it/-/browser-readablestream-to-it-1.0.3.tgz#ac3e406c7ee6cdf0a502dd55db33bab97f7fba76"
+
+browser-readablestream-to-it@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/browser-readablestream-to-it/-/browser-readablestream-to-it-2.0.2.tgz#fc0f2018e9075b56397b206f9adf653d40f0e6da"
 
 browserify-aes@1.0.6:
   version "1.0.6"
@@ -534,6 +1255,18 @@ buffer@^6.0.1, buffer@^6.0.3:
     base64-js "^1.3.1"
     ieee754 "^1.2.1"
 
+busboy@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
+  dependencies:
+    streamsearch "^1.1.0"
+
+byte-access@^1.0.0, byte-access@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/byte-access/-/byte-access-1.0.1.tgz#84badd99be3671c03f0dd6a039a9c963983724af"
+  dependencies:
+    uint8arraylist "^2.0.0"
+
 bytebuffer@5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/bytebuffer/-/bytebuffer-5.0.1.tgz"
@@ -544,15 +1277,15 @@ bytes@^3.1.0:
   version "3.1.2"
   resolved "https://registry.npmjs.org/bytes/-/bytes-3.1.2.tgz"
 
-caseless@~0.12.0:
-  version "0.12.0"
-  resolved "https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz"
-
-catering@^2.0.0, catering@^2.1.0:
+catering@^2.1.0, catering@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/catering/-/catering-2.1.1.tgz"
 
-cborg@^1.3.1, cborg@^1.3.3, cborg@^1.3.4, cborg@^1.5.4, cborg@^1.6.0:
+cborg@^1.10.0, cborg@^1.9.0:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/cborg/-/cborg-1.10.1.tgz#24cfe52c69ec0f66f95e23dc57f2086954c8d718"
+
+cborg@^1.3.3, cborg@^1.3.4:
   version "1.8.1"
   resolved "https://registry.npmjs.org/cborg/-/cborg-1.8.1.tgz"
 
@@ -571,19 +1304,15 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-class-is@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/class-is/-/class-is-1.1.0.tgz"
-
-clean-stack@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/clean-stack/-/clean-stack-2.2.0.tgz"
-
-combined-stream@^1.0.6, combined-stream@~1.0.6:
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz"
+classic-level@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/classic-level/-/classic-level-1.3.0.tgz#5e36680e01dc6b271775c093f2150844c5edd5c8"
   dependencies:
-    delayed-stream "~1.0.0"
+    abstract-level "^1.0.2"
+    catering "^2.1.0"
+    module-error "^1.0.1"
+    napi-macros "^2.2.2"
+    node-gyp-build "^4.3.0"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -592,10 +1321,6 @@ concat-map@0.0.1:
 core-js@^2.4.0:
   version "2.6.12"
   resolved "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz"
-
-core-util-is@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
 
 create-hash@1.1.3, create-hash@^1.1.0:
   version "1.1.3"
@@ -632,68 +1357,66 @@ cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-dag-jose@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/dag-jose/-/dag-jose-1.0.0.tgz"
+dag-jose@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/dag-jose/-/dag-jose-4.0.0.tgz#4e65f62af58dd5203b2b094eb52142ffe0cdec1d"
   dependencies:
-    "@ipld/dag-cbor" "^6.0.3"
-    multiformats "^9.0.2"
+    "@ipld/dag-cbor" "^9.0.0"
+    multiformats "^11.0.0"
 
-dashdash@^1.12.0:
-  version "1.14.1"
-  resolved "https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz"
+datastore-core@^8.0.1:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/datastore-core/-/datastore-core-8.0.4.tgz#a5951c8e530f0ba11ca44f6bb3ce5d7070a3d44e"
   dependencies:
-    assert-plus "^1.0.0"
-
-datastore-core@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.npmjs.org/datastore-core/-/datastore-core-7.0.1.tgz"
-  dependencies:
-    debug "^4.1.1"
+    "@libp2p/logger" "^2.0.0"
     err-code "^3.0.1"
-    interface-datastore "^6.0.2"
-    it-drain "^1.0.4"
-    it-filter "^1.0.2"
-    it-map "^1.0.5"
-    it-merge "^1.0.1"
-    it-pipe "^1.1.0"
-    it-pushable "^1.4.2"
-    it-take "^1.0.1"
-    uint8arrays "^3.0.0"
+    interface-datastore "^7.0.0"
+    it-all "^2.0.0"
+    it-drain "^2.0.0"
+    it-filter "^2.0.0"
+    it-map "^2.0.0"
+    it-merge "^2.0.0"
+    it-pipe "^2.0.3"
+    it-pushable "^3.0.0"
+    it-take "^2.0.0"
+    uint8arrays "^4.0.2"
 
-datastore-fs@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/datastore-fs/-/datastore-fs-7.0.0.tgz"
+datastore-fs@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/datastore-fs/-/datastore-fs-8.0.0.tgz#273407f5259ae3dc46c254fc5abf5a85756147d9"
   dependencies:
-    datastore-core "^7.0.0"
+    datastore-core "^8.0.1"
     fast-write-atomic "^0.2.0"
-    interface-datastore "^6.0.2"
+    interface-datastore "^7.0.0"
     it-glob "^1.0.1"
     it-map "^1.0.5"
     it-parallel-batch "^1.0.9"
     mkdirp "^1.0.4"
 
-datastore-level@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/datastore-level/-/datastore-level-8.0.0.tgz"
+datastore-level@^9.0.0:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/datastore-level/-/datastore-level-9.0.4.tgz#1e2534fef6aedda528dcb5ead7c1f4cbcbb46d3a"
   dependencies:
-    datastore-core "^7.0.0"
-    interface-datastore "^6.0.2"
-    it-filter "^1.0.2"
-    it-map "^1.0.5"
-    it-sort "^1.0.0"
-    it-take "^1.0.1"
-    level "^7.0.0"
+    abstract-level "^1.0.3"
+    datastore-core "^8.0.1"
+    interface-datastore "^7.0.0"
+    it-filter "^2.0.0"
+    it-map "^2.0.0"
+    it-sort "^2.0.0"
+    it-take "^2.0.0"
+    level "^8.0.0"
 
-datastore-pubsub@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/datastore-pubsub/-/datastore-pubsub-2.0.0.tgz"
+datastore-pubsub@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/datastore-pubsub/-/datastore-pubsub-7.0.0.tgz#15e02fc70a12bcc08572995fe607834ff64ec1c1"
   dependencies:
-    datastore-core "^7.0.0"
-    debug "^4.2.0"
-    err-code "^3.0.1"
-    interface-datastore "^6.0.2"
-    uint8arrays "^3.0.0"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.0"
+    datastore-core "^8.0.1"
+    interface-datastore "^7.0.0"
+    uint8arrays "^4.0.2"
 
 debug@^3.1.0:
   version "3.2.7"
@@ -701,9 +1424,15 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.0, debug@^4.3.1, debug@~4.3.1, debug@~4.3.2:
+debug@^4.1.0, debug@^4.3.1, debug@~4.3.1, debug@~4.3.2:
   version "4.3.3"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.3.tgz"
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.3:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   dependencies:
     ms "2.1.2"
 
@@ -713,16 +1442,9 @@ default-gateway@^6.0.2:
   dependencies:
     execa "^5.0.0"
 
-deferred-leveldown@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/deferred-leveldown/-/deferred-leveldown-7.0.0.tgz"
-  dependencies:
-    abstract-leveldown "^7.2.0"
-    inherits "^2.0.3"
-
-delayed-stream@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
+delay@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/delay/-/delay-5.0.0.tgz#137045ef1b96e5071060dd5be60bf9334436bd1d"
 
 denque@^1.5.0:
   version "1.5.1"
@@ -732,13 +1454,14 @@ dlv@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz"
 
-dns-over-http-resolver@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/dns-over-http-resolver/-/dns-over-http-resolver-1.2.3.tgz"
+dns-over-http-resolver@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/dns-over-http-resolver/-/dns-over-http-resolver-2.1.1.tgz#a3ff3fd7614cea7a4b72594eaf12fb3c85080456"
   dependencies:
     debug "^4.3.1"
-    native-fetch "^3.0.0"
+    native-fetch "^4.0.2"
     receptacle "^1.3.2"
+    undici "^5.12.0"
 
 dns-packet@^5.2.2:
   version "5.3.1"
@@ -749,13 +1472,6 @@ dns-packet@^5.2.2:
 dotenv@^10.0.0:
   version "10.0.0"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-10.0.0.tgz"
-
-ecc-jsbn@~0.1.1:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz"
-  dependencies:
-    jsbn "~0.1.0"
-    safer-buffer "^2.1.0"
 
 ecurve@1.0.5:
   version "1.0.5"
@@ -780,15 +1496,6 @@ elliptic@6.5.4, elliptic@^6.5.4:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
-
-encoding-down@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.npmjs.org/encoding-down/-/encoding-down-7.1.0.tgz"
-  dependencies:
-    abstract-leveldown "^7.2.0"
-    inherits "^2.0.3"
-    level-codec "^10.0.0"
-    level-errors "^3.0.0"
 
 encoding@^0.1.11, encoding@^0.1.13:
   version "0.1.13"
@@ -854,25 +1561,21 @@ eosjs@^21.0.3:
     hash.js "1.1.7"
     pako "2.0.3"
 
-err-code@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/err-code/-/err-code-2.0.3.tgz"
-
-err-code@^3.0.0, err-code@^3.0.1:
+err-code@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/err-code/-/err-code-3.0.1.tgz"
-
-es6-promisify@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/es6-promisify/-/es6-promisify-7.0.0.tgz"
 
 event-iterator@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/event-iterator/-/event-iterator-2.0.0.tgz"
 
-eventemitter3@^4.0.4:
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+
+eventemitter3@^4.0.7:
   version "4.0.7"
-  resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
 
 events@^3.3.0:
   version "3.3.0"
@@ -899,29 +1602,13 @@ execa@^5.0.0:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
-extend@~3.0.2:
-  version "3.0.2"
-  resolved "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz"
-
-extsprintf@1.3.0, extsprintf@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz"
-
 fakelish@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/fakelish/-/fakelish-0.3.0.tgz"
 
-fast-deep-equal@^3.1.1:
-  version "3.1.3"
-  resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
-
 fast-fifo@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/fast-fifo/-/fast-fifo-1.1.0.tgz"
-
-fast-json-stable-stringify@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz"
 
 fast-sha256@^1.1.1:
   version "1.3.0"
@@ -939,17 +1626,9 @@ follow-redirects@^1.14.0:
   version "1.14.9"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz"
 
-forever-agent@~0.6.1:
-  version "0.6.1"
-  resolved "https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz"
-
-form-data@~2.3.2:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz"
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.6"
-    mime-types "^2.1.12"
+freeport-promise@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/freeport-promise/-/freeport-promise-2.0.0.tgz#11e4f81e24d680b88a20c15b2103551f4b6663d8"
 
 fs-extra@^10.0.0:
   version "10.0.0"
@@ -959,23 +1638,17 @@ fs-extra@^10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-get-browser-rtc@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/get-browser-rtc/-/get-browser-rtc-1.1.0.tgz"
-
 get-iterator@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/get-iterator/-/get-iterator-1.0.2.tgz"
 
+get-iterator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/get-iterator/-/get-iterator-2.0.0.tgz#c9ac9f8002e5d8d6b4dc9dae07c30945022a58c1"
+
 get-stream@^6.0.0:
   version "6.0.1"
   resolved "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz"
-
-getpass@^0.1.1:
-  version "0.1.7"
-  resolved "https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz"
-  dependencies:
-    assert-plus "^1.0.0"
 
 gm@^1.23.1:
   version "1.23.1"
@@ -990,23 +1663,12 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   version "4.2.9"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz"
 
-hamt-sharding@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/hamt-sharding/-/hamt-sharding-2.0.1.tgz"
+hamt-sharding@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/hamt-sharding/-/hamt-sharding-3.0.2.tgz#a3fba1e4e6b58469388a0e1458768c78c0cd95f6"
   dependencies:
     sparse-array "^1.3.1"
-    uint8arrays "^3.0.0"
-
-har-schema@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz"
-
-har-validator@~5.1.3:
-  version "5.1.5"
-  resolved "https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz"
-  dependencies:
-    ajv "^6.12.3"
-    har-schema "^2.0.0"
+    uint8arrays "^4.0.2"
 
 has-cors@1.1.0:
   version "1.1.0"
@@ -1039,14 +1701,6 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-http-signature@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/http-signature/-/http-signature-1.2.0.tgz"
-  dependencies:
-    assert-plus "^1.0.0"
-    jsprim "^1.2.2"
-    sshpk "^1.7.0"
-
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
@@ -1065,367 +1719,381 @@ imagemagick@^0.1.3:
   version "0.1.3"
   resolved "https://registry.npmjs.org/imagemagick/-/imagemagick-0.1.3.tgz"
 
-indent-string@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/indent-string/-/indent-string-4.0.0.tgz"
-
 inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
 
-interface-blockstore@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/interface-blockstore/-/interface-blockstore-1.0.2.tgz"
+interface-blockstore@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/interface-blockstore/-/interface-blockstore-4.0.1.tgz#0dda1774d72ca7e990dc1921cfc524b3e9d1b9ca"
   dependencies:
-    err-code "^3.0.1"
-    interface-store "^1.0.2"
-    it-all "^1.0.5"
-    it-drain "^1.0.4"
-    it-filter "^1.0.2"
-    it-take "^1.0.1"
-    multiformats "^9.0.4"
+    interface-store "^3.0.0"
+    multiformats "^11.0.0"
 
-interface-blockstore@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/interface-blockstore/-/interface-blockstore-2.0.3.tgz"
+interface-datastore@^7.0.0:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/interface-datastore/-/interface-datastore-7.0.4.tgz#f09ae4e2896f57f876d5d742a59e982fb3f42891"
   dependencies:
-    interface-store "^2.0.2"
-    multiformats "^9.0.4"
+    interface-store "^3.0.0"
+    nanoid "^4.0.0"
+    uint8arrays "^4.0.2"
 
-interface-datastore@^6.0.2:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/interface-datastore/-/interface-datastore-6.1.0.tgz"
+interface-datastore@^8.0.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/interface-datastore/-/interface-datastore-8.2.0.tgz#70076985ac17dcdb35b33c2b0f957480ce6489e1"
   dependencies:
-    interface-store "^2.0.1"
-    nanoid "^3.0.2"
-    uint8arrays "^3.0.0"
+    interface-store "^5.0.0"
+    nanoid "^4.0.0"
+    uint8arrays "^4.0.2"
 
-interface-store@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/interface-store/-/interface-store-1.0.2.tgz"
+interface-store@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/interface-store/-/interface-store-3.0.4.tgz#670d95ef45f3b7061d154c3cbfaf39a538167ad7"
 
-interface-store@^2.0.1, interface-store@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/interface-store/-/interface-store-2.0.2.tgz"
+interface-store@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/interface-store/-/interface-store-5.1.0.tgz#1735cead844fe452d62c307fafbaaa1d261e6ff3"
 
-ip-address@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.npmjs.org/ip-address/-/ip-address-8.1.0.tgz"
-  dependencies:
-    jsbn "1.1.0"
-    sprintf-js "1.1.2"
-
-ip-regex@^4.0.0, ip-regex@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.npmjs.org/ip-regex/-/ip-regex-4.3.0.tgz"
+ip-regex@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-5.0.0.tgz#cd313b2ae9c80c07bd3851e12bf4fa4dc5480632"
 
 ipaddr.js@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-2.0.1.tgz"
 
-ipfs-bitswap@^10.0.1:
-  version "10.0.2"
-  resolved "https://registry.npmjs.org/ipfs-bitswap/-/ipfs-bitswap-10.0.2.tgz"
+ipfs-bitswap@^15.0.0:
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/ipfs-bitswap/-/ipfs-bitswap-15.0.2.tgz#945b1faf04fcac9b34bd34b8fcc5bc82df623707"
   dependencies:
+    "@libp2p/interface-connection" "^3.0.1"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-store" "^1.2.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/logger" "^2.0.5"
+    "@libp2p/topology" "^4.0.0"
+    "@libp2p/tracked-map" "^3.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
     "@vascosantos/moving-average" "^1.1.0"
+    abortable-iterator "^4.0.2"
     any-signal "^3.0.0"
-    blockstore-core "^1.0.2"
-    debug "^4.2.0"
-    err-code "^3.0.1"
-    interface-blockstore "^2.0.2"
-    it-length-prefixed "^5.0.2"
-    it-pipe "^1.1.0"
-    just-debounce-it "^1.1.0"
-    libp2p-interfaces "^4.0.0"
-    multiaddr "^10.0.0"
-    multiformats "^9.0.4"
-    protobufjs "^6.10.2"
-    readable-stream "^3.6.0"
-    uint8arrays "^3.0.0"
+    blockstore-core "^3.0.0"
+    interface-blockstore "^4.0.0"
+    it-length-prefixed "^8.0.2"
+    it-pipe "^2.0.4"
+    just-debounce-it "^3.0.1"
+    multiformats "^11.0.0"
+    protobufjs "^7.0.0"
+    readable-stream "^4.0.0"
+    timeout-abort-controller "^3.0.0"
+    uint8arrays "^4.0.2"
     varint "^6.0.0"
     varint-decoder "^1.0.0"
 
-ipfs-core-config@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/ipfs-core-config/-/ipfs-core-config-0.3.1.tgz"
+ipfs-core-config@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ipfs-core-config/-/ipfs-core-config-0.7.0.tgz#81f77adf411633bbe0fbd96745d20926bf44fcc1"
   dependencies:
-    "@chainsafe/libp2p-noise" "^5.0.1"
-    blockstore-datastore-adapter "^2.0.2"
-    datastore-core "^7.0.0"
-    datastore-fs "^7.0.0"
-    datastore-level "^8.0.0"
-    debug "^4.1.1"
+    "@chainsafe/libp2p-gossipsub" "^6.0.0"
+    "@libp2p/floodsub" "^6.0.0"
+    "@libp2p/logger" "^2.0.2"
+    "@libp2p/mdns" "^6.0.0"
+    "@libp2p/prometheus-metrics" "^1.0.1"
+    "@libp2p/tcp" "^6.0.2"
+    "@libp2p/webrtc-star" "^6.0.0"
+    blockstore-datastore-adapter "^5.0.0"
+    datastore-core "^8.0.1"
+    datastore-fs "^8.0.0"
+    datastore-level "^9.0.0"
     err-code "^3.0.1"
     hashlru "^2.3.0"
-    interface-datastore "^6.0.2"
-    ipfs-repo "^14.0.1"
-    ipfs-utils "^9.0.2"
-    ipns "^0.16.0"
-    is-ipfs "^6.0.1"
-    it-all "^1.0.4"
-    it-drain "^1.0.3"
-    it-foreach "^0.1.1"
-    libp2p-floodsub "^0.29.0"
-    libp2p-gossipsub "^0.13.0"
-    libp2p-kad-dht "^0.28.5"
-    libp2p-mdns "^0.18.0"
-    libp2p-mplex "^0.10.2"
-    libp2p-tcp "^0.17.1"
-    libp2p-webrtc-star "^0.25.0"
-    libp2p-websockets "^0.16.2"
-    p-queue "^6.6.1"
-    uint8arrays "^3.0.0"
+    interface-datastore "^7.0.0"
+    ipfs-repo "^17.0.0"
+    ipfs-utils "^9.0.13"
+    is-ipfs "^8.0.0"
+    it-all "^2.0.0"
+    it-drain "^2.0.0"
+    it-foreach "^1.0.0"
+    p-queue "^7.2.0"
+    uint8arrays "^4.0.2"
 
-ipfs-core-types@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.npmjs.org/ipfs-core-types/-/ipfs-core-types-0.10.1.tgz"
+ipfs-core-types@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/ipfs-core-types/-/ipfs-core-types-0.14.0.tgz#a301d534f5261aad2254da393cb09f9cd36b6742"
   dependencies:
-    interface-datastore "^6.0.2"
-    multiaddr "^10.0.0"
-    multiformats "^9.5.1"
+    "@ipld/dag-pb" "^4.0.0"
+    "@libp2p/interface-keychain" "^2.0.0"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.2"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    "@types/node" "^18.0.0"
+    interface-datastore "^7.0.0"
+    ipfs-unixfs "^9.0.0"
+    multiformats "^11.0.0"
 
-ipfs-core-utils@^0.14.1:
-  version "0.14.1"
-  resolved "https://registry.npmjs.org/ipfs-core-utils/-/ipfs-core-utils-0.14.1.tgz"
+ipfs-core-utils@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/ipfs-core-utils/-/ipfs-core-utils-0.18.0.tgz#c528c6cfb231d3a1a0d5420d0a3506615d26f4b4"
   dependencies:
+    "@libp2p/logger" "^2.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    "@multiformats/multiaddr-to-uri" "^9.0.1"
     any-signal "^3.0.0"
-    blob-to-it "^1.0.1"
-    browser-readablestream-to-it "^1.0.1"
-    debug "^4.1.1"
+    blob-to-it "^2.0.0"
+    browser-readablestream-to-it "^2.0.0"
     err-code "^3.0.1"
-    ipfs-core-types "^0.10.1"
-    ipfs-unixfs "^6.0.3"
-    ipfs-utils "^9.0.2"
-    it-all "^1.0.4"
-    it-map "^1.0.4"
-    it-peekable "^1.0.2"
+    ipfs-core-types "^0.14.0"
+    ipfs-unixfs "^9.0.0"
+    ipfs-utils "^9.0.13"
+    it-all "^2.0.0"
+    it-map "^2.0.0"
+    it-peekable "^2.0.0"
     it-to-stream "^1.0.0"
     merge-options "^3.0.4"
-    multiaddr "^10.0.0"
-    multiaddr-to-uri "^8.0.0"
-    multiformats "^9.5.1"
-    nanoid "^3.1.23"
+    multiformats "^11.0.0"
+    nanoid "^4.0.0"
     parse-duration "^1.0.0"
     timeout-abort-controller "^3.0.0"
-    uint8arrays "^3.0.0"
+    uint8arrays "^4.0.2"
 
-ipfs-core@^0.14.1:
-  version "0.14.1"
-  resolved "https://registry.npmjs.org/ipfs-core/-/ipfs-core-0.14.1.tgz"
+ipfs-core@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/ipfs-core/-/ipfs-core-0.18.0.tgz#7e9563c7d1984817c30537e373d75014ed55966a"
   dependencies:
-    "@chainsafe/libp2p-noise" "^5.0.0"
-    "@ipld/car" "^3.1.0"
-    "@ipld/dag-cbor" "^7.0.0"
-    "@ipld/dag-json" "^8.0.1"
-    "@ipld/dag-pb" "^2.1.3"
-    "@multiformats/murmur3" "^1.1.1"
+    "@chainsafe/libp2p-noise" "^11.0.0"
+    "@ipld/car" "^5.0.0"
+    "@ipld/dag-cbor" "^9.0.0"
+    "@ipld/dag-json" "^10.0.0"
+    "@ipld/dag-pb" "^4.0.0"
+    "@libp2p/bootstrap" "^6.0.0"
+    "@libp2p/crypto" "^1.0.0"
+    "@libp2p/delegated-content-routing" "^4.0.0"
+    "@libp2p/delegated-peer-routing" "^4.0.0"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-keys" "^1.0.6"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-transport" "^2.1.0"
+    "@libp2p/interfaces" "^3.2.0"
+    "@libp2p/kad-dht" "^7.0.0"
+    "@libp2p/logger" "^2.0.5"
+    "@libp2p/mplex" "^7.1.1"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/peer-id-factory" "^2.0.0"
+    "@libp2p/record" "^3.0.0"
+    "@libp2p/websockets" "^5.0.0"
+    "@multiformats/mafmt" "^11.0.2"
+    "@multiformats/multiaddr" "^11.1.5"
+    "@multiformats/multiaddr-to-uri" "^9.0.1"
+    "@multiformats/murmur3" "^2.0.0"
     any-signal "^3.0.0"
-    array-shuffle "^2.0.0"
-    blockstore-core "^1.0.2"
-    blockstore-datastore-adapter "^2.0.2"
-    dag-jose "^1.0.0"
-    datastore-core "^7.0.0"
-    datastore-pubsub "^2.0.0"
-    debug "^4.1.1"
+    array-shuffle "^3.0.0"
+    blockstore-core "^3.0.0"
+    browser-readablestream-to-it "^2.0.0"
+    dag-jose "^4.0.0"
+    datastore-core "^8.0.1"
+    datastore-pubsub "^7.0.0"
     dlv "^1.1.3"
     err-code "^3.0.1"
-    hamt-sharding "^2.0.0"
+    hamt-sharding "^3.0.0"
     hashlru "^2.3.0"
-    interface-blockstore "^2.0.2"
-    interface-datastore "^6.0.2"
-    ipfs-bitswap "^10.0.1"
-    ipfs-core-config "^0.3.1"
-    ipfs-core-types "^0.10.1"
-    ipfs-core-utils "^0.14.1"
-    ipfs-http-client "^56.0.1"
-    ipfs-repo "^14.0.1"
-    ipfs-unixfs "^6.0.3"
-    ipfs-unixfs-exporter "^7.0.3"
-    ipfs-unixfs-importer "^9.0.3"
-    ipfs-utils "^9.0.2"
-    ipns "^0.16.0"
+    interface-blockstore "^4.0.0"
+    interface-datastore "^7.0.0"
+    ipfs-bitswap "^15.0.0"
+    ipfs-core-config "^0.7.0"
+    ipfs-core-types "^0.14.0"
+    ipfs-core-utils "^0.18.0"
+    ipfs-http-client "^60.0.0"
+    ipfs-repo "^17.0.0"
+    ipfs-unixfs "^9.0.0"
+    ipfs-unixfs-exporter "^10.0.0"
+    ipfs-unixfs-importer "^12.0.0"
+    ipfs-utils "^9.0.9"
+    ipns "^5.0.1"
     is-domain-name "^1.0.1"
-    is-ipfs "^6.0.1"
-    it-all "^1.0.4"
-    it-drain "^1.0.3"
-    it-filter "^1.0.2"
-    it-first "^1.0.4"
-    it-last "^1.0.4"
-    it-map "^1.0.4"
-    it-merge "^1.0.2"
-    it-parallel "^2.0.1"
-    it-peekable "^1.0.2"
-    it-pipe "^1.1.0"
-    it-pushable "^1.4.2"
-    it-tar "^4.0.0"
-    it-to-buffer "^2.0.0"
-    just-safe-set "^2.2.1"
-    libp2p "^0.36.2"
-    libp2p-bootstrap "^0.14.0"
-    libp2p-crypto "^0.21.1"
-    libp2p-delegated-content-routing "^0.11.1"
-    libp2p-delegated-peer-routing "^0.11.0"
-    libp2p-record "^0.10.3"
-    mafmt "^10.0.0"
+    is-ipfs "^8.0.0"
+    it-drain "^2.0.0"
+    it-filter "^2.0.0"
+    it-first "^2.0.0"
+    it-last "^2.0.0"
+    it-map "^2.0.0"
+    it-merge "^2.0.0"
+    it-parallel "^3.0.0"
+    it-peekable "^2.0.0"
+    it-pipe "^2.0.3"
+    it-pushable "^3.0.0"
+    it-tar "^6.0.0"
+    it-to-buffer "^3.0.0"
+    just-safe-set "^4.0.2"
+    libp2p "^0.42.0"
     merge-options "^3.0.4"
-    mortice "^2.0.0"
-    multiaddr "^10.0.0"
-    multiaddr-to-uri "^8.0.0"
-    multiformats "^9.5.1"
-    pako "^1.0.2"
+    mortice "^3.0.0"
+    multiformats "^11.0.0"
+    pako "^2.0.4"
     parse-duration "^1.0.0"
-    peer-id "^0.16.0"
     timeout-abort-controller "^3.0.0"
-    uint8arrays "^3.0.0"
+    uint8arrays "^4.0.2"
 
-ipfs-http-client@^56.0.1:
-  version "56.0.1"
-  resolved "https://registry.npmjs.org/ipfs-http-client/-/ipfs-http-client-56.0.1.tgz"
+ipfs-http-client@^60.0.0:
+  version "60.0.0"
+  resolved "https://registry.yarnpkg.com/ipfs-http-client/-/ipfs-http-client-60.0.0.tgz#429ca98544ee1fde79f96ee055d95a789384247c"
   dependencies:
-    "@ipld/dag-cbor" "^7.0.0"
-    "@ipld/dag-json" "^8.0.1"
-    "@ipld/dag-pb" "^2.1.3"
+    "@ipld/dag-cbor" "^9.0.0"
+    "@ipld/dag-json" "^10.0.0"
+    "@ipld/dag-pb" "^4.0.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
     any-signal "^3.0.0"
-    dag-jose "^1.0.0"
-    debug "^4.1.1"
+    dag-jose "^4.0.0"
     err-code "^3.0.1"
-    ipfs-core-types "^0.10.1"
-    ipfs-core-utils "^0.14.1"
-    ipfs-utils "^9.0.2"
-    it-first "^1.0.6"
-    it-last "^1.0.4"
+    ipfs-core-types "^0.14.0"
+    ipfs-core-utils "^0.18.0"
+    ipfs-utils "^9.0.13"
+    it-first "^2.0.0"
+    it-last "^2.0.0"
     merge-options "^3.0.4"
-    multiaddr "^10.0.0"
-    multiformats "^9.5.1"
+    multiformats "^11.0.0"
     parse-duration "^1.0.0"
     stream-to-it "^0.2.2"
-    uint8arrays "^3.0.0"
+    uint8arrays "^4.0.2"
 
-ipfs-repo-migrations@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.npmjs.org/ipfs-repo-migrations/-/ipfs-repo-migrations-12.0.1.tgz"
+ipfs-repo-migrations@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/ipfs-repo-migrations/-/ipfs-repo-migrations-15.0.0.tgz#617889f4a5eac51fe9f5622072d00629be5d19bb"
   dependencies:
-    "@ipld/dag-pb" "^2.0.0"
-    cborg "^1.3.1"
-    datastore-core "^7.0.0"
+    "@ipld/dag-pb" "^4.0.0"
+    "@multiformats/multiaddr" "^11.0.0"
+    cborg "^1.3.4"
+    datastore-core "^8.0.1"
     debug "^4.1.0"
     fnv1a "^1.0.1"
-    interface-blockstore "^2.0.2"
-    interface-datastore "^6.0.2"
-    it-length "^1.0.1"
-    multiaddr "^10.0.1"
-    multiformats "^9.0.0"
-    protobufjs "^6.10.2"
-    uint8arrays "^3.0.0"
+    interface-blockstore "^4.0.0"
+    interface-datastore "^7.0.0"
+    it-length "^2.0.0"
+    multiformats "^11.0.0"
+    protobufjs "^7.0.0"
+    uint8arrays "^4.0.2"
     varint "^6.0.0"
 
-ipfs-repo@^14.0.1:
-  version "14.0.1"
-  resolved "https://registry.npmjs.org/ipfs-repo/-/ipfs-repo-14.0.1.tgz"
+ipfs-repo@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/ipfs-repo/-/ipfs-repo-17.0.0.tgz#0cb0a17c73f0109b2f0442ff5d6f75d41b4601a4"
   dependencies:
-    "@ipld/dag-pb" "^2.1.0"
+    "@ipld/dag-pb" "^4.0.0"
     bytes "^3.1.0"
     cborg "^1.3.4"
-    datastore-core "^7.0.0"
+    datastore-core "^8.0.1"
     debug "^4.1.0"
     err-code "^3.0.1"
-    interface-blockstore "^2.0.2"
-    interface-datastore "^6.0.2"
-    ipfs-repo-migrations "^12.0.1"
-    it-drain "^1.0.1"
-    it-filter "^1.0.2"
-    it-first "^1.0.2"
-    it-map "^1.0.5"
-    it-merge "^1.0.2"
-    it-parallel-batch "^1.0.9"
-    it-pipe "^1.1.0"
-    it-pushable "^1.4.0"
-    just-safe-get "^2.0.0"
-    just-safe-set "^2.1.0"
+    interface-blockstore "^4.0.0"
+    interface-datastore "^7.0.0"
+    ipfs-repo-migrations "^15.0.0"
+    it-drain "^2.0.0"
+    it-filter "^2.0.0"
+    it-first "^2.0.0"
+    it-map "^2.0.0"
+    it-merge "^2.0.0"
+    it-parallel-batch "^2.0.0"
+    it-pipe "^2.0.4"
+    it-pushable "^3.1.0"
+    just-safe-get "^4.1.1"
+    just-safe-set "^4.1.1"
     merge-options "^3.0.4"
-    mortice "^2.0.1"
-    multiformats "^9.0.4"
-    p-queue "^6.0.0"
+    mortice "^3.0.0"
+    multiformats "^11.0.0"
+    p-queue "^7.3.0"
     proper-lockfile "^4.0.0"
-    sort-keys "^4.2.0"
-    uint8arrays "^3.0.0"
+    quick-lru "^6.1.1"
+    sort-keys "^5.0.0"
+    uint8arrays "^4.0.2"
 
-ipfs-unixfs-exporter@^7.0.3:
-  version "7.0.6"
-  resolved "https://registry.npmjs.org/ipfs-unixfs-exporter/-/ipfs-unixfs-exporter-7.0.6.tgz"
+ipfs-unixfs-exporter@^10.0.0:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/ipfs-unixfs-exporter/-/ipfs-unixfs-exporter-10.0.1.tgz#7b4cde8dd8d02919c6c28c47b16fe1f17faa51a1"
   dependencies:
-    "@ipld/dag-cbor" "^6.0.4"
-    "@ipld/dag-pb" "^2.0.2"
-    "@multiformats/murmur3" "^1.0.3"
+    "@ipld/dag-cbor" "^9.0.0"
+    "@ipld/dag-pb" "^4.0.0"
+    "@multiformats/murmur3" "^2.0.0"
     err-code "^3.0.1"
-    hamt-sharding "^2.0.0"
-    interface-blockstore "^1.0.0"
-    ipfs-unixfs "^6.0.6"
-    it-last "^1.0.5"
-    multiformats "^9.4.2"
-    uint8arrays "^3.0.0"
+    hamt-sharding "^3.0.0"
+    interface-blockstore "^4.0.0"
+    ipfs-unixfs "^9.0.0"
+    it-last "^2.0.0"
+    it-map "^2.0.0"
+    it-parallel "^3.0.0"
+    it-pipe "^2.0.4"
+    it-pushable "^3.1.0"
+    multiformats "^11.0.0"
+    p-queue "^7.3.0"
+    uint8arrays "^4.0.2"
 
-ipfs-unixfs-importer@^9.0.3:
-  version "9.0.6"
-  resolved "https://registry.npmjs.org/ipfs-unixfs-importer/-/ipfs-unixfs-importer-9.0.6.tgz"
+ipfs-unixfs-importer@^12.0.0:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/ipfs-unixfs-importer/-/ipfs-unixfs-importer-12.0.1.tgz#316a52d8a793e9e006b1ee43edc50b83e00ef306"
   dependencies:
-    "@ipld/dag-pb" "^2.0.2"
-    "@multiformats/murmur3" "^1.0.3"
-    bl "^5.0.0"
+    "@ipld/dag-pb" "^4.0.0"
+    "@multiformats/murmur3" "^2.0.0"
     err-code "^3.0.1"
-    hamt-sharding "^2.0.0"
-    interface-blockstore "^1.0.0"
-    ipfs-unixfs "^6.0.6"
-    it-all "^1.0.5"
-    it-batch "^1.0.8"
-    it-first "^1.0.6"
-    it-parallel-batch "^1.0.9"
+    hamt-sharding "^3.0.0"
+    interface-blockstore "^4.0.0"
+    ipfs-unixfs "^9.0.0"
+    it-all "^2.0.0"
+    it-batch "^2.0.0"
+    it-first "^2.0.0"
+    it-parallel-batch "^2.0.0"
     merge-options "^3.0.4"
-    multiformats "^9.4.2"
+    multiformats "^11.0.0"
     rabin-wasm "^0.1.4"
-    uint8arrays "^3.0.0"
+    uint8arraylist "^2.3.3"
+    uint8arrays "^4.0.2"
 
-ipfs-unixfs@^6.0.3, ipfs-unixfs@^6.0.6:
-  version "6.0.6"
-  resolved "https://registry.npmjs.org/ipfs-unixfs/-/ipfs-unixfs-6.0.6.tgz"
+ipfs-unixfs@^9.0.0:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/ipfs-unixfs/-/ipfs-unixfs-9.0.1.tgz#d06e688e07ef4ce08d610337ba2fe8c143c386e7"
   dependencies:
     err-code "^3.0.1"
-    protobufjs "^6.10.2"
+    protobufjs "^7.0.0"
 
-ipfs-utils@^9.0.1, ipfs-utils@^9.0.2:
-  version "9.0.5"
-  resolved "https://registry.npmjs.org/ipfs-utils/-/ipfs-utils-9.0.5.tgz"
+ipfs-utils@^9.0.13, ipfs-utils@^9.0.9:
+  version "9.0.14"
+  resolved "https://registry.yarnpkg.com/ipfs-utils/-/ipfs-utils-9.0.14.tgz#24f5fda1f4567685eb32bca2543d518f95fd8704"
   dependencies:
     any-signal "^3.0.0"
+    browser-readablestream-to-it "^1.0.0"
     buffer "^6.0.1"
     electron-fetch "^1.7.2"
     err-code "^3.0.1"
     is-electron "^2.2.0"
     iso-url "^1.1.5"
+    it-all "^1.0.4"
     it-glob "^1.0.1"
     it-to-stream "^1.0.0"
     merge-options "^3.0.4"
     nanoid "^3.1.20"
     native-fetch "^3.0.0"
-    node-fetch "https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz"
-    react-native-fetch-api "^2.0.0"
+    node-fetch "^2.6.8"
+    react-native-fetch-api "^3.0.0"
     stream-to-it "^0.2.2"
 
-ipns@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.npmjs.org/ipns/-/ipns-0.16.0.tgz"
+ipns@^5.0.1:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/ipns/-/ipns-5.0.2.tgz#06d8f0b01b422ecbd2290ecaec411aebd31ee2c9"
   dependencies:
+    "@libp2p/crypto" "^1.0.0"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-keys" "^1.0.3"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/logger" "^2.0.0"
+    "@libp2p/peer-id" "^2.0.0"
     cborg "^1.3.3"
-    debug "^4.2.0"
     err-code "^3.0.1"
-    interface-datastore "^6.0.2"
-    libp2p-crypto "^0.21.0"
-    long "^4.0.0"
-    multiformats "^9.4.5"
-    peer-id "^0.16.0"
-    protobufjs "^6.10.2"
+    interface-datastore "^7.0.0"
+    multiformats "^11.0.0"
+    protons-runtime "^4.0.1"
     timestamp-nano "^1.0.0"
-    uint8arrays "^3.0.0"
+    uint8arraylist "^2.4.3"
+    uint8arrays "^4.0.2"
 
 is-buffer@^2.0.5:
   version "2.0.5"
@@ -1439,29 +2107,27 @@ is-electron@^2.2.0:
   version "2.2.1"
   resolved "https://registry.npmjs.org/is-electron/-/is-electron-2.2.1.tgz"
 
-is-ip@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/is-ip/-/is-ip-3.1.0.tgz"
+is-ipfs@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/is-ipfs/-/is-ipfs-8.0.1.tgz#23aefd086d32a7fce7b180bc55bf71313a641415"
   dependencies:
-    ip-regex "^4.0.0"
-
-is-ipfs@^6.0.1:
-  version "6.0.2"
-  resolved "https://registry.npmjs.org/is-ipfs/-/is-ipfs-6.0.2.tgz"
-  dependencies:
+    "@multiformats/mafmt" "^11.0.3"
+    "@multiformats/multiaddr" "^11.0.0"
     iso-url "^1.1.3"
-    mafmt "^10.0.0"
-    multiaddr "^10.0.0"
-    multiformats "^9.0.0"
-    uint8arrays "^3.0.0"
+    multiformats "^11.0.0"
+    uint8arrays "^4.0.2"
 
-is-loopback-addr@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/is-loopback-addr/-/is-loopback-addr-1.0.1.tgz"
+is-loopback-addr@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/is-loopback-addr/-/is-loopback-addr-2.0.1.tgz#0b43534f0b16ff899f1f19f322b59c38bd25fa03"
 
-is-plain-obj@^2.0.0, is-plain-obj@^2.1.0:
+is-plain-obj@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-2.1.0.tgz"
+
+is-plain-obj@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-4.1.0.tgz#d65025edec3657ce032fd7db63c97883eaed71f0"
 
 is-stream@^1.0.1:
   version "1.1.0"
@@ -1471,10 +2137,6 @@ is-stream@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz"
 
-is-typedarray@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz"
-
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
@@ -1483,9 +2145,9 @@ iso-constants@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/iso-constants/-/iso-constants-0.1.2.tgz"
 
-iso-random-stream@^2.0.0:
+iso-random-stream@^2.0.2:
   version "2.0.2"
-  resolved "https://registry.npmjs.org/iso-random-stream/-/iso-random-stream-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/iso-random-stream/-/iso-random-stream-2.0.2.tgz#a24f77c34cfdad9d398707d522a6a0cc640ff27d"
   dependencies:
     events "^3.3.0"
     readable-stream "^3.4.0"
@@ -1501,46 +2163,49 @@ isomorphic-fetch@^2.2.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-isstream@~0.1.2:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz"
-
-it-all@^1.0.4, it-all@^1.0.5, it-all@^1.0.6:
+it-all@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npmjs.org/it-all/-/it-all-1.0.6.tgz"
 
-it-batch@^1.0.8, it-batch@^1.0.9:
+it-all@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-all/-/it-all-2.0.1.tgz#45d530ecf6e13fb81d7ba583cdfd55ffdb376b05"
+
+it-batch@^1.0.9:
   version "1.0.9"
   resolved "https://registry.npmjs.org/it-batch/-/it-batch-1.0.9.tgz"
 
-it-buffer@^0.1.2, it-buffer@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/it-buffer/-/it-buffer-0.1.3.tgz"
+it-batch@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-batch/-/it-batch-2.0.1.tgz#a0822be9b18743c41d8525835f788a7f297ba41f"
+
+it-batched-bytes@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/it-batched-bytes/-/it-batched-bytes-1.0.1.tgz#a3b12a10db24308c76a1126032af9184afc2dc63"
   dependencies:
-    bl "^5.0.0"
-    buffer "^6.0.3"
+    it-stream-types "^1.0.4"
+    p-defer "^4.0.0"
+    uint8arraylist "^2.4.1"
 
-it-concat@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/it-concat/-/it-concat-2.0.0.tgz"
-  dependencies:
-    bl "^5.0.0"
+it-drain@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-drain/-/it-drain-2.0.1.tgz#f50f6ce5cb8592a9d6337c9b5e780348877b152d"
 
-it-drain@^1.0.1, it-drain@^1.0.3, it-drain@^1.0.4:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/it-drain/-/it-drain-1.0.5.tgz"
+it-filter@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/it-filter/-/it-filter-2.0.2.tgz#c849b3de4a12a2de3cc45be734ee55f69a0ed284"
 
-it-filter@^1.0.1, it-filter@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/it-filter/-/it-filter-1.0.3.tgz"
+it-first@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-first/-/it-first-2.0.1.tgz#75d66b254c385ae3a1906def060a69006a437cef"
 
-it-first@^1.0.2, it-first@^1.0.4, it-first@^1.0.6:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/it-first/-/it-first-1.0.7.tgz"
+it-first@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/it-first/-/it-first-3.0.1.tgz#3f70681277cb7badd5d19867fdf593bc9e0e43ec"
 
-it-foreach@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/it-foreach/-/it-foreach-0.1.1.tgz"
+it-foreach@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/it-foreach/-/it-foreach-1.0.1.tgz#a4dab99c111457d1480bef6c4f9382076d9a6b81"
 
 it-glob@^1.0.1:
   version "1.0.2"
@@ -1549,45 +2214,70 @@ it-glob@^1.0.1:
     "@types/minimatch" "^3.0.4"
     minimatch "^3.0.4"
 
-it-handshake@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/it-handshake/-/it-handshake-2.0.0.tgz"
+it-handshake@^4.1.2, it-handshake@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/it-handshake/-/it-handshake-4.1.3.tgz#4e6650f8eff5cb3686c6861958645289fb3dc32a"
   dependencies:
-    it-pushable "^1.4.0"
-    it-reader "^3.0.0"
-    p-defer "^3.0.0"
+    it-pushable "^3.1.0"
+    it-reader "^6.0.1"
+    it-stream-types "^2.0.1"
+    p-defer "^4.0.0"
+    uint8arraylist "^2.0.0"
 
-it-last@^1.0.4, it-last@^1.0.5:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/it-last/-/it-last-1.0.6.tgz"
+it-last@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-last/-/it-last-2.0.1.tgz#a6f3253459cb77e917aeada3b2c4ae9f3e66c64b"
 
-it-length-prefixed@^5.0.0, it-length-prefixed@^5.0.2, it-length-prefixed@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/it-length-prefixed/-/it-length-prefixed-5.0.3.tgz"
+it-length-prefixed@^8.0.2:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/it-length-prefixed/-/it-length-prefixed-8.0.4.tgz#80bd356d93d77a8989a71200f8ca0860db040404"
   dependencies:
-    bl "^5.0.0"
-    buffer "^6.0.3"
-    varint "^6.0.0"
+    err-code "^3.0.1"
+    it-stream-types "^1.0.4"
+    uint8-varint "^1.0.1"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
 
-it-length@^1.0.1, it-length@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/it-length/-/it-length-1.0.4.tgz"
+it-length-prefixed@^9.0.0:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/it-length-prefixed/-/it-length-prefixed-9.0.1.tgz#12b7f8a283251bf74102c1c92d61b33985089e7c"
+  dependencies:
+    err-code "^3.0.1"
+    it-stream-types "^2.0.1"
+    uint8-varint "^1.0.1"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
 
-it-map@^1.0.4, it-map@^1.0.5:
+it-length@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-length/-/it-length-2.0.1.tgz#f4793637a35456bf14caea176e426b66aedb5ff4"
+
+it-map@^1.0.5:
   version "1.0.6"
   resolved "https://registry.npmjs.org/it-map/-/it-map-1.0.6.tgz"
 
-it-merge@^1.0.0, it-merge@^1.0.1, it-merge@^1.0.2, it-merge@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/it-merge/-/it-merge-1.0.4.tgz"
-  dependencies:
-    it-pushable "^1.4.0"
+it-map@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-map/-/it-map-2.0.1.tgz#d5251fd6b222d6ee39293d406a3f8fce54fb9220"
 
-it-pair@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/it-pair/-/it-pair-1.0.0.tgz"
+it-merge@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-merge/-/it-merge-2.0.1.tgz#6137c63f0dbdcb3b8b74ec67549f2b3351c84da8"
   dependencies:
-    get-iterator "^1.0.2"
+    it-pushable "^3.1.0"
+
+it-merge@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/it-merge/-/it-merge-3.0.0.tgz#d820749ecbf647867e16fa81335a46ac2b79e91f"
+  dependencies:
+    it-pushable "^3.1.0"
+
+it-pair@^2.0.2:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/it-pair/-/it-pair-2.0.6.tgz#072defa6b96f611af34e0b0c84573107ddb9f28f"
+  dependencies:
+    it-stream-types "^2.0.1"
+    p-defer "^4.0.0"
 
 it-parallel-batch@^1.0.9:
   version "1.0.10"
@@ -1595,65 +2285,96 @@ it-parallel-batch@^1.0.9:
   dependencies:
     it-batch "^1.0.9"
 
-it-parallel@^2.0.1:
+it-parallel-batch@^2.0.0:
   version "2.0.1"
-  resolved "https://registry.npmjs.org/it-parallel/-/it-parallel-2.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/it-parallel-batch/-/it-parallel-batch-2.0.1.tgz#23eb07bbeb73521253d7c8a1566b53137103077c"
   dependencies:
-    p-defer "^3.0.0"
+    it-batch "^2.0.0"
 
-it-pb-rpc@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/it-pb-rpc/-/it-pb-rpc-0.2.0.tgz"
+it-parallel@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/it-parallel/-/it-parallel-3.0.2.tgz#204d141551a2407cdcc513de6410140bebcc7fe4"
   dependencies:
-    it-handshake "^2.0.0"
-    it-length-prefixed "^5.0.3"
+    p-defer "^4.0.0"
 
-it-peekable@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/it-peekable/-/it-peekable-1.0.3.tgz"
-
-it-pipe@^1.0.1, it-pipe@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/it-pipe/-/it-pipe-1.1.0.tgz"
-
-it-pushable@^1.4.0, it-pushable@^1.4.1, it-pushable@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/it-pushable/-/it-pushable-1.4.2.tgz"
+it-pb-stream@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/it-pb-stream/-/it-pb-stream-3.2.1.tgz#58ad0b1268894d6eb05c17110e22326a33884a46"
   dependencies:
-    fast-fifo "^1.0.0"
+    err-code "^3.0.1"
+    it-length-prefixed "^9.0.0"
+    it-pushable "^3.1.2"
+    it-stream-types "^1.0.4"
+    protons-runtime "^5.0.0"
+    uint8-varint "^1.0.6"
+    uint8arraylist "^2.0.0"
 
-it-reader@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/it-reader/-/it-reader-3.0.0.tgz"
+it-peekable@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-peekable/-/it-peekable-2.0.1.tgz#1e118610473aa511efc70f3bb7a7066178728dd3"
+
+it-pipe@^2.0.3, it-pipe@^2.0.4:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/it-pipe/-/it-pipe-2.0.5.tgz#9caf7993dcbbc3824bc6ef64ee8b94574f65afa7"
   dependencies:
-    bl "^5.0.0"
+    it-merge "^2.0.0"
+    it-pushable "^3.1.0"
+    it-stream-types "^1.0.3"
 
-it-sort@^1.0.0, it-sort@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/it-sort/-/it-sort-1.0.1.tgz"
+it-pipe@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/it-pipe/-/it-pipe-3.0.1.tgz#b25720df82f4c558a8532602b5fbc37bbe4e7ba5"
   dependencies:
-    it-all "^1.0.6"
+    it-merge "^3.0.0"
+    it-pushable "^3.1.2"
+    it-stream-types "^2.0.1"
 
-it-take@^1.0.0, it-take@^1.0.1, it-take@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/it-take/-/it-take-1.0.2.tgz"
+it-pushable@^3.0.0, it-pushable@^3.1.0, it-pushable@^3.1.2, it-pushable@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/it-pushable/-/it-pushable-3.1.3.tgz#b6f4a1e0236502f12b5661b40468b629799baf0e"
 
-it-tar@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/it-tar/-/it-tar-4.0.0.tgz"
+it-reader@^6.0.1:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/it-reader/-/it-reader-6.0.4.tgz#439cb88225dcd15116be0ffde9e846a928c3871a"
   dependencies:
-    bl "^5.0.0"
-    buffer "^6.0.3"
+    it-stream-types "^2.0.1"
+    uint8arraylist "^2.0.0"
+
+it-sort@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-sort/-/it-sort-2.0.1.tgz#37af025862f7adb30d7fc1f8520b3cd7ef219ef6"
+  dependencies:
+    it-all "^2.0.0"
+
+it-stream-types@^1.0.2, it-stream-types@^1.0.3, it-stream-types@^1.0.4:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/it-stream-types/-/it-stream-types-1.0.5.tgz#9c72e6adefdea9dac69d0a28fbea783deebd508d"
+
+it-stream-types@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-stream-types/-/it-stream-types-2.0.1.tgz#69cb4d7e79e707b8257a8997e02751ccb6c3af32"
+
+it-take@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/it-take/-/it-take-2.0.1.tgz#f9e5ddf0b73a18ba00e62fb532d9d3cde3fe4ce6"
+
+it-tar@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/it-tar/-/it-tar-6.0.1.tgz#6164227c4f20cb870efb89e2a6693ffde77f69b1"
+  dependencies:
     iso-constants "^0.1.2"
-    it-concat "^2.0.0"
-    it-reader "^3.0.0"
-    p-defer "^3.0.0"
+    it-reader "^6.0.1"
+    it-stream-types "^1.0.4"
+    it-to-buffer "^3.0.0"
+    p-defer "^4.0.0"
+    uint8arraylist "^2.3.2"
+    uint8arrays "^4.0.2"
 
-it-to-buffer@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/it-to-buffer/-/it-to-buffer-2.0.2.tgz"
+it-to-buffer@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/it-to-buffer/-/it-to-buffer-3.0.1.tgz#ac00e7d9616c7a7d1613f29dc437c67d0e473271"
   dependencies:
-    uint8arrays "^3.0.0"
+    uint8arrays "^4.0.2"
 
 it-to-stream@^1.0.0:
   version "1.0.0"
@@ -1666,34 +2387,19 @@ it-to-stream@^1.0.0:
     p-fifo "^1.0.0"
     readable-stream "^3.6.0"
 
-it-ws@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/it-ws/-/it-ws-4.0.0.tgz"
+it-ws@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/it-ws/-/it-ws-5.0.6.tgz#9b69ff2ef9d08fda18ef2db604acf972d0fedded"
   dependencies:
-    buffer "^6.0.3"
     event-iterator "^2.0.0"
     iso-url "^1.1.2"
-    ws "^7.3.1"
+    it-stream-types "^1.0.2"
+    uint8arrays "^4.0.2"
+    ws "^8.4.0"
 
 jsbn@1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/jsbn/-/jsbn-1.1.0.tgz"
-
-jsbn@~0.1.0:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz"
-
-json-schema-traverse@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz"
-
-json-schema@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz"
-
-json-stringify-safe@~5.0.1:
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz"
 
 jsonfile@^6.0.1:
   version "6.1.0"
@@ -1703,26 +2409,17 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsprim@^1.2.2:
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/jsprim/-/jsprim-1.4.2.tgz"
-  dependencies:
-    assert-plus "1.0.0"
-    extsprintf "1.3.0"
-    json-schema "0.4.0"
-    verror "1.10.0"
+just-debounce-it@^3.0.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/just-debounce-it/-/just-debounce-it-3.2.0.tgz#4352265f4af44188624ce9fdbc6bff4d49c63a80"
 
-just-debounce-it@^1.1.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/just-debounce-it/-/just-debounce-it-1.5.0.tgz"
+just-safe-get@^4.1.1:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/just-safe-get/-/just-safe-get-4.2.0.tgz#8b184907473ae9995c9b30a52ce3462544437dca"
 
-just-safe-get@^2.0.0:
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/just-safe-get/-/just-safe-get-2.1.2.tgz"
-
-just-safe-set@^2.1.0, just-safe-set@^2.2.1:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/just-safe-set/-/just-safe-set-2.2.3.tgz"
+just-safe-set@^4.0.2, just-safe-set@^4.1.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/just-safe-set/-/just-safe-set-4.2.1.tgz#aa2d26abedc670ef247c1eaabeba73dc07a05cea"
 
 k-bucket@^5.1.0:
   version "5.1.0"
@@ -1730,364 +2427,98 @@ k-bucket@^5.1.0:
   dependencies:
     randombytes "^2.1.0"
 
-level-codec@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.npmjs.org/level-codec/-/level-codec-10.0.0.tgz"
+level-supports@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/level-supports/-/level-supports-4.0.1.tgz#431546f9d81f10ff0fea0e74533a0e875c08c66a"
+
+level-transcoder@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/level-transcoder/-/level-transcoder-1.0.1.tgz#f8cef5990c4f1283d4c86d949e73631b0bc8ba9c"
   dependencies:
     buffer "^6.0.3"
+    module-error "^1.0.1"
 
-level-concat-iterator@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/level-concat-iterator/-/level-concat-iterator-3.1.0.tgz"
+level@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/level/-/level-8.0.0.tgz#41b4c515dabe28212a3e881b61c161ffead14394"
   dependencies:
-    catering "^2.1.0"
+    browser-level "^1.0.1"
+    classic-level "^1.2.0"
 
-level-errors@^3.0.0, level-errors@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/level-errors/-/level-errors-3.0.1.tgz"
-
-level-iterator-stream@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/level-iterator-stream/-/level-iterator-stream-5.0.0.tgz"
+libp2p@^0.42.0:
+  version "0.42.2"
+  resolved "https://registry.yarnpkg.com/libp2p/-/libp2p-0.42.2.tgz#093b694b550508fadd8d3bcbd5d42cc984409d0f"
   dependencies:
-    inherits "^2.0.4"
-    readable-stream "^3.4.0"
-
-level-js@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/level-js/-/level-js-6.1.0.tgz"
-  dependencies:
-    abstract-leveldown "^7.2.0"
-    buffer "^6.0.3"
-    inherits "^2.0.3"
-    ltgt "^2.1.2"
-    run-parallel-limit "^1.1.0"
-
-level-packager@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/level-packager/-/level-packager-6.0.1.tgz"
-  dependencies:
-    encoding-down "^7.1.0"
-    levelup "^5.1.1"
-
-level-supports@^2.0.1:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/level-supports/-/level-supports-2.1.0.tgz"
-
-level@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.npmjs.org/level/-/level-7.0.1.tgz"
-  dependencies:
-    level-js "^6.1.0"
-    level-packager "^6.0.1"
-    leveldown "^6.1.0"
-
-leveldown@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/leveldown/-/leveldown-6.1.0.tgz"
-  dependencies:
-    abstract-leveldown "^7.2.0"
-    napi-macros "~2.0.0"
-    node-gyp-build "^4.3.0"
-
-levelup@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/levelup/-/levelup-5.1.1.tgz"
-  dependencies:
-    catering "^2.0.0"
-    deferred-leveldown "^7.0.0"
-    level-errors "^3.0.1"
-    level-iterator-stream "^5.0.0"
-    level-supports "^2.0.1"
-    queue-microtask "^1.2.3"
-
-libp2p-bootstrap@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.npmjs.org/libp2p-bootstrap/-/libp2p-bootstrap-0.14.0.tgz"
-  dependencies:
-    debug "^4.3.1"
-    mafmt "^10.0.0"
-    multiaddr "^10.0.0"
-    peer-id "^0.16.0"
-
-libp2p-crypto@^0.21.0, libp2p-crypto@^0.21.1, libp2p-crypto@^0.21.2:
-  version "0.21.2"
-  resolved "https://registry.npmjs.org/libp2p-crypto/-/libp2p-crypto-0.21.2.tgz"
-  dependencies:
-    "@noble/ed25519" "^1.5.1"
-    "@noble/secp256k1" "^1.3.0"
-    err-code "^3.0.1"
-    iso-random-stream "^2.0.0"
-    multiformats "^9.4.5"
-    node-forge "^1.2.1"
-    protobufjs "^6.11.2"
-    uint8arrays "^3.0.0"
-
-libp2p-delegated-content-routing@^0.11.1:
-  version "0.11.2"
-  resolved "https://registry.npmjs.org/libp2p-delegated-content-routing/-/libp2p-delegated-content-routing-0.11.2.tgz"
-  dependencies:
-    debug "^4.1.1"
-    it-drain "^1.0.3"
-    multiaddr "^10.0.0"
-    p-defer "^3.0.0"
-    p-queue "^6.2.1"
-    peer-id "^0.16.0"
-
-libp2p-delegated-peer-routing@^0.11.0:
-  version "0.11.1"
-  resolved "https://registry.npmjs.org/libp2p-delegated-peer-routing/-/libp2p-delegated-peer-routing-0.11.1.tgz"
-  dependencies:
-    debug "^4.3.1"
-    multiformats "^9.0.2"
-    p-defer "^3.0.0"
-    p-queue "^6.3.0"
-    peer-id "^0.16.0"
-
-libp2p-floodsub@^0.29.0:
-  version "0.29.1"
-  resolved "https://registry.npmjs.org/libp2p-floodsub/-/libp2p-floodsub-0.29.1.tgz"
-  dependencies:
-    debug "^4.2.0"
-    libp2p-interfaces "^4.0.5"
-    time-cache "^0.3.0"
-    uint8arrays "^3.0.0"
-
-libp2p-gossipsub@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/libp2p-gossipsub/-/libp2p-gossipsub-0.13.0.tgz"
-  dependencies:
-    "@types/debug" "^4.1.7"
-    debug "^4.3.1"
-    denque "^1.5.0"
-    err-code "^3.0.1"
-    it-pipe "^1.1.0"
-    libp2p-interfaces "^4.0.4"
-    peer-id "^0.16.0"
-    protobufjs "^6.11.2"
-    uint8arrays "^3.0.0"
-
-libp2p-interfaces@^4.0.0, libp2p-interfaces@^4.0.4, libp2p-interfaces@^4.0.5:
-  version "4.0.6"
-  resolved "https://registry.npmjs.org/libp2p-interfaces/-/libp2p-interfaces-4.0.6.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    debug "^4.3.1"
-    err-code "^3.0.1"
-    it-length-prefixed "^5.0.2"
-    it-pipe "^1.1.0"
-    it-pushable "^1.4.2"
-    libp2p-crypto "^0.21.0"
-    multiaddr "^10.0.0"
-    multiformats "^9.1.2"
-    p-queue "^6.6.2"
-    peer-id "^0.16.0"
-    protobufjs "^6.10.2"
-    uint8arrays "^3.0.0"
-
-libp2p-kad-dht@^0.28.5:
-  version "0.28.6"
-  resolved "https://registry.npmjs.org/libp2p-kad-dht/-/libp2p-kad-dht-0.28.6.tgz"
-  dependencies:
+    "@achingbrain/nat-port-mapper" "^1.0.3"
+    "@libp2p/crypto" "^1.0.4"
+    "@libp2p/interface-address-manager" "^2.0.0"
+    "@libp2p/interface-connection" "^3.0.2"
+    "@libp2p/interface-connection-encrypter" "^3.0.1"
+    "@libp2p/interface-connection-manager" "^1.1.1"
+    "@libp2p/interface-content-routing" "^2.0.0"
+    "@libp2p/interface-dht" "^2.0.0"
+    "@libp2p/interface-libp2p" "^1.0.0"
+    "@libp2p/interface-metrics" "^4.0.0"
+    "@libp2p/interface-peer-discovery" "^1.0.1"
+    "@libp2p/interface-peer-id" "^2.0.0"
+    "@libp2p/interface-peer-info" "^1.0.3"
+    "@libp2p/interface-peer-routing" "^1.0.1"
+    "@libp2p/interface-peer-store" "^1.2.2"
+    "@libp2p/interface-pubsub" "^3.0.0"
+    "@libp2p/interface-registrar" "^2.0.3"
+    "@libp2p/interface-stream-muxer" "^3.0.0"
+    "@libp2p/interface-transport" "^2.1.0"
+    "@libp2p/interfaces" "^3.0.3"
+    "@libp2p/logger" "^2.0.1"
+    "@libp2p/multistream-select" "^3.0.0"
+    "@libp2p/peer-collections" "^3.0.0"
+    "@libp2p/peer-id" "^2.0.0"
+    "@libp2p/peer-id-factory" "^2.0.0"
+    "@libp2p/peer-record" "^5.0.0"
+    "@libp2p/peer-store" "^6.0.0"
+    "@libp2p/tracked-map" "^3.0.0"
+    "@libp2p/utils" "^3.0.2"
+    "@multiformats/mafmt" "^11.0.2"
+    "@multiformats/multiaddr" "^11.0.0"
+    abortable-iterator "^4.0.2"
     any-signal "^3.0.0"
-    datastore-core "^7.0.0"
-    debug "^4.3.1"
-    err-code "^3.0.0"
-    hashlru "^2.3.0"
-    interface-datastore "^6.0.2"
-    it-all "^1.0.5"
-    it-drain "^1.0.4"
-    it-first "^1.0.4"
-    it-length "^1.0.3"
-    it-length-prefixed "^5.0.2"
-    it-map "^1.0.5"
-    it-merge "^1.0.3"
-    it-parallel "^2.0.1"
-    it-pipe "^1.1.0"
-    it-take "^1.0.2"
-    k-bucket "^5.1.0"
-    libp2p-crypto "^0.21.0"
-    libp2p-interfaces "^4.0.0"
-    libp2p-record "^0.10.4"
-    multiaddr "^10.0.0"
-    multiformats "^9.4.5"
-    p-defer "^3.0.0"
-    p-map "^4.0.0"
-    p-queue "^6.6.2"
-    peer-id "^0.16.0"
-    private-ip "^2.3.3"
-    protobufjs "^6.10.2"
-    streaming-iterables "^6.0.0"
-    timeout-abort-controller "^3.0.0"
-    uint8arrays "^3.0.0"
-    varint "^6.0.0"
-
-libp2p-mdns@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.npmjs.org/libp2p-mdns/-/libp2p-mdns-0.18.0.tgz"
-  dependencies:
-    debug "^4.3.1"
-    multiaddr "^10.0.0"
-    multicast-dns "^7.2.0"
-    peer-id "^0.16.0"
-
-libp2p-mplex@^0.10.2:
-  version "0.10.7"
-  resolved "https://registry.npmjs.org/libp2p-mplex/-/libp2p-mplex-0.10.7.tgz"
-  dependencies:
-    abortable-iterator "^3.0.2"
-    bl "^5.0.0"
-    debug "^4.3.1"
+    datastore-core "^8.0.1"
     err-code "^3.0.1"
-    it-pipe "^1.1.0"
-    it-pushable "^1.4.1"
-    varint "^6.0.0"
-
-libp2p-record@^0.10.3, libp2p-record@^0.10.4:
-  version "0.10.6"
-  resolved "https://registry.npmjs.org/libp2p-record/-/libp2p-record-0.10.6.tgz"
-  dependencies:
-    err-code "^3.0.1"
-    multiformats "^9.4.5"
-    protobufjs "^6.11.2"
-    uint8arrays "^3.0.0"
-
-libp2p-tcp@^0.17.1:
-  version "0.17.2"
-  resolved "https://registry.npmjs.org/libp2p-tcp/-/libp2p-tcp-0.17.2.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    class-is "^1.1.0"
-    debug "^4.3.1"
-    err-code "^3.0.1"
-    libp2p-utils "^0.4.0"
-    mafmt "^10.0.0"
-    multiaddr "^10.0.0"
-    stream-to-it "^0.2.2"
-
-libp2p-utils@^0.4.0:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/libp2p-utils/-/libp2p-utils-0.4.1.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    debug "^4.3.0"
-    err-code "^3.0.1"
-    ip-address "^8.0.0"
-    is-loopback-addr "^1.0.0"
-    multiaddr "^10.0.0"
-    private-ip "^2.1.1"
-
-libp2p-webrtc-peer@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.npmjs.org/libp2p-webrtc-peer/-/libp2p-webrtc-peer-10.0.1.tgz"
-  dependencies:
-    debug "^4.0.1"
-    err-code "^2.0.3"
-    get-browser-rtc "^1.0.0"
-    queue-microtask "^1.1.0"
-    randombytes "^2.0.3"
-    readable-stream "^3.4.0"
-
-libp2p-webrtc-star@^0.25.0:
-  version "0.25.0"
-  resolved "https://registry.npmjs.org/libp2p-webrtc-star/-/libp2p-webrtc-star-0.25.0.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    class-is "^1.1.0"
-    debug "^4.2.0"
-    err-code "^3.0.1"
-    ipfs-utils "^9.0.1"
-    it-pipe "^1.1.0"
-    libp2p-utils "^0.4.0"
-    libp2p-webrtc-peer "^10.0.1"
-    mafmt "^10.0.0"
-    multiaddr "^10.0.0"
-    p-defer "^3.0.0"
-    peer-id "^0.16.0"
-    socket.io-client "^4.1.2"
-    stream-to-it "^0.2.2"
-
-libp2p-websockets@^0.16.2:
-  version "0.16.2"
-  resolved "https://registry.npmjs.org/libp2p-websockets/-/libp2p-websockets-0.16.2.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    class-is "^1.1.0"
-    debug "^4.3.1"
-    err-code "^3.0.1"
-    ipfs-utils "^9.0.1"
-    it-ws "^4.0.0"
-    libp2p-utils "^0.4.0"
-    mafmt "^10.0.0"
-    multiaddr "^10.0.0"
-    multiaddr-to-uri "^8.0.0"
-    p-defer "^3.0.0"
-    p-timeout "^4.1.0"
-
-libp2p@^0.36.2:
-  version "0.36.2"
-  resolved "https://registry.npmjs.org/libp2p/-/libp2p-0.36.2.tgz"
-  dependencies:
-    "@vascosantos/moving-average" "^1.1.0"
-    abortable-iterator "^3.0.0"
-    aggregate-error "^3.1.0"
-    any-signal "^3.0.0"
-    bignumber.js "^9.0.1"
-    class-is "^1.1.0"
-    datastore-core "^7.0.0"
-    debug "^4.3.1"
-    err-code "^3.0.0"
-    es6-promisify "^7.0.0"
     events "^3.3.0"
     hashlru "^2.3.0"
-    interface-datastore "^6.0.2"
-    it-all "^1.0.4"
-    it-buffer "^0.1.2"
-    it-drain "^1.0.3"
-    it-filter "^1.0.1"
-    it-first "^1.0.4"
-    it-foreach "^0.1.1"
-    it-handshake "^2.0.0"
-    it-length-prefixed "^5.0.2"
-    it-map "^1.0.4"
-    it-merge "^1.0.0"
-    it-pipe "^1.1.0"
-    it-sort "^1.0.1"
-    it-take "^1.0.0"
-    libp2p-crypto "^0.21.2"
-    libp2p-interfaces "^4.0.0"
-    libp2p-utils "^0.4.0"
-    mafmt "^10.0.0"
+    interface-datastore "^7.0.0"
+    it-all "^2.0.0"
+    it-drain "^2.0.0"
+    it-filter "^2.0.0"
+    it-first "^2.0.0"
+    it-foreach "^1.0.0"
+    it-handshake "^4.1.2"
+    it-length-prefixed "^8.0.2"
+    it-map "^2.0.0"
+    it-merge "^2.0.0"
+    it-pair "^2.0.2"
+    it-pipe "^2.0.3"
+    it-sort "^2.0.0"
+    it-stream-types "^1.0.4"
     merge-options "^3.0.4"
-    mortice "^2.0.1"
-    multiaddr "^10.0.0"
-    multiformats "^9.0.0"
-    multistream-select "^3.0.0"
-    mutable-proxy "^1.0.0"
-    nat-api "^0.3.1"
-    node-forge "^1.2.1"
-    p-any "^3.0.0"
+    multiformats "^11.0.0"
+    node-forge "^1.3.1"
     p-fifo "^1.0.0"
-    p-retry "^4.4.0"
-    p-settle "^4.1.1"
-    peer-id "^0.16.0"
-    private-ip "^2.1.0"
-    protobufjs "^6.10.2"
+    p-retry "^5.0.0"
+    p-settle "^5.0.0"
+    private-ip "^3.0.0"
+    protons-runtime "^4.0.1"
+    rate-limiter-flexible "^2.3.11"
     retimer "^3.0.0"
     sanitize-filename "^1.6.3"
     set-delayed-interval "^1.0.0"
-    streaming-iterables "^6.0.0"
     timeout-abort-controller "^3.0.0"
-    uint8arrays "^3.0.0"
-    varint "^6.0.0"
-    wherearewe "^1.0.0"
+    uint8arraylist "^2.3.2"
+    uint8arrays "^4.0.2"
+    wherearewe "^2.0.0"
     xsalsa20 "^1.1.0"
 
-lodash.throttle@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
-
-lodash@^4.17.20:
+lodash@^4.17.20, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
 
@@ -2095,9 +2526,20 @@ long@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/long/-/long-4.0.0.tgz"
 
+long@^5.0.0:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
+
 long@~3:
   version "3.2.0"
   resolved "https://registry.npmjs.org/long/-/long-3.2.0.tgz"
+
+longbits@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/longbits/-/longbits-1.1.0.tgz#d6a7b2411dead1cf4b79ee4586816e65c7356ab9"
+  dependencies:
+    byte-access "^1.0.1"
+    uint8arraylist "^2.0.0"
 
 lru-cache@^4.0.1:
   version "4.1.5"
@@ -2105,16 +2547,6 @@ lru-cache@^4.0.1:
   dependencies:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
-
-ltgt@^2.1.2:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/ltgt/-/ltgt-2.2.1.tgz"
-
-mafmt@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.npmjs.org/mafmt/-/mafmt-10.0.0.tgz"
-  dependencies:
-    multiaddr "^10.0.0"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -2133,16 +2565,6 @@ merge-options@^3.0.4:
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz"
-
-mime-db@1.51.0:
-  version "1.51.0"
-  resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.51.0.tgz"
-
-mime-types@^2.1.12, mime-types@~2.1.19:
-  version "2.1.34"
-  resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.34.tgz"
-  dependencies:
-    mime-db "1.51.0"
 
 mimic-fn@^2.1.0:
   version "2.1.0"
@@ -2170,35 +2592,22 @@ mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
 
-mortice@^2.0.0, mortice@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/mortice/-/mortice-2.0.1.tgz"
+module-error@^1.0.1, module-error@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/module-error/-/module-error-1.0.2.tgz#8d1a48897ca883f47a45816d4fb3e3c6ba404d86"
+
+mortice@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/mortice/-/mortice-3.0.1.tgz#27c1943b1841502c7b27a9c8fea789f87c124515"
   dependencies:
-    nanoid "^3.1.20"
-    observable-webworkers "^1.0.0"
-    p-queue "^6.0.0"
-    promise-timeout "^1.3.0"
+    nanoid "^4.0.0"
+    observable-webworkers "^2.0.1"
+    p-queue "^7.2.0"
+    p-timeout "^6.0.0"
 
 ms@2.1.2, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
-
-multiaddr-to-uri@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/multiaddr-to-uri/-/multiaddr-to-uri-8.0.0.tgz"
-  dependencies:
-    multiaddr "^10.0.0"
-
-multiaddr@^10.0.0, multiaddr@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.npmjs.org/multiaddr/-/multiaddr-10.0.1.tgz"
-  dependencies:
-    dns-over-http-resolver "^1.2.3"
-    err-code "^3.0.1"
-    is-ip "^3.1.0"
-    multiformats "^9.4.5"
-    uint8arrays "^3.0.0"
-    varint "^6.0.0"
 
 multicast-dns@^7.2.0:
   version "7.2.4"
@@ -2207,56 +2616,33 @@ multicast-dns@^7.2.0:
     dns-packet "^5.2.2"
     thunky "^1.0.2"
 
-multiformats@^9.0.0, multiformats@^9.0.2, multiformats@^9.0.4, multiformats@^9.1.0, multiformats@^9.1.2, multiformats@^9.4.2, multiformats@^9.4.5, multiformats@^9.4.7, multiformats@^9.5.1, multiformats@^9.5.4:
-  version "9.6.4"
-  resolved "https://registry.npmjs.org/multiformats/-/multiformats-9.6.4.tgz"
-
-multistream-select@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.npmjs.org/multistream-select/-/multistream-select-3.0.2.tgz"
-  dependencies:
-    abortable-iterator "^3.0.0"
-    bl "^5.0.0"
-    debug "^4.1.1"
-    err-code "^3.0.1"
-    it-first "^1.0.6"
-    it-handshake "^2.0.0"
-    it-length-prefixed "^5.0.0"
-    it-pipe "^1.0.1"
-    it-reader "^3.0.0"
-    p-defer "^3.0.0"
-    uint8arrays "^3.0.0"
+multiformats@^11.0.0:
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-11.0.2.tgz#b14735efc42cd8581e73895e66bebb9752151b60"
 
 murmurhash3js-revisited@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/murmurhash3js-revisited/-/murmurhash3js-revisited-3.0.0.tgz"
 
-mutable-proxy@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/mutable-proxy/-/mutable-proxy-1.0.0.tgz"
-
-nanoid@^3.0.2, nanoid@^3.1.20, nanoid@^3.1.23:
+nanoid@^3.1.20:
   version "3.3.1"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.1.tgz"
 
-napi-macros@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/napi-macros/-/napi-macros-2.0.0.tgz"
+nanoid@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
 
-nat-api@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/nat-api/-/nat-api-0.3.1.tgz"
-  dependencies:
-    async "^3.2.0"
-    debug "^4.2.0"
-    default-gateway "^6.0.2"
-    request "^2.88.2"
-    unordered-array-remove "^1.0.2"
-    xml2js "^0.1.0"
+napi-macros@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/napi-macros/-/napi-macros-2.2.2.tgz#817fef20c3e0e40a963fbf7b37d1600bd0201044"
 
 native-fetch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/native-fetch/-/native-fetch-3.0.0.tgz"
+
+native-fetch@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/native-fetch/-/native-fetch-4.0.2.tgz#75c8a44c5f3bb021713e5e24f2846750883e49af"
 
 netmask@^2.0.2:
   version "2.0.2"
@@ -2269,11 +2655,17 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-node-fetch@^2.6.1, "node-fetch@https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz":
+node-fetch@^2.6.1:
   version "2.6.7"
   resolved "https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz"
 
-node-forge@^1.2.1:
+node-fetch@^2.6.8:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.9.tgz#7c7f744b5cc6eb5fd404e0c7a9fec630a55657e6"
+  dependencies:
+    whatwg-url "^5.0.0"
+
+node-forge@^1.1.0, node-forge@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
 
@@ -2291,13 +2683,9 @@ npm-run-path@^4.0.1:
   dependencies:
     path-key "^3.0.0"
 
-oauth-sign@~0.9.0:
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz"
-
-observable-webworkers@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/observable-webworkers/-/observable-webworkers-1.0.0.tgz"
+observable-webworkers@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/observable-webworkers/-/observable-webworkers-2.0.1.tgz#7d9086ebc567bd318b46ba0506b10cedf3813878"
 
 onetime@^5.1.2:
   version "5.1.2"
@@ -2305,20 +2693,19 @@ onetime@^5.1.2:
   dependencies:
     mimic-fn "^2.1.0"
 
-p-any@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/p-any/-/p-any-3.0.0.tgz"
-  dependencies:
-    p-cancelable "^2.0.0"
-    p-some "^5.0.0"
-
-p-cancelable@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/p-cancelable/-/p-cancelable-2.1.1.tgz"
-
 p-defer@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/p-defer/-/p-defer-3.0.0.tgz"
+
+p-defer@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-4.0.0.tgz#8082770aeeb10eb6b408abe91866738741ddd5d2"
+
+p-event@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/p-event/-/p-event-5.0.1.tgz#614624ec02ae7f4f13d09a721c90586184af5b0c"
+  dependencies:
+    p-timeout "^5.0.2"
 
 p-fifo@^1.0.0:
   version "1.0.0"
@@ -2327,75 +2714,52 @@ p-fifo@^1.0.0:
     fast-fifo "^1.0.0"
     p-defer "^3.0.0"
 
-p-finally@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz"
-
-p-limit@^2.2.2:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/p-limit/-/p-limit-2.3.0.tgz"
-  dependencies:
-    p-try "^2.0.0"
-
-p-map@^4.0.0:
+p-limit@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.npmjs.org/p-map/-/p-map-4.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-4.0.0.tgz#914af6544ed32bfa54670b061cafcbd04984b644"
   dependencies:
-    aggregate-error "^3.0.0"
+    yocto-queue "^1.0.0"
 
-p-queue@^6.0.0, p-queue@^6.2.1, p-queue@^6.3.0, p-queue@^6.6.1, p-queue@^6.6.2:
-  version "6.6.2"
-  resolved "https://registry.npmjs.org/p-queue/-/p-queue-6.6.2.tgz"
+p-queue@^7.2.0, p-queue@^7.3.0:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-7.3.4.tgz#7ef7d89b6c1a0563596d98adbc9dc404e9ed4a84"
   dependencies:
-    eventemitter3 "^4.0.4"
-    p-timeout "^3.2.0"
+    eventemitter3 "^4.0.7"
+    p-timeout "^5.0.2"
 
-p-reflect@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/p-reflect/-/p-reflect-2.1.0.tgz"
+p-reflect@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/p-reflect/-/p-reflect-3.1.0.tgz#bba22747439b5fc50a7f626e8e909dc9b888218d"
 
-p-retry@^4.4.0:
-  version "4.6.1"
-  resolved "https://registry.npmjs.org/p-retry/-/p-retry-4.6.1.tgz"
+p-retry@^5.0.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-5.1.2.tgz#c16eaee4f2016f9161d12da40d3b8b0f2e3c1b76"
   dependencies:
-    "@types/retry" "^0.12.0"
+    "@types/retry" "0.12.1"
     retry "^0.13.1"
 
-p-settle@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/p-settle/-/p-settle-4.1.1.tgz"
+p-settle@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/p-settle/-/p-settle-5.1.0.tgz#6abf85e073d6b137b48ed70f8a8d94660454bd17"
   dependencies:
-    p-limit "^2.2.2"
-    p-reflect "^2.1.0"
+    p-limit "^4.0.0"
+    p-reflect "^3.1.0"
 
-p-some@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/p-some/-/p-some-5.0.0.tgz"
-  dependencies:
-    aggregate-error "^3.0.0"
-    p-cancelable "^2.0.0"
+p-timeout@^5.0.2:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-5.1.0.tgz#b3c691cf4415138ce2d9cfe071dba11f0fee085b"
 
-p-timeout@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/p-timeout/-/p-timeout-3.2.0.tgz"
-  dependencies:
-    p-finally "^1.0.0"
-
-p-timeout@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/p-timeout/-/p-timeout-4.1.0.tgz"
-
-p-try@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
+p-timeout@^6.0.0:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-6.1.1.tgz#bcee5e37d730f5474d973b6ff226751a1a5e6ff1"
 
 pako@2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/pako/-/pako-2.0.3.tgz"
 
-pako@^1.0.2:
-  version "1.0.11"
-  resolved "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz"
+pako@^2.0.4:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
 
 parse-duration@^1.0.0:
   version "1.0.2"
@@ -2413,36 +2777,26 @@ path-key@^3.0.0, path-key@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz"
 
-peer-id@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.npmjs.org/peer-id/-/peer-id-0.16.0.tgz"
-  dependencies:
-    class-is "^1.1.0"
-    libp2p-crypto "^0.21.0"
-    multiformats "^9.4.5"
-    protobufjs "^6.10.2"
-    uint8arrays "^3.0.0"
+platform@^1.3.3:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
 
-performance-now@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
-
-private-ip@^2.1.0, private-ip@^2.1.1, private-ip@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/private-ip/-/private-ip-2.3.3.tgz"
+private-ip@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/private-ip/-/private-ip-3.0.0.tgz#a65d10e2db06f6bb2f97f716f1a8976a3460a4a6"
   dependencies:
-    ip-regex "^4.3.0"
+    "@chainsafe/is-ip" "^2.0.1"
+    ip-regex "^5.0.0"
     ipaddr.js "^2.0.1"
-    is-ip "^3.1.0"
     netmask "^2.0.2"
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
 promise-polyfill@^6.0.1:
   version "6.1.0"
   resolved "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.1.0.tgz"
-
-promise-timeout@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/promise-timeout/-/promise-timeout-1.3.0.tgz"
 
 proper-lockfile@^4.0.0:
   version "4.1.2"
@@ -2452,7 +2806,7 @@ proper-lockfile@^4.0.0:
     retry "^0.12.0"
     signal-exit "^3.0.2"
 
-protobufjs@^6.10.2, protobufjs@^6.11.2:
+protobufjs@^6.11.2:
   version "6.11.2"
   resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.2.tgz"
   dependencies:
@@ -2470,25 +2824,48 @@ protobufjs@^6.10.2, protobufjs@^6.11.2:
     "@types/node" ">=13.7.0"
     long "^4.0.0"
 
+protobufjs@^7.0.0:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-7.2.3.tgz#01af019e40d9c6133c49acbb3ff9e30f4f0f70b2"
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/node" ">=13.7.0"
+    long "^5.0.0"
+
+protons-runtime@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/protons-runtime/-/protons-runtime-4.0.2.tgz#a5670e703a5389dccb3700b583532e3316efcb94"
+  dependencies:
+    protobufjs "^7.0.0"
+    uint8arraylist "^2.4.3"
+
+protons-runtime@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/protons-runtime/-/protons-runtime-5.0.0.tgz#1eb3c78637ff02cc90bb030e3bff6f0402109c25"
+  dependencies:
+    protobufjs "^7.0.0"
+    uint8arraylist "^2.4.3"
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz"
 
-psl@^1.1.28:
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/psl/-/psl-1.8.0.tgz"
-
-punycode@^2.1.0, punycode@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
-
-qs@~6.5.2:
-  version "6.5.3"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.5.3.tgz"
-
-queue-microtask@^1.1.0, queue-microtask@^1.2.2, queue-microtask@^1.2.3:
+queue-microtask@^1.2.2, queue-microtask@^1.2.3:
   version "1.2.3"
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
+
+quick-lru@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-6.1.1.tgz#f8e5bf9010376c126c80c1a62827a526c0e60adf"
 
 rabin-wasm@^0.1.4:
   version "0.1.5"
@@ -2501,7 +2878,7 @@ rabin-wasm@^0.1.4:
     node-fetch "^2.6.1"
     readable-stream "^3.6.0"
 
-randombytes@2.0.5, randombytes@^2.0.3:
+randombytes@2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/randombytes/-/randombytes-2.0.5.tgz"
   dependencies:
@@ -2513,9 +2890,13 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-native-fetch-api@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/react-native-fetch-api/-/react-native-fetch-api-2.0.0.tgz"
+rate-limiter-flexible@^2.3.11, rate-limiter-flexible@^2.3.9:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/rate-limiter-flexible/-/rate-limiter-flexible-2.4.1.tgz#c74cfe36ac2cbfe56f68ded9a3b4b2fde1963c41"
+
+react-native-fetch-api@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-fetch-api/-/react-native-fetch-api-3.0.0.tgz#81e1bb6562c292521bc4eca52fe1097f4c1ebab5"
   dependencies:
     p-defer "^3.0.0"
 
@@ -2526,6 +2907,15 @@ readable-stream@^3.4.0, readable-stream@^3.6.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-stream@^4.0.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-4.3.0.tgz#0914d0c72db03b316c9733bb3461d64a3cc50cba"
+  dependencies:
+    abort-controller "^3.0.0"
+    buffer "^6.0.3"
+    events "^3.3.0"
+    process "^0.11.10"
 
 receptacle@^1.3.2:
   version "1.3.2"
@@ -2540,31 +2930,6 @@ regenerator-runtime@^0.11.0:
 regenerator-runtime@^0.13.2:
   version "0.13.9"
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
-
-request@^2.88.2:
-  version "2.88.2"
-  resolved "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
-  dependencies:
-    aws-sign2 "~0.7.0"
-    aws4 "^1.8.0"
-    caseless "~0.12.0"
-    combined-stream "~1.0.6"
-    extend "~3.0.2"
-    forever-agent "~0.6.1"
-    form-data "~2.3.2"
-    har-validator "~5.1.3"
-    http-signature "~1.2.0"
-    is-typedarray "~1.0.0"
-    isstream "~0.1.2"
-    json-stringify-safe "~5.0.1"
-    mime-types "~2.1.19"
-    oauth-sign "~0.9.0"
-    performance-now "^2.1.0"
-    qs "~6.5.2"
-    safe-buffer "^5.1.2"
-    tough-cookie "~2.5.0"
-    tunnel-agent "^0.6.0"
-    uuid "^3.3.2"
 
 retimer@^3.0.0:
   version "3.0.0"
@@ -2595,7 +2960,7 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, 
   version "5.2.1"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
 
-"safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
+"safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
 
@@ -2605,9 +2970,9 @@ sanitize-filename@^1.6.3:
   dependencies:
     truncate-utf8-bytes "^1.0.0"
 
-sax@>=0.1.1:
+sax@>=0.6.0:
   version "1.2.4"
-  resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
+  resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
 set-delayed-interval@^1.0.0:
   version "1.0.0"
@@ -2652,11 +3017,11 @@ socket.io-parser@~4.1.1:
     "@socket.io/component-emitter" "~3.0.0"
     debug "~4.3.1"
 
-sort-keys@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/sort-keys/-/sort-keys-4.2.0.tgz"
+sort-keys@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-5.0.0.tgz#5d775f8ae93ecc29bc7312bbf3acac4e36e3c446"
   dependencies:
-    is-plain-obj "^2.0.0"
+    is-plain-obj "^4.0.0"
 
 sparse-array@^1.3.1:
   version "1.3.2"
@@ -2666,29 +3031,15 @@ sprintf-js@1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.2.tgz"
 
-sshpk@^1.7.0:
-  version "1.17.0"
-  resolved "https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz"
-  dependencies:
-    asn1 "~0.2.3"
-    assert-plus "^1.0.0"
-    bcrypt-pbkdf "^1.0.0"
-    dashdash "^1.12.0"
-    ecc-jsbn "~0.1.1"
-    getpass "^0.1.1"
-    jsbn "~0.1.0"
-    safer-buffer "^2.0.2"
-    tweetnacl "~0.14.0"
-
 stream-to-it@^0.2.2:
   version "0.2.4"
   resolved "https://registry.npmjs.org/stream-to-it/-/stream-to-it-0.2.4.tgz"
   dependencies:
     get-iterator "^1.0.2"
 
-streaming-iterables@^6.0.0:
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/streaming-iterables/-/streaming-iterables-6.2.0.tgz"
+streamsearch@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
 
 string_decoder@^1.1.1:
   version "1.3.0"
@@ -2708,12 +3059,6 @@ thunky@^1.0.2:
   version "1.1.0"
   resolved "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz"
 
-time-cache@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/time-cache/-/time-cache-0.3.0.tgz"
-  dependencies:
-    lodash.throttle "^4.1.1"
-
 timeout-abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/timeout-abort-controller/-/timeout-abort-controller-3.0.0.tgz"
@@ -2724,12 +3069,9 @@ timestamp-nano@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/timestamp-nano/-/timestamp-nano-1.0.0.tgz"
 
-tough-cookie@~2.5.0:
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz"
-  dependencies:
-    psl "^1.1.28"
-    punycode "^2.1.1"
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
 
 truncate-utf8-bytes@^1.0.0:
   version "1.0.2"
@@ -2741,35 +3083,36 @@ tslib@^2.0.3:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
 
-tunnel-agent@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz"
+uint8-varint@^1.0.1, uint8-varint@^1.0.2, uint8-varint@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/uint8-varint/-/uint8-varint-1.0.6.tgz#bacf9526b0ddcd38fd6645e17895a4ee42d2bec4"
   dependencies:
-    safe-buffer "^5.0.1"
+    byte-access "^1.0.0"
+    longbits "^1.1.0"
+    uint8arraylist "^2.0.0"
+    uint8arrays "^4.0.2"
 
-tweetnacl@^0.14.3, tweetnacl@~0.14.0:
-  version "0.14.5"
-  resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz"
-
-uint8arrays@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/uint8arrays/-/uint8arrays-3.0.0.tgz"
+uint8arraylist@^2.0.0, uint8arraylist@^2.1.0, uint8arraylist@^2.1.1, uint8arraylist@^2.1.2, uint8arraylist@^2.3.1, uint8arraylist@^2.3.2, uint8arraylist@^2.3.3, uint8arraylist@^2.4.1, uint8arraylist@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/uint8arraylist/-/uint8arraylist-2.4.3.tgz#1148aa979b407d382e4eb8d9c8f2b4bf3f5910d5"
   dependencies:
-    multiformats "^9.4.2"
+    uint8arrays "^4.0.2"
+
+uint8arrays@^4.0.2, uint8arrays@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-4.0.3.tgz#43109c03c4c10d312e7f2e9f4d53e5cd2398c7fd"
+  dependencies:
+    multiformats "^11.0.0"
+
+undici@^5.12.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.22.0.tgz#5e205d82a5aecc003fc4388ccd3d2c6e8674a0ad"
+  dependencies:
+    busboy "^1.6.0"
 
 universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/universalify/-/universalify-2.0.0.tgz"
-
-unordered-array-remove@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/unordered-array-remove/-/unordered-array-remove-1.0.2.tgz"
-
-uri-js@^4.2.2:
-  version "4.4.1"
-  resolved "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz"
-  dependencies:
-    punycode "^2.1.0"
 
 utf8-byte-length@^1.0.1:
   version "1.0.4"
@@ -2778,10 +3121,6 @@ utf8-byte-length@^1.0.1:
 util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
-
-uuid@^3.3.2:
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
 
 varint-decoder@^1.0.0:
   version "1.0.0"
@@ -2797,21 +3136,24 @@ varint@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/varint/-/varint-6.0.0.tgz"
 
-verror@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/verror/-/verror-1.10.0.tgz"
-  dependencies:
-    assert-plus "^1.0.0"
-    core-util-is "1.0.2"
-    extsprintf "^1.2.0"
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
 
 whatwg-fetch@>=0.10.0:
   version "3.6.2"
   resolved "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz"
 
-wherearewe@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/wherearewe/-/wherearewe-1.0.1.tgz"
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
+
+wherearewe@^2.0.0, wherearewe@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/wherearewe/-/wherearewe-2.0.1.tgz#37c97a7bf112dca8db34bfefb2f6c997af312bb8"
   dependencies:
     is-electron "^2.2.0"
 
@@ -2827,19 +3169,24 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-ws@^7.3.1:
-  version "7.5.7"
-  resolved "https://registry.npmjs.org/ws/-/ws-7.5.7.tgz"
+ws@^8.12.1, ws@^8.4.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
 
 ws@~8.2.3:
   version "8.2.3"
   resolved "https://registry.npmjs.org/ws/-/ws-8.2.3.tgz"
 
-xml2js@^0.1.0:
-  version "0.1.14"
-  resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.1.14.tgz"
+xml2js@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.5.0.tgz#d9440631fbb2ed800203fad106f2724f62c493b7"
   dependencies:
-    sax ">=0.1.1"
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
+xmlbuilder@~11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
 
 xmlhttprequest-ssl@~2.0.0:
   version "2.0.0"
@@ -2856,6 +3203,10 @@ yallist@^2.1.2:
 yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"
+
+yocto-queue@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
 
 zlib@^1.0.5:
   version "1.0.5"
