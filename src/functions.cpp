@@ -1,6 +1,6 @@
 // #pragma once
-#include "avatarmk.hpp"
 #include "atomicassets.hpp"
+#include "avatarmk.hpp"
 
 namespace avatarmk {
 
@@ -23,7 +23,6 @@ namespace avatarmk {
         else {
             result.next_base_price = avatar_floor_mint_price * avatar.rarity;
         }
-
         //calculate mint price based on current base price
         const uint64_t pv = avatar.base_price.amount;
         const double r = 0.01 * (5 / avatar.rarity);                     //rare avatars will decay slower

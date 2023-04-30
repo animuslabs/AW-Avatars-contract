@@ -1,7 +1,7 @@
 #pragma once
+#include <eosio/asset.hpp>
 #include <eosio/eosio.hpp>
 #include <eosio/singleton.hpp>
-#include <eosio/asset.hpp>
 
 namespace avatarmk {
     struct config {
@@ -18,4 +18,4 @@ namespace avatarmk {
     };
     EOSIO_REFLECT(config, freeze, moderator, auto_claim_packs, whitelist_enabled, payment_token, rng, collection_name, parts_schema, avatar_schema, pack_schema)
     typedef eosio::singleton<"config"_n, config> config_table;
-}
+}  // namespace avatarmk
