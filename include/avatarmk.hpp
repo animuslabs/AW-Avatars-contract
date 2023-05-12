@@ -86,7 +86,8 @@ namespace avatarmk {
         void setparts(const eosio::name& edition_scope, const std::vector<uint32_t> template_ids, std::vector<uint8_t>& rarity_scores);
         void receiverand(uint64_t& assoc_id, const eosio::checksum256& random_value);
 
-        void setconfig(std::optional<config> cfg);
+        void setconfig(std::optional<config2> cfg);
+        void clrconfig();
         void packadd(eosio::name& edition_scope,
                      uint64_t& template_id,
                      eosio::asset& base_price,
@@ -121,8 +122,8 @@ namespace avatarmk {
                                 ATTRIBUTE_MAP immutable_data);  //,atomicassets::ATTRIBUTE_MAP immutable_data
 
        private:
-        pack_data validate_pack(const uint64_t& asset_id, const config& cfg);
-        assemble_set validate_assemble_set(std::vector<uint64_t> asset_ids, config cfg);
+        pack_data validate_pack(const uint64_t& asset_id, const config2& cfg);
+        assemble_set validate_assemble_set(std::vector<uint64_t> asset_ids, config2 cfg);
         eosio::checksum256 calculateIdentifier(std::vector<uint32_t>& template_ids);
         avatar_mint_price calculate_mint_price(const avatars& avatar, const eosio::asset& avatar_floor_mint_price);
 
@@ -130,10 +131,10 @@ namespace avatarmk {
         void add_balance(const eosio::name& owner, const eosio::extended_asset& value, const eosio::name& ram_payer = eosio::name(0));
         void sub_balance(const eosio::name& owner, const eosio::extended_asset& value);
 
-        bool is_whitelisted(const eosio::name& account, const config& cfg);
-        void check_contract_is_frozen(const config& cfg);
-        void require_privileged_account(const config& cfg);
-
+        bool is_whitelisted(const eosio::name& account, const config2& cfg);
+        void check_contract_is_frozen(const config2& cfg);
+        void require_privileged_account(const config2& cfg);
+        std::string rarity_string_from_score(uint8_t rarity_score);
         void burn_nfts(std::vector<uint64_t>& asset_ids);
         eosio::checksum256 get_trx_id();
         void register_part(const eosio::name& edition_scope, const uint32_t& template_id, const uint8_t& rarity_score);
@@ -157,6 +158,7 @@ namespace avatarmk {
                 action(editiondel, edition_scope),
                 action(setparts, edition_scope, template_ids, rarity_scores),
                 action(setconfig, cfg),
+                action(clrconfig),
                 action(withdraw, owner, value),
                 action(open, owner, token, ram_payer),
                 action(assemble, set_data),

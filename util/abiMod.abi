@@ -1,0 +1,849 @@
+{
+  "version": "eosio::abi/1.1",
+  "types": [
+    {
+      "new_type_name": "vector<uint32>",
+      "type": "uint32[]"
+    }
+  ],
+  "structs": [
+    {
+      "name": "packadd",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "template_id",
+          "type": "uint64"
+        },
+        {
+          "name": "base_price",
+          "type": "asset"
+        },
+        {
+          "name": "floor_price",
+          "type": "asset"
+        },
+        {
+          "name": "pack_name",
+          "type": "string"
+        },
+        {
+          "name": "rarity_distribution",
+          "type": "uint8[]"
+        }
+      ]
+    },
+    {
+      "name": "packdel",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "template_id",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "avatardel",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "avatar_template_name",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "buypack",
+      "base": "",
+      "fields": [
+        {
+          "name": "buyer",
+          "type": "name"
+        },
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "template_id",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "claimpack",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "pack_asset_id",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "editionset",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "avatar_floor_mint_price",
+          "type": "asset"
+        },
+        {
+          "name": "avatar_template_price",
+          "type": "asset"
+        }
+      ]
+    },
+    {
+      "name": "editiondel",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "setparts",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "template_ids",
+          "type": "uint32[]"
+        },
+        {
+          "name": "rarity_scores",
+          "type": "uint8[]"
+        }
+      ]
+    },
+    {
+      "name": "extended_symbol",
+      "base": "",
+      "fields": [
+        {
+          "name": "sym",
+          "type": "symbol"
+        },
+        {
+          "name": "contract",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "config2",
+      "base": "",
+      "fields": [
+        {
+          "name": "freeze",
+          "type": "bool"
+        },
+        {
+          "name": "moderator",
+          "type": "name"
+        },
+        {
+          "name": "auto_claim_packs",
+          "type": "bool"
+        },
+        {
+          "name": "whitelist_enabled",
+          "type": "bool"
+        },
+        {
+          "name": "payment_token",
+          "type": "extended_symbol"
+        },
+        {
+          "name": "rng",
+          "type": "name"
+        },
+        {
+          "name": "collection_name",
+          "type": "name"
+        },
+        {
+          "name": "parts_schema",
+          "type": "name"
+        },
+        {
+          "name": "avatar_schema",
+          "type": "name"
+        },
+        {
+          "name": "pack_schema",
+          "type": "name"
+        },
+        {
+          "name": "avatar_mint_pct_increase",
+          "type": "float32"
+        }
+      ]
+    },
+    {
+      "name": "setconfig",
+      "base": "",
+      "fields": [
+        {
+          "name": "cfg",
+          "type": "config2?"
+        }
+      ]
+    },
+    {
+      "name": "clrconfig",
+      "base": "",
+      "fields": []
+    },
+    {
+      "name": "extended_asset",
+      "base": "",
+      "fields": [
+        {
+          "name": "quantity",
+          "type": "asset"
+        },
+        {
+          "name": "contract",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "value",
+          "type": "extended_asset"
+        }
+      ]
+    },
+    {
+      "name": "open",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "token",
+          "type": "extended_symbol"
+        },
+        {
+          "name": "ram_payer",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "namepair",
+      "base": "",
+      "fields": [
+        {
+          "name": "avatarpart",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "assemble_set",
+      "base": "",
+      "fields": [
+        {
+          "name": "creator",
+          "type": "name"
+        },
+        {
+          "name": "avatar_name",
+          "type": "name"
+        },
+        {
+          "name": "template_ids",
+          "type": "uint32[]"
+        },
+        {
+          "name": "rarity_score",
+          "type": "uint8"
+        },
+        {
+          "name": "identifier",
+          "type": "checksum256"
+        },
+        {
+          "name": "max_mint",
+          "type": "uint32"
+        },
+        {
+          "name": "avatarpart_names",
+          "type": "namepair[]"
+        },
+        {
+          "name": "scope",
+          "type": "name"
+        },
+        {
+          "name": "base_price",
+          "type": "asset"
+        }
+      ]
+    },
+    {
+      "name": "assemble",
+      "base": "",
+      "fields": [
+        {
+          "name": "set_data",
+          "type": "assemble_set"
+        }
+      ]
+    },
+    {
+      "name": "finalize",
+      "base": "",
+      "fields": [
+        {
+          "name": "identifier",
+          "type": "checksum256"
+        },
+        {
+          "name": "ipfs_hash",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "mintavatar",
+      "base": "",
+      "fields": [
+        {
+          "name": "minter",
+          "type": "name"
+        },
+        {
+          "name": "avatar_name",
+          "type": "name"
+        },
+        {
+          "name": "scope",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "receiverand",
+      "base": "",
+      "fields": [
+        {
+          "name": "assoc_id",
+          "type": "uint64"
+        },
+        {
+          "name": "random_value",
+          "type": "checksum256"
+        }
+      ]
+    },
+    {
+      "name": "setowner",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "new_owner",
+          "type": "name"
+        },
+        {
+          "name": "avatar_name",
+          "type": "name"
+        },
+        {
+          "name": "scope",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "whitelistadd",
+      "base": "",
+      "fields": [
+        {
+          "name": "account",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "whitelistdel",
+      "base": "",
+      "fields": [
+        {
+          "name": "account",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "base": "",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "clravatars",
+      "base": "",
+      "fields": [
+        {
+          "name": "scope",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "clrqueue",
+      "base": "",
+      "fields": []
+    },
+    {
+      "name": "clrunpack",
+      "base": "",
+      "fields": []
+    },
+    {
+      "name": "clrwhitelist",
+      "base": "",
+      "fields": []
+    },
+    {
+      "name": "whitelist",
+      "base": "",
+      "fields": [
+        {
+          "name": "account",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "avatars",
+      "base": "",
+      "fields": [
+        {
+          "name": "avatar_name",
+          "type": "name"
+        },
+        {
+          "name": "template_id",
+          "type": "uint32"
+        },
+        {
+          "name": "creator",
+          "type": "name"
+        },
+        {
+          "name": "identifier",
+          "type": "checksum256"
+        },
+        {
+          "name": "rarity",
+          "type": "uint8"
+        },
+        {
+          "name": "mint",
+          "type": "uint32"
+        },
+        {
+          "name": "max_mint",
+          "type": "uint32"
+        },
+        {
+          "name": "modified",
+          "type": "time_point_sec"
+        },
+        {
+          "name": "base_price",
+          "type": "asset"
+        },
+        {
+          "name": "avatarparts",
+          "type": "uint32[]"
+        }
+      ]
+    },
+    {
+      "name": "queue",
+      "base": "",
+      "fields": [
+        {
+          "name": "avatar_name",
+          "type": "name"
+        },
+        {
+          "name": "identifier",
+          "type": "checksum256"
+        },
+        {
+          "name": "work",
+          "type": "name"
+        },
+        {
+          "name": "scope",
+          "type": "name"
+        },
+        {
+          "name": "set_data",
+          "type": "assemble_set"
+        },
+        {
+          "name": "inserted",
+          "type": "time_point_sec"
+        }
+      ]
+    },
+    {
+      "name": "deposits",
+      "base": "",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uint64"
+        },
+        {
+          "name": "balance",
+          "type": "extended_asset"
+        }
+      ]
+    },
+    {
+      "name": "editions",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition_scope",
+          "type": "name"
+        },
+        {
+          "name": "avatar_floor_mint_price",
+          "type": "asset"
+        },
+        {
+          "name": "avatar_template_price",
+          "type": "asset"
+        },
+        {
+          "name": "avatar_template_count",
+          "type": "uint64"
+        },
+        {
+          "name": "num_avatarparts",
+          "type": "uint8"
+        },
+        {
+          "name": "part_template_ids",
+          "type": "vector<uint32>[]"
+        }
+      ]
+    },
+    {
+      "name": "packs",
+      "base": "",
+      "fields": [
+        {
+          "name": "template_id",
+          "type": "uint64"
+        },
+        {
+          "name": "base_price",
+          "type": "asset"
+        },
+        {
+          "name": "floor_price",
+          "type": "asset"
+        },
+        {
+          "name": "last_sold",
+          "type": "time_point_sec"
+        },
+        {
+          "name": "pack_name",
+          "type": "string"
+        },
+        {
+          "name": "rarity_distribution",
+          "type": "uint8[]"
+        }
+      ]
+    },
+    {
+      "name": "pack_data",
+      "base": "",
+      "fields": [
+        {
+          "name": "edition",
+          "type": "name"
+        },
+        {
+          "name": "pack_size",
+          "type": "uint8"
+        },
+        {
+          "name": "rarity_distribution",
+          "type": "uint8[]"
+        }
+      ]
+    },
+    {
+      "name": "unpack",
+      "base": "",
+      "fields": [
+        {
+          "name": "pack_asset_id",
+          "type": "uint64"
+        },
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "pack_data",
+          "type": "pack_data"
+        },
+        {
+          "name": "claimable_template_ids",
+          "type": "uint32[]"
+        },
+        {
+          "name": "inserted",
+          "type": "time_point_sec"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "packadd",
+      "type": "packadd",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "packdel",
+      "type": "packdel",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "avatardel",
+      "type": "avatardel",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "buypack",
+      "type": "buypack",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "claimpack",
+      "type": "claimpack",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "editionset",
+      "type": "editionset",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "editiondel",
+      "type": "editiondel",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "setparts",
+      "type": "setparts",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "setconfig",
+      "type": "setconfig",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "clrconfig",
+      "type": "clrconfig",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "withdraw",
+      "type": "withdraw",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "open",
+      "type": "open",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "assemble",
+      "type": "assemble",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "finalize",
+      "type": "finalize",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "mintavatar",
+      "type": "mintavatar",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "receiverand",
+      "type": "receiverand",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "setowner",
+      "type": "setowner",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "whitelistadd",
+      "type": "whitelistadd",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "whitelistdel",
+      "type": "whitelistdel",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "test",
+      "type": "test",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "clravatars",
+      "type": "clravatars",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "clrqueue",
+      "type": "clrqueue",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "clrunpack",
+      "type": "clrunpack",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "clrwhitelist",
+      "type": "clrwhitelist",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [
+    {
+      "name": "whitelist",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "whitelist"
+    },
+    {
+      "name": "avatars",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "avatars"
+    },
+    {
+      "name": "queue",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "queue"
+    },
+    {
+      "name": "deposits",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "deposits"
+    },
+    {
+      "name": "config2",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "config2"
+    },
+    {
+      "name": "editions",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "editions"
+    },
+    {
+      "name": "packs",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "packs"
+    },
+    {
+      "name": "unpack",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": [],
+      "type": "unpack"
+    }
+  ],
+  "ricardian_clauses": [],
+  "error_messages": [],
+  "abi_extensions": [],
+  "variants": []
+}

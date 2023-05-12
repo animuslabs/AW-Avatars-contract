@@ -11,7 +11,7 @@ module.exports = {
     telosTest: "avatar.boid",
     jungle: "avatar.boid",
     eos: "avatar.boid",
-    waxTest: "waxcontract1"
+    waxTest: "alienavatars"
   },
   explorer: {
     waxTest: "https://wax-test.bloks.io"

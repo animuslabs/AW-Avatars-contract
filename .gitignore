@@ -1,6 +1,4 @@
 .DS_Store
-*.wasm
-*.abi
 
 build/*
 Testing/*

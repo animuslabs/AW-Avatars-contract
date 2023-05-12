@@ -41,10 +41,10 @@ if (require.main == module) {
   if (!methods[chain]) {
     if (conf.chains.find(el => el == chain)) {
       methods.default(chain, target)
-        .catch((error) => console.error(error.toString()))
+        .catch((error) => console.error(error))
     } else console.error('invalid chain, must be \n', conf.chains, '\n set the chain using CHAIN=eos or "node deploy eos"', '\n configure chains in eosioConfig.json and .env.js')
   } else {
     methods[chain]()
-      .catch((error) => console.error(error.toString()))
+      .catch((error) => console.error(error))
   }
 }

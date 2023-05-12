@@ -7,7 +7,7 @@ const contractAccount = conf.accountName[activeChain]
 
 const methods = {
   async clrcfg(param1, param2) {
-    await doAction('setconfig', {})
+    await doAction('clrconfig')
   },
   async clrqueue() {
     await doAction('clrqueue')
@@ -15,15 +15,16 @@ const methods = {
   async setconfig() {
     await doAction('setconfig', { cfg:
       { freeze: false,
-        moderator:"nft.boid",
+        moderator:"alienavatars",
         auto_claim_packs: false,
         whitelist_enabled: false,
-        collection_name: "avatar.boid",
+        collection_name: "alienavatars",
         parts_schema: "avatarparts",
-        avatar_schema: "boidavatars",
+        avatar_schema: "alienavatar",
         pack_schema: "partpacks",
-        rng:"rng.boid",
-        payment_token:{contract:"boidcomtoken",sym:"4,BOID"}
+        rng:"orng.wax",
+        payment_token:{contract:"tsttlmtokens",sym:"4,TLM"},
+        avatar_mint_pct_increase:0.1
       } })
   },
   async clravatars(scope) {
@@ -31,10 +32,14 @@ const methods = {
   },
   async editionset() {
     await doAction('editionset', {
-      edition_scope:"cartoon",
-      avatar_floor_mint_price:"1000.0000 BOID",
-      avatar_template_price:"100000.0000 BOID"
+      edition_scope:"first",
+      avatar_floor_mint_price:"500.0000 TLM",
+      avatar_template_price: "1000.0000 TLM",
+      num_avatarparts:6,
     })
+  },
+  async editiondel(edition_scope) {
+    await doAction('editiondel', { edition_scope })
   },
   async clrunpack() {
     await doAction('clrunpack', { })

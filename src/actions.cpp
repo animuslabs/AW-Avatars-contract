@@ -6,8 +6,8 @@ namespace avatarmk {
 
     void avatarmk_c::whitelistadd(const eosio::name& account)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -21,8 +21,8 @@ namespace avatarmk {
 
     void avatarmk_c::whitelistdel(const eosio::name& account)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -35,8 +35,8 @@ namespace avatarmk {
     {
         //warning no input validation!
         // require_auth(get_self());
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -61,8 +61,8 @@ namespace avatarmk {
     }
     void avatarmk_c::editiondel(eosio::name& edition_scope)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -71,9 +71,9 @@ namespace avatarmk {
         _editions.erase(itr);
     }
 
-    void avatarmk_c::setconfig(std::optional<config> cfg)
+    void avatarmk_c::setconfig(std::optional<config2> cfg)
     {
-        config_table _config(get_self(), get_self().value);
+        config_table2 _config(get_self(), get_self().value);
         if (_config.exists()) {
             auto const existing_cfg = _config.get();
             require_privileged_account(existing_cfg);
@@ -84,14 +84,21 @@ namespace avatarmk {
         cfg ? _config.set(cfg.value(), get_self()) : _config.remove();
     }
 
+    void avatarmk_c::clrconfig()
+    {
+        config_table2 _config(get_self(), get_self().value);
+        require_auth(get_self());
+        _config.remove();
+    }
+
     void avatarmk_c::mintavatar(eosio::name& minter, eosio::name& avatar_name, eosio::name& scope)
     {
         require_auth(minter);
         avatars_table _avatars(get_self(), scope.value);
         auto itr = _avatars.require_find(avatar_name.value, "Avatar with this name doesn't exist.");
 
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         check_contract_is_frozen(cfg);
 
@@ -178,8 +185,8 @@ namespace avatarmk {
     void avatarmk_c::finalize(eosio::checksum256& identifier, std::string& ipfs_hash)
     {
         //finalize will remove from queue
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -208,11 +215,11 @@ namespace avatarmk {
         immutable_data["edition"] = scope.to_string();
         immutable_data["img"] = ipfs_hash;
         immutable_data["rarityScore"] = queue_entry->set_data.rarity_score;
-        immutable_data["bodyparts"] = queue_entry->set_data.template_ids;  //vector template_ids
-
+        immutable_data["avatarparts"] = queue_entry->set_data.template_ids;  //vector template_ids
+        immutable_data["rarity"] = rarity_string_from_score(queue_entry->set_data.rarity_score);
         //add part names to immutable_data
-        for (auto p : queue_entry->set_data.bodypart_names) {
-            immutable_data[p.bodypart] = p.name;
+        for (auto p : queue_entry->set_data.avatarpart_names) {
+            immutable_data[p.avatarpart] = p.name;
         }
 
         const auto data = make_tuple(authorized_creator, collection_name, schema_name, transferable, burnable, max_supply, immutable_data);
@@ -226,7 +233,7 @@ namespace avatarmk {
             n.identifier = queue_entry->identifier;
             n.base_price = queue_entry->set_data.base_price;
             n.modified = eosio::time_point_sec(eosio::current_time_point());
-            n.bodyparts = queue_entry->set_data.template_ids;
+            n.avatarparts = queue_entry->set_data.template_ids;
             n.max_mint = queue_entry->set_data.max_mint;
         });
         //delete queue entry, not needed anymore.
@@ -245,8 +252,8 @@ namespace avatarmk {
                              std::string& pack_name,
                              std::vector<uint8_t>& rarity_distribution)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -265,8 +272,8 @@ namespace avatarmk {
     }
     void avatarmk_c::packdel(eosio::name& edition_scope, uint64_t& template_id)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -277,8 +284,8 @@ namespace avatarmk {
     }
     void avatarmk_c::avatardel(eosio::name& edition_scope, eosio::name& avatar_template_name)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 
@@ -295,8 +302,8 @@ namespace avatarmk {
         packs_table _packs(get_self(), edition_scope.value);
         auto p_itr = _packs.require_find(template_id, "Pack with this template_id not found for this scope");
 
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         check_contract_is_frozen(cfg);
 
@@ -321,8 +328,8 @@ namespace avatarmk {
 
     void avatarmk_c::claimpack(eosio::name& owner, uint64_t& pack_asset_id)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         eosio::check(has_auth(get_self()) || has_auth(owner) || has_auth(cfg.moderator), "Need authorization of owner, contract or moderator");
 
@@ -350,8 +357,8 @@ namespace avatarmk {
 
     void avatarmk_c::receiverand(uint64_t& assoc_id, const eosio::checksum256& random_value)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         eosio::check(has_auth(get_self()) || has_auth(cfg.rng), "Need authorization of owner or contract");
 
@@ -407,8 +414,8 @@ namespace avatarmk {
 
     void avatarmk_c::setparts(const eosio::name& edition_scope, const std::vector<uint32_t> template_ids, std::vector<uint8_t>& rarity_scores)
     {
-        config_table _config(get_self(), get_self().value);
-        auto const cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        auto const cfg = _config.get_or_create(get_self(), config2());
 
         require_privileged_account(cfg);
 

@@ -1,22 +1,22 @@
 [
-    {
-        "account": "atomicassets",
-        "name": "mintasset",
-        "authorization": [
-            {
-                "actor": "waxcontract1",
-                "permission": "active"
-            }
-        ],
-        "data": {
-            "authorized_minter": "waxcontract1",
-            "collection_name": "avatars1235a",
-            "schema_name": "bodyparts123",
-            "template_id": 343519,
-            "new_asset_owner": "piecesnbitss",
-            "immutable_data": [],
-            "mutable_data": [],
-            "tokens_to_back": []
-        }
+  {
+    "account": "atomicassets",
+    "name": "mintasset",
+    "authorization": [
+      {
+        "actor": "waxcontract1",
+        "permission": "active"
+      }
+    ],
+    "data": {
+      "authorized_minter": "waxcontract1",
+      "collection_name": "avatars1235a",
+      "schema_name": "avatarparts123",
+      "template_id": 343519,
+      "new_asset_owner": "piecesnbitss",
+      "immutable_data": [],
+      "mutable_data": [],
+      "tokens_to_back": []
     }
+  }
 ]

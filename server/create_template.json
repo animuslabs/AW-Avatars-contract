@@ -1,43 +1,43 @@
 [
-    {
-        "account": "atomicassets",
-        "name": "createtempl",
-        "authorization": [
-            {
-                "actor": "waxcontract1",
-                "permission": "active"
-            }
-        ],
-        "data": {
-            "authorized_creator": "waxcontract1",
-            "collection_name": "avatars1235a",
-            "schema_name": "bodyparts123",
-            "transferable": true,
-            "burnable": true,
-            "max_supply": 0,
-            "immutable_data": [
-                {
-                    "key": "name",
-                    "value": [
-                        "string",
-                        "astronaut head"
-                    ]
-                },
-                {
-                    "key": "type",
-                    "value": [
-                        "string",
-                        "head"
-                    ]
-                },
-                {
-                    "key": "rarity",
-                    "value": [
-                        "uint8",
-                        1
-                    ]
-                }
-            ]
+  {
+    "account": "atomicassets",
+    "name": "createtempl",
+    "authorization": [
+      {
+        "actor": "waxcontract1",
+        "permission": "active"
+      }
+    ],
+    "data": {
+      "authorized_creator": "waxcontract1",
+      "collection_name": "avatars1235a",
+      "schema_name": "avatarparts123",
+      "transferable": true,
+      "burnable": true,
+      "max_supply": 0,
+      "immutable_data": [
+        {
+          "key": "name",
+          "value": [
+            "string",
+            "astronaut head"
+          ]
+        },
+        {
+          "key": "type",
+          "value": [
+            "string",
+            "head"
+          ]
+        },
+        {
+          "key": "rarity",
+          "value": [
+            "uint8",
+            1
+          ]
         }
+      ]
     }
+  }
 ]

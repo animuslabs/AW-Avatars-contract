@@ -7,10 +7,10 @@ const contract = require('./do.js')
 const meta = require('./nftMetadata')
 const collectionName = 'avatar.boid'
 const defaultCollectionData = [
-  { key: 'name', value: ['string', 'Boid Avatar NFTs'] },
-  { key: 'img', value: ['string', 'QmZ4w4grmzJVDEr2mr9NNgegmsjzBJtyhw7TmbkPzJS1Pv'] },
-  { key: 'description', value: ['string', 'Avatar NFTs for the Boid universe.'] },
-  { key: 'url', value: ['string', 'https://avatar.boid.com'] },
+  { key: 'name', value: ['string', 'Alien Worlds Avatar NFTs'] },
+  { key: 'img', value: ['string', 'bafybeiaomhzh63cvm6uwlxgqwcv7gqitsa2v6yo75tvi4fketbv4t2f53y'] },
+  { key: 'description', value: ['string', 'Avatar NFTs for Alien Worlds.'] },
+  { key: 'url', value: ['string', 'https://alienavatars.io'] },
 ]
 
 const methods = {

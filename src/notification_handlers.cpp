@@ -24,8 +24,8 @@ namespace avatarmk {
     void avatarmk_c::notify_logtransfer(eosio::name collection_name, eosio::name from, eosio::name to, std::vector<uint64_t> asset_ids, std::string memo)
     {
         if (get_first_receiver() != atomic_contract) return;
-        config_table _config(get_self(), get_self().value);
-        const auto cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        const auto cfg = _config.get_or_create(get_self(), config2());
         if (collection_name != cfg.collection_name) return;
 
         //incoming transfers
@@ -91,14 +91,14 @@ namespace avatarmk {
     {
         if (get_first_receiver() != atomic_contract) return;
 
-        config_table _config(get_self(), get_self().value);
-        const auto cfg = _config.get_or_create(get_self(), config());
+        config_table2 _config(get_self(), get_self().value);
+        const auto cfg = _config.get_or_create(get_self(), config2());
         if (collection_name != cfg.collection_name) return;
 
         if (schema_name == cfg.avatar_schema) {
             //avatar template creation//
             ////////////////////////////
-            auto template_ids = std::get<UINT32_VEC>(immutable_data["bodyparts"]);
+            auto template_ids = std::get<UINT32_VEC>(immutable_data["avatarparts"]);
             auto identifier = calculateIdentifier(template_ids);
 
             auto scope_str = std::get<std::string>(immutable_data["edition"]);

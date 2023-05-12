@@ -5,10 +5,10 @@
 
 namespace avatarmk {
     struct namepair {
-        std::string bodypart;
+        std::string avatarpart;
         std::string name;
     };
-    EOSIO_REFLECT(namepair, bodypart, name)
+    EOSIO_REFLECT(namepair, avatarpart, name)
 
     struct assemble_set {
         eosio::name creator;
@@ -17,11 +17,11 @@ namespace avatarmk {
         uint8_t rarity_score;
         eosio::checksum256 identifier;
         uint32_t max_mint;
-        std::vector<namepair> bodypart_names;  ///////////////////
+        std::vector<namepair> avatarpart_names;  ///////////////////
         eosio::name scope;
         eosio::asset base_price;
     };
-    EOSIO_REFLECT(assemble_set, creator, avatar_name, template_ids, rarity_score, identifier, max_mint, bodypart_names, scope, base_price)
+    EOSIO_REFLECT(assemble_set, creator, avatar_name, template_ids, rarity_score, identifier, max_mint, avatarpart_names, scope, base_price)
 
     struct queue {
         eosio::name avatar_name;

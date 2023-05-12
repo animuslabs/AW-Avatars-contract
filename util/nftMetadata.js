@@ -4,7 +4,7 @@ const nftMetadata = {
       { name: 'name', type: 'string' },
       { name: 'edition', type: 'string' },
       { name: 'rarityScore', type: 'uint8' },
-      { name: 'bodypart', type: 'string' },
+      { name: 'avatarpart', type: 'string' },
       { name: 'info', type: 'string' },
       { name: 'url', type: 'string' },
       { name: 'img', type: 'image' }
@@ -24,7 +24,7 @@ const nftMetadata = {
       {name:'legs', type:'string'},//old bottom
       {name:'big-wings', type:'string'},
       {name:'small-wings', type:'string'},
-      {name:'bodyparts', type:'uint32[]'},
+      {name:'avatarparts', type:'uint32[]'},
       {name:'img', type:'image'}
     ]
   },
