@@ -1,7 +1,7 @@
 
 #pragma once
-#include <eosio/eosio.hpp>
 #include <eosio/asset.hpp>
+#include <eosio/eosio.hpp>
 
 namespace avatarmk {
     struct namepair {

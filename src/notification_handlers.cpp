@@ -1,6 +1,6 @@
 // #pragma once
-#include "avatarmk.hpp"
 #include "atomicassets.hpp"
+#include "avatarmk.hpp"
 namespace avatarmk {
     //
     //system core token transfer handler
@@ -61,6 +61,7 @@ namespace avatarmk {
                 //get pack info
                 auto asset_id = asset_ids[0];
                 auto pack_data = validate_pack(asset_id, cfg);
+                // check(false, "here");
 
                 unpack_table _unpack(get_self(), get_self().value);
                 _unpack.emplace(get_self(), [&](auto& n) {

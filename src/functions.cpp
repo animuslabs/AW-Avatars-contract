@@ -48,9 +48,10 @@ namespace avatarmk {
         auto pack_schema = collection_schemas.get(cfg.pack_schema.value, "Schema with name not found in atomicassets contract");
         auto t = templates.get(asset.template_id, "Template not found");
         auto des_data = atomicassets::deserialize(t.immutable_serialized_data, pack_schema.format);
-
         result.pack_size = std::get<uint8_t>(des_data["size"]);
-        result.edition = eosio::name(std::get<std::string>(des_data["edition"]));
+        std::string editionString = std::get<std::string>(des_data["edition"]);
+        editionString[0] = std::tolower(editionString[0]);
+        result.edition = eosio::name(editionString);
         result.rarity_distribution = std::get<std::vector<uint8_t>>(des_data["rarities"]);
         editions_table _editions(get_self(), get_self().value);
         _editions.get(result.edition.value, "Pack received with unkown edition.");
@@ -189,8 +190,8 @@ namespace avatarmk {
         else if (rarity_score == 5)
             return "Mythical";
         else {
-            check(false, "invalid rarity_score");
-            return "";
+            // check(false, "invalid rarity_score");
+            return "Mythical";
         }
     }
 
