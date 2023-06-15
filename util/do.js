@@ -33,7 +33,7 @@ const methods = {
   async editionset() {
     await doAction('editionset', {
       edition_scope:"first",
-      avatar_floor_mint_price:"500.0000 TLM",
+      avatar_floor_mint_price:"250.0000 TLM",
       avatar_template_price: "1000.0000 TLM",
       num_avatarparts:6,
     })
@@ -46,6 +46,9 @@ const methods = {
   },
   async whitelistadd(account) {
     await doAction('whitelistadd', { account })
+  },
+  async avatardel(edition_scope,avatar_template_name){
+    await doAction("avatardel",{edition_scope,avatar_template_name})
   },
   async packdel(edition_scope, template_id) {
     await doAction('packdel', { edition_scope, template_id })

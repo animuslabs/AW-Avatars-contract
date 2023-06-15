@@ -91,7 +91,7 @@ namespace avatarmk {
         _config.remove();
     }
 
-    void avatarmk_c::mintavatar(eosio::name& minter, eosio::name& avatar_name, eosio::name& scope)
+    void avatarmk_c::mintavatar(eosio::name& minter, eosio::name& avatar_name, eosio::name& scope, uint64_t holding_tool_id)
     {
         require_auth(minter);
         avatars_table _avatars(get_self(), scope.value);
@@ -110,6 +110,17 @@ namespace avatarmk {
 
         editions_table _editions(get_self(), get_self().value);
         editions edition_cfg = _editions.get(scope.value, "Scope is not a valid edition");
+        auto collection = eosio::name("alien.worlds");
+        auto schema = eosio::name("tool.worlds");
+        auto templates = atomicassets::get_templates(collection);
+        auto collection_schemas = atomicassets::get_schemas(collection);
+        auto tool_schema = collection_schemas.get(schema.value, "Schema with name not found in atomicassets contract");
+        auto user_assets = atomicassets::get_assets(minter);
+        auto user_asset = user_assets.get(holding_tool_id, "user not holding provided tool asset");
+        auto t = templates.get(user_asset.template_id, "Template not found");
+        auto des_data = atomicassets::deserialize(t.immutable_serialized_data, tool_schema.format);
+        auto tool_rarity = std::get<std::string>(des_data["rarity"]);
+        check(rarity_string_from_score(itr->rarity) == tool_rarity, "tool rarity does not match avatar rarity");
 
         //billing logic
         avatar_mint_price amp;
@@ -245,12 +256,7 @@ namespace avatarmk {
         _editions.modify(edition_itr, eosio::same_payer, [&](auto& n) { n.avatar_template_count += 1; });
     }
 
-    void avatarmk_c::packadd(eosio::name& edition_scope,
-                             uint64_t& template_id,
-                             eosio::asset& base_price,
-                             eosio::asset& floor_price,
-                             std::string& pack_name,
-                             std::vector<uint8_t>& rarity_distribution)
+    void avatarmk_c::packadd(eosio::name& edition_scope, uint64_t& template_id, eosio::asset& base_price, eosio::asset& floor_price, std::string& pack_name)
     {
         config_table2 _config(get_self(), get_self().value);
         auto const cfg = _config.get_or_create(get_self(), config2());
@@ -260,14 +266,21 @@ namespace avatarmk {
         packs_table _packs(get_self(), edition_scope.value);
         auto p_itr = _packs.find(template_id);
         eosio::check(p_itr == _packs.end(), "Pack with this template_id already in table");
-        eosio::check(std::accumulate(rarity_distribution.begin(), rarity_distribution.end(), 0) == 100, "Sum of rarity distribitions must equal 100");
+
+        auto templates = atomicassets::get_templates(cfg.collection_name);
+        auto collection_schemas = atomicassets::get_schemas(cfg.collection_name);
+        auto pack_schema = collection_schemas.get(cfg.pack_schema.value, "Schema with name not found in atomicassets contract");
+        auto t = templates.get(template_id, "Template not found");
+        auto des_data = atomicassets::deserialize(t.immutable_serialized_data, pack_schema.format);
+        auto rarity_distribution = std::get<std::vector<uint8_t>>(des_data["rarities"]);
+        auto total_rarity = std::accumulate(rarity_distribution.begin(), rarity_distribution.end(), 0);
+        eosio::check(total_rarity == 100, "Sum of rarity distribitions must equal 100 " + std::to_string(total_rarity) + " " + pack_name);
         eosio::check(rarity_distribution.size() == 5, "There must be a rarity chance specified for each rarity score 1-5");
         _packs.emplace(get_self(), [&](auto& n) {
             n.template_id = template_id;
             n.base_price = base_price;
             n.floor_price = floor_price;
             n.pack_name = pack_name;
-            n.rarity_distribution = rarity_distribution;
         });
     }
     void avatarmk_c::packdel(eosio::name& edition_scope, uint64_t& template_id)
@@ -397,7 +410,7 @@ namespace avatarmk {
             else if (in_range(rd4 + 1, 100, r)) {
                 rarity_index = 1;
             }
-            auto r2 = RP.get_rand(edition_cfg.part_template_ids[rarity_index - 1].size() - 1);
+            auto r2 = RP.get_rand(edition_cfg.part_template_ids[rarity_index - 1].size());
             result.push_back(edition_cfg.part_template_ids[rarity_index - 1][r2]);
         }
 

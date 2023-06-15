@@ -30,10 +30,6 @@
         {
           "name": "pack_name",
           "type": "string"
-        },
-        {
-          "name": "rarity_distribution",
-          "type": "uint8[]"
         }
       ]
     },
@@ -363,6 +359,10 @@
         {
           "name": "scope",
           "type": "name"
+        },
+        {
+          "name": "holding_tool_id",
+          "type": "uint64"
         }
       ]
     },
@@ -610,10 +610,6 @@
         {
           "name": "pack_name",
           "type": "string"
-        },
-        {
-          "name": "rarity_distribution",
-          "type": "uint8[]"
         }
       ]
     },

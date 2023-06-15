@@ -9,6 +9,7 @@ namespace avatarmk {
         avatar_mint_price result;
 
         const auto sec_passed = (eosio::current_time_point() - avatar.modified).to_seconds();
+        // const auto days_passed = std::floor(sec_passed / 60);
         const auto days_passed = std::floor(sec_passed / day_sec);
 
         config_table2 _config(get_self(), get_self().value);
@@ -18,13 +19,15 @@ namespace avatarmk {
 
         //calculate mint price based on current base price
         const uint64_t pv = avatar.base_price.amount;
-        const double r = 0.01 * (5 / avatar.rarity);  // rare avatars will decay slower
+        const double r = 0.01 * (5.0 / double(avatar.rarity));  // rare avatars will decay slower
+        // check(false,std::to_string(r));
         const auto decay_step = days_passed;
         const uint64_t p = (uint64_t)(pv * pow(1 - r, decay_step));
+        // check(false,std::to_string(p));
         eosio::asset mint_price{static_cast<int64_t>(p), cfg.payment_token.get_symbol()};
         mint_price = std::max(mint_price, avatar_floor_mint_price);
         result.price = {mint_price, cfg.payment_token.get_contract()};
-
+        // check(false,mint_price.to_string());
         return result;
     }
 
@@ -79,7 +82,7 @@ namespace avatarmk {
 
         editions_table _editions(get_self(), get_self().value);
         editions edition_cfg;
-
+        // check(false, "beforeloop");
         for (uint64_t asset_id : asset_ids) {
             auto asset = received_assets.get(asset_id, "Asset not received in contract");
 
@@ -97,7 +100,8 @@ namespace avatarmk {
                 eosio::check(scope == result.scope, "body parts from different editions/scope received.");
             }
 
-            auto body_type = std::get<std::string>(des_data["avatarpart"]);  //type
+            // check(false, "inloop");
+            auto body_type = std::get<std::string>(des_data["bodypart"]);  //type
 
             if (std::find(test_types.begin(), test_types.end(), body_type) != test_types.end()) {
                 eosio::check(false, "Duplicate body part type " + body_type);
@@ -115,8 +119,9 @@ namespace avatarmk {
 
         result.identifier = calculateIdentifier(result.template_ids);
         result.rarity_score = std::floor(std::accumulate(rarities.begin(), rarities.end(), 0) / edition_cfg.num_avatarparts);
-        result.max_mint = 10 * pow(6 - result.rarity_score, 2);
-        result.base_price = edition_cfg.avatar_floor_mint_price * pow(result.rarity_score, 3);
+        // result.max_mint = 10 * pow(6 - result.rarity_score, 2);
+        result.max_mint = std::floor(5 * pow(6 - result.rarity_score, 1));
+        result.base_price = edition_cfg.avatar_floor_mint_price * pow(result.rarity_score, 2);
 
         return result;
     };
@@ -196,3 +201,9 @@ namespace avatarmk {
     }
 
 }  // namespace avatarmk
+
+// if (rarNum === 1) return 'common'
+// else if (rarNum === 2) return 'rare'
+// else if (rarNum === 3) return 'epic'
+// else if (rarNum === 4) return 'legendary'
+// else if (rarNum === 5) return 'mythical'

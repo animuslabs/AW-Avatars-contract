@@ -88,12 +88,7 @@ namespace avatarmk {
 
         void setconfig(std::optional<config2> cfg);
         void clrconfig();
-        void packadd(eosio::name& edition_scope,
-                     uint64_t& template_id,
-                     eosio::asset& base_price,
-                     eosio::asset& floor_price,
-                     std::string& pack_name,
-                     std::vector<uint8_t>& rarity_distribution);
+        void packadd(eosio::name& edition_scope, uint64_t& template_id, eosio::asset& base_price, eosio::asset& floor_price, std::string& pack_name);
         void packdel(eosio::name& edition_scope, uint64_t& template_id);
         void avatardel(eosio::name& edition_scope, eosio::name& avatar_template_name);
         void editionset(eosio::name& edition_scope, eosio::asset& avatar_floor_mint_price, eosio::asset& avatar_template_price);
@@ -105,7 +100,7 @@ namespace avatarmk {
         void claimpack(eosio::name& owner, uint64_t& pack_asset_id);
         void assemble(assemble_set& set_data);
         void finalize(eosio::checksum256& identifier, std::string& ipfs_hash);
-        void mintavatar(eosio::name& minter, eosio::name& avatar_name, eosio::name& scope);
+        void mintavatar(eosio::name& minter, eosio::name& avatar_name, eosio::name& scope, uint64_t holding_tool_id);
         void setowner(eosio::name& owner, eosio::name& new_owner, eosio::name& avatar_name, eosio::name& scope);
         using assemble_action = eosio::action_wrapper<"assemble"_n, &avatarmk_c::assemble>;
 
@@ -149,7 +144,7 @@ namespace avatarmk {
     EOSIO_ACTIONS(
                 avatarmk_c,
                 "avatarmk"_n,
-                action(packadd, edition_scope, template_id, base_price, floor_price, pack_name, rarity_distribution),
+                action(packadd, edition_scope, template_id, base_price, floor_price, pack_name),
                 action(packdel, edition_scope, template_id),
                 action(avatardel, edition_scope, avatar_template_name),
                 action(buypack, buyer, edition_scope, template_id),
@@ -163,7 +158,7 @@ namespace avatarmk {
                 action(open, owner, token, ram_payer),
                 action(assemble, set_data),
                 action(finalize, identifier, ipfs_hash),
-                action(mintavatar, minter, avatar_name, scope),
+                action(mintavatar, minter, avatar_name, scope, holding_tool_id),
                 action(receiverand, assoc_id, random_value),
                 action(setowner, owner, new_owner, avatar_name, scope),
                 action(whitelistadd, account),

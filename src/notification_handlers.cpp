@@ -32,9 +32,10 @@ namespace avatarmk {
         if (to == get_self()) {
             if (memo.substr(0, 8) == "assemble") {
                 //validate_assemble_set will assert when not a valid set
-                eosio::check(is_whitelisted(from, cfg), "Only whitelisted accounts can assemble parts");
+                // eosio::check(is_whitelisted(from, cfg), "Only whitelisted accounts can assemble parts");
                 check_contract_is_frozen(cfg);
                 auto assemble_set = validate_assemble_set(asset_ids, cfg);
+                // check(false, "past assemble");
                 assemble_set.creator = from;
                 assemble_set.avatar_name = eosio::name(memo.substr(9));  //assemble:avatarname
 
