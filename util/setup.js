@@ -5,17 +5,17 @@ const activeChain = process.env.CHAIN || env.defaultChain
 const contractAccount = conf.accountName[activeChain]
 const contract = require('./do.js')
 const meta = require('./nftMetadata')
-const collectionName = 'avatar.boid'
+const collectionName = 'alienavatars'
 const defaultCollectionData = [
   { key: 'name', value: ['string', 'Alien Worlds Avatar NFTs'] },
-  { key: 'img', value: ['string', 'bafybeiaomhzh63cvm6uwlxgqwcv7gqitsa2v6yo75tvi4fketbv4t2f53y'] },
+  { key: 'img', value: ['string', 'QmWDvxz6Q77pavQgNNCwYZmAgA878PYDgCxjydKH8S7AGM'] },
   { key: 'description', value: ['string', 'Avatar NFTs for Alien Worlds.'] },
   { key: 'url', value: ['string', 'https://alienavatars.io'] },
 ]
 
 const methods = {
   async updateAuth(pubkey) {
-    if (!pubkey) pubkey = "EOS6FoTSwiKk27SJ1kANdJFmso3KbECASAMDpEka4dG9p1ub6GqiH"
+    if (!pubkey) return console.error("must provide active pubkey as parameter")
     const auth = {
       "threshold": 1,
       "keys": [{ key: pubkey, weight: 1 }],
@@ -24,16 +24,18 @@ const methods = {
     }
     await doAction('updateauth', { account: contractAccount, auth, parent: 'owner', permission: 'active' }, 'eosio', contractAccount)
   },
-  async addWorkerPermission(pubkey) {
-    if (!pubkey) pubkey = "EOS6FoTSwiKk27SJ1kANdJFmso3KbECASAMDpEka4dG9p1ub6GqiH"
+  async addWorkerPermission() {
     const auth = {
       "threshold": 1,
-      "keys": [{ key: pubkey, weight: 1 }],
-      "accounts": [],
+      "keys": [],
+      "accounts": [
+        // { "permission": { "actor": "animusystems", "permission": "active" }, "weight": 1 },
+        { "permission": { "actor": "boidcomnodes", "permission": "active" }, "weight": 1 }
+      ],
       "waits": []
     }
     await doAction('updateauth', { account: contractAccount, auth, parent: 'active', permission: 'avataroracle' }, 'eosio', contractAccount)
-    await doAction('linkauth', { account: contractAccount, code:'avatar.boid',type:"finalize",requirement:'avataroracle' }, 'eosio', contractAccount)
+    await doAction('linkauth', { account: contractAccount, code:contractAccount,type:"finalize",requirement:'avataroracle' }, 'eosio', contractAccount)
   },
   async buyRam(bytes) {
     const data = {

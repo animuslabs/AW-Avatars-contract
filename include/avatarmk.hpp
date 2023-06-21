@@ -171,7 +171,7 @@ namespace avatarmk {
                     action(clrunpack),
                     action(clrwhitelist),
                 #endif
-                notify("tsttlmtokens"_n, transfer),
+                notify("alien.worlds"_n, transfer),
                 // notify("eosio.token"_n, transfer),
                 notify(atomic_contract, logtransfer),
                 notify(atomic_contract, lognewtempl)

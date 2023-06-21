@@ -100,7 +100,7 @@ namespace avatarmk {
         config_table2 _config(get_self(), get_self().value);
         auto const cfg = _config.get_or_create(get_self(), config2());
 
-        check_contract_is_frozen(cfg);
+        if (minter != cfg.moderator) check_contract_is_frozen(cfg);
 
         eosio::time_point_sec now(eosio::current_time_point());
 
@@ -110,18 +110,20 @@ namespace avatarmk {
 
         editions_table _editions(get_self(), get_self().value);
         editions edition_cfg = _editions.get(scope.value, "Scope is not a valid edition");
-        auto collection = eosio::name("alien.worlds");
-        auto schema = eosio::name("tool.worlds");
-        auto templates = atomicassets::get_templates(collection);
-        auto collection_schemas = atomicassets::get_schemas(collection);
-        auto tool_schema = collection_schemas.get(schema.value, "Schema with name not found in atomicassets contract");
-        auto user_assets = atomicassets::get_assets(minter);
-        auto user_asset = user_assets.get(holding_tool_id, "user not holding provided tool asset");
-        auto t = templates.get(user_asset.template_id, "Template not found");
-        auto des_data = atomicassets::deserialize(t.immutable_serialized_data, tool_schema.format);
-        auto tool_rarity = std::get<std::string>(des_data["rarity"]);
-        check(rarity_string_from_score(itr->rarity) == tool_rarity, "tool rarity does not match avatar rarity");
-
+        if (minter != cfg.moderator) {
+            auto collection = eosio::name("alien.worlds");
+            // auto collection = eosio::name("alientestnft");
+            auto schema = eosio::name("tool.worlds");
+            auto templates = atomicassets::get_templates(collection);
+            auto collection_schemas = atomicassets::get_schemas(collection);
+            auto tool_schema = collection_schemas.get(schema.value, "Schema with name not found in atomicassets contract");
+            auto user_assets = atomicassets::get_assets(minter);
+            auto user_asset = user_assets.get(holding_tool_id, "user not holding provided tool asset");
+            auto t = templates.get(user_asset.template_id, "Template not found");
+            auto des_data = atomicassets::deserialize(t.immutable_serialized_data, tool_schema.format);
+            auto tool_rarity = std::get<std::string>(des_data["rarity"]);
+            check(rarity_string_from_score(itr->rarity) == tool_rarity, "tool rarity does not match avatar rarity");
+        }
         //billing logic
         avatar_mint_price amp;
         if (minter != cfg.moderator) {

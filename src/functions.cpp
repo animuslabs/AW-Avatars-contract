@@ -9,7 +9,6 @@ namespace avatarmk {
         avatar_mint_price result;
 
         const auto sec_passed = (eosio::current_time_point() - avatar.modified).to_seconds();
-        // const auto days_passed = std::floor(sec_passed / 60);
         const auto days_passed = std::floor(sec_passed / day_sec);
 
         config_table2 _config(get_self(), get_self().value);
@@ -101,7 +100,7 @@ namespace avatarmk {
             }
 
             // check(false, "inloop");
-            auto body_type = std::get<std::string>(des_data["bodypart"]);  //type
+            auto body_type = std::get<std::string>(des_data["avatarpart"]);  //type
 
             if (std::find(test_types.begin(), test_types.end(), body_type) != test_types.end()) {
                 eosio::check(false, "Duplicate body part type " + body_type);
@@ -119,7 +118,6 @@ namespace avatarmk {
 
         result.identifier = calculateIdentifier(result.template_ids);
         result.rarity_score = std::floor(std::accumulate(rarities.begin(), rarities.end(), 0) / edition_cfg.num_avatarparts);
-        // result.max_mint = 10 * pow(6 - result.rarity_score, 2);
         result.max_mint = std::floor(5 * pow(6 - result.rarity_score, 1));
         result.base_price = edition_cfg.avatar_floor_mint_price * pow(result.rarity_score, 2);
 

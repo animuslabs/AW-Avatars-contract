@@ -15,15 +15,15 @@ const methods = {
   async setconfig() {
     await doAction('setconfig', { cfg:
       { freeze: false,
-        moderator:"alienavatars",
+        moderator:"nft.boid",
         auto_claim_packs: false,
         whitelist_enabled: false,
         collection_name: "alienavatars",
         parts_schema: "avatarparts",
-        avatar_schema: "alienavatar",
+        avatar_schema: "alienavatars",
         pack_schema: "partpacks",
         rng:"orng.wax",
-        payment_token:{contract:"tsttlmtokens",sym:"4,TLM"},
+        payment_token:{contract:"alien.worlds",sym:"4,TLM"},
         avatar_mint_pct_increase:0.1
       } })
   },
