@@ -94,6 +94,7 @@ namespace avatarmk {
         void editionset(eosio::name& edition_scope, eosio::asset& avatar_floor_mint_price, eosio::asset& avatar_template_price);
         void editiondel(eosio::name& edition_scope);
         void withdraw(const eosio::name& owner, const eosio::extended_asset& value);
+        void selfwithdraw(const eosio::name& destination, const eosio::extended_asset& value);
         void open(const eosio::name& owner, eosio::extended_symbol& token, const eosio::name& ram_payer);
 
         void buypack(eosio::name& buyer, eosio::name& edition_scope, uint64_t& template_id);
@@ -155,6 +156,7 @@ namespace avatarmk {
                 action(setconfig, cfg),
                 action(clrconfig),
                 action(withdraw, owner, value),
+                action(selfwithdraw, destination, value),
                 action(open, owner, token, ram_payer),
                 action(assemble, set_data),
                 action(finalize, identifier, ipfs_hash),

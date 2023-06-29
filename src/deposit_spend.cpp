@@ -64,8 +64,15 @@ namespace avatarmk {
     void avatarmk_c::withdraw(const eosio::name& owner, const eosio::extended_asset& value)
     {
         require_auth(owner);
-        eosio::check(value.quantity.amount > 0, "Withdraw amount must be possitive.");
+        eosio::check(value.quantity.amount > 0, "Withdraw amount must be positive.");
         sub_balance(owner, value);
         token::actions::transfer{value.contract, get_self()}.send(get_self(), owner, value.quantity, "withdraw");
+    }
+    void avatarmk_c::selfwithdraw(const eosio::name& destination, const eosio::extended_asset& value)
+    {
+        require_auth(get_self());
+        eosio::check(value.quantity.amount > 0, "Withdraw amount must be positive.");
+        sub_balance(get_self(), value);
+        token::actions::transfer{value.contract, get_self()}.send(get_self(), destination, value.quantity, "withdraw");
     }
 }  // namespace avatarmk
